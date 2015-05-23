@@ -17,7 +17,7 @@
  			status = 0 
  	</update>
  	
- 	<update id="excluirUserDAO" parameterType="delivery.model.User">
+ 	<update id="excluirUserDAO" parameterType="java.lang.String">
  		update User set status = 1
  	</update>
  	

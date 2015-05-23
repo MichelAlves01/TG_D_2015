@@ -1,8 +1,20 @@
 package delivery.api.dao;
 
+import java.util.List;
+
 import delivery.model.Produto;
 
 
 public interface ProdutoDAO {
-	public void cadastrarProdutoDAO(Produto produto);
+	
+	void cadastrarProdutoDAO(Produto produto);
+	
+	void atualizarProdutoDAO(Produto produto);
+	
+	void excluirProdutoDAO(int idProduto);
+	
+	Produto getProdutoDAO(int idProduto);
+	
+	List<Produto> getProdutosDAO();
+	
 }

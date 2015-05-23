@@ -13,7 +13,7 @@
  		update Item set id = #{id}, descricao = #{descricao}, preco = #{preco}
  	</update>
  	
- 	<update id="excluirProdutoDAO" parameterType="delivery.model.Item">
+ 	<update id="excluirProdutoDAO" parameterType="java.lang.Integer">
  		update Item set id = #{id}, descricao = #{descricao}, preco = #{preco}, status = 1
  	</update>
  	
