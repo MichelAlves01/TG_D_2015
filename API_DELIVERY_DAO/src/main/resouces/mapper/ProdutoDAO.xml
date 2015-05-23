@@ -3,7 +3,7 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
- <mapper namespace="delivery.dao.ProdutoDAO">
+ <mapper namespace="delivery.api.dao.ProdutoDAO">
  	<insert id="cadastrarProdutoDAO" parameterType="delivery.model.Produto">
  		insert into produto (id, decricao,preco, id_empresa) values ( #{id},#{descricao}, #{preco}, #{id_empresa} )
  	</insert>
