@@ -9,7 +9,7 @@ import delivery.model.UsuarioMob;
 
 
 public class UsuariosMobImpl {
-	
+	UsuarioMob usuariomob = null;
 		
 	
 	private UsuarioMob usuarioMob =  new UsuarioMob();
@@ -25,7 +25,9 @@ public class UsuariosMobImpl {
 	public UsuarioMob selectUsuarioMobDAO(String email) {
 		SqlSession session = ConnectionFactory.getSqlSessionFactory().openSession();
 		UsuarioMobDAO usuarioMobDao = session.getMapper(UsuarioMobDAO.class);
-			return usuarioMobDao.getUsuarioMobDAO(email);
+		usuariomob = usuarioMobDao.getUsuarioMobDAO(email);
+		session.close();
+		return usuariomob;
 	}
 	
 	public void atualizarUsuarioMobDAO(UsuarioMob usuarioMob){

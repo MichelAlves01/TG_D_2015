@@ -6,14 +6,14 @@ import delivery.model.Item;
 
 public interface ItemDAO {
 	
-	public void cadastrarItemDAO(Item item);
+	void cadastrarItemDAO(Item item);
 	
-	public void atualizarItemDAO(Item item);
+	void atualizarItemDAO(Item item);
 	
-	public void excluirProdutoDAO(int idItem);
+	void excluirProdutoDAO(int idItem);
 	
-	public Item getItemDAO(int idItem);
+	Item getItemDAO(int idItem);
 	
-	public List<Item> getItensDAO();
+	List<Item> getItensDAO();
 	
 }
