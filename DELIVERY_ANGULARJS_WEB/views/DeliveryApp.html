@@ -1,10 +1,16 @@
-<html>
+<html ng-app="Login">
 <head>
 	<meta charset="utf-8">
 	<title>Delivery</title>
-			<script type="text/javascript" src="../js/jquery.js"></script>
+			
+			<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+			<script type="text/javascript" src="../js/angular.min.js"></script>
+			<script type="text/javascript" src="../angular/controller/empresaController.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+			<!--script type="text/javascript" src="../angular/app.js"></script-->
+			
 
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.css">
@@ -15,7 +21,7 @@
 
 
 </head>
-<body >
+<body ng-controller="CadastrarEmpresaInicio as inicio">
 
 	<div id="cabecalho">
 		<label><font>Delivery Gerenciador</font></label>
@@ -31,13 +37,13 @@
 					<tr>
 						<td>
 							
-							<input type="text" name="nome" class="input-xxlarge" required="true" placeholder="Minha emoresa"/>
+							<input type="text" name="nome" class="input-xxlarge"  ng-model="nome" required="true" placeholder="Minha emoresa" ng-model="name"/>
 						</td>	
 						<td>
-							<input type="text" name="cpfCnpj" class="input-large" required="true" placeholder="CPF ou CNPJ somente numeros"/>
+							<input type="text" name="cpfCnpj" class="input-large" ng-model="cpfCnpj" required="true" placeholder="CPF ou CNPJ somente numeros"/>
 						</td>
 						<td style="padding-top: 10px; padding-left: 5px; padding-right: 25px;">
-							<button class="btn btn-primary">Cadastrar</button>
+							<button class="btn btn-primary">Cadastrar minha empresa</button>
 						</td>
 					</tr>
 				</table>
