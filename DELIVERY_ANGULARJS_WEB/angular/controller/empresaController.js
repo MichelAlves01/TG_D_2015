@@ -1,9 +1,14 @@
 
 (function() {
   var app = angular.module('Login', []);
-
+ 	var nome = "";
   app.controller('CadastrarEmpresaInicio', function ($scope){
-     var nome = 'Michel';
+     
+     $scope.redirect = function(){    	
+    	  nome = $scope.nome;
+     	location.href="CadastroEmpresas.html"
+     }
+     
   });
 
 })();
