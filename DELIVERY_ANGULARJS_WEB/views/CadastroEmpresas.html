@@ -1,10 +1,11 @@
-<html ng-app="Login">
+<html ng-app="empresaService">
 <head>
 	<meta charset="utf-8">
 	<title>Delivery</title>
 			<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 			<script type="text/javascript" src="../js/angular.min.js"></script>
 			<script type="text/javascript" src="../angular/controller/empresaController.js"></script>
+			<script type="text/javascript" src="../angular/service/empresaService.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
@@ -17,7 +18,7 @@
 
 
 </head>
-<body ng-controller="CadastrarEmpresaInicio as inicio">
+<body ng-controller="cadastroEmpresaParte1 as inicio">
 
 	<div id="cabecalho">
 		<label><font>Delivery Gerenciador</font></label>
@@ -29,7 +30,7 @@
 
 			   <div id="form">
 			   		<div id="form-title"> 
-			   			<label><font color="#ffffff">Cadastro de Produtos {{ inicio.nome }}<font></label>
+			   			<label><font color="#ffffff">Cadastro de Produtos {{empresa.nome}} <font></label>
 			   		</div>
 			   		
 
