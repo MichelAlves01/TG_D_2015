@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Empresa {
 	
-	private int cpfCnpj;
+	private String cpfCnpj;
 	private String nome;
 	private String endereco;
 	private Cidade cidade;
@@ -20,10 +20,10 @@ public class Empresa {
 	private List<Produto> produto;
 	private List<Users> users;
 	
-	public int getCpfCnpj() {
+	public String getCpfCnpj() {
 		return cpfCnpj;
 	}
-	public void setCpfCnpj(int cpfCnpj) {
+	public void setCpfCnpj(String cpfCnpj) {
 		this.cpfCnpj = cpfCnpj;
 	}
 	public String getNome() {

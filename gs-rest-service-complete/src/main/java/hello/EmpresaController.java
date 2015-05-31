@@ -13,7 +13,7 @@ public class EmpresaController {
 	
 	@RequestMapping(value="/iniciaCadastroEmpresa", method=RequestMethod.POST)
 	public void iniciaCadastro( 	@RequestParam(value="nome") String nome,
-									@RequestParam(value="cpfCnpj") int cpfCnpj){
+									@RequestParam(value="cpfCnpj") String cpfCnpj){
 		
 		empresa.setNome(nome);
 		empresa.setCpfCnpj(cpfCnpj);
