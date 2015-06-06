@@ -19,4 +19,10 @@ public class EmpresaController {
 		empresa.setCpfCnpj(cpfCnpj);
 		System.out.println("nome = " + nome + " e " + cpfCnpj);
 	}
+	
+	@RequestMapping(value="/getEmpresaCadastro", method=RequestMethod.GET)
+	public Empresa getEmpresaCadastro(){
+		
+		return empresa;
+	}
 }
