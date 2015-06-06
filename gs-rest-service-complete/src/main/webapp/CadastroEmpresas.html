@@ -6,6 +6,7 @@
 			<script type="text/javascript" src="../js/angular.min.js"></script>
 			<script type="text/javascript" src="../angular/controller/empresaController.js"></script>
 			<script type="text/javascript" src="../angular/service/empresaService.js"></script>
+			<script type="text/javascript" src="../angular/service/cidadeEstadoService.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
@@ -50,16 +51,18 @@
 									   <table class="form">
 											<tr>
 												<td>
-													<table>
-														<tr>
-															<td><label>Nome da empresa :</label></td>
-															<td>{{empresa.nome}}</td>
-														</tr>
-														<tr>
-															<td><label>CPF/CNPJ</label></td>
-															<td>{{empresa.cpfCnpj}}</td>
-														</tr>
-													</table>
+													<fieldset>
+														<table>
+															<tr>
+																<td><label>Nome da empresa :</label></td>
+																<td>{{empresa.nome}}</td>
+															</tr>
+															<tr>
+																<td><label>CPF/CNPJ</label></td>
+																<td>{{empresa.cpfCnpj}}</td>
+															</tr>
+														</table>
+													</fieldset>
 													
 												</td>
 												
@@ -77,9 +80,28 @@
 													<label>Endereço</label>
 													<input type="text" class="input-xxlarge" />
 												</td>
-										
 											</tr>
-
+											<tr ng-controller="CidadesEstados">
+												<td data-ng-init="getEstados()">
+													<table>
+														<tr>
+															<td style="padding-right: 10px;">
+																<label>Estado</label>
+																<select  ng-options="estado.nome for estado in estados" ng-model="estado" ng-change="getCidades()">
+																	<option value="">Selecione seu estado</option>
+																</select>
+															</td>
+															<td>
+																<label>Cidade</label>
+																<select ng-options="cidade.nome for cidade in cidades" ng-model="idCidade">
+																	<option value="">Selecione sua cidade</option>
+																</select>
+															</td>
+														</tr>
+													</table>
+													
+												</td>
+											</tr>
 											<tr>
 												<td height="80px">
 													<button class="btn" type="button">Salvar</button>

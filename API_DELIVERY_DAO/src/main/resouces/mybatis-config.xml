@@ -16,7 +16,9 @@
     </dataSource>
   </environment>
   </environments>
+  
   <mappers>
-      <mapper resource='mapper/UsuarioMobDAO.xml' />
+      <mapper resource='estadoDAO.xml' />
+      <mapper resource='cidadeDAO.xml' />
   </mappers>
 </configuration>

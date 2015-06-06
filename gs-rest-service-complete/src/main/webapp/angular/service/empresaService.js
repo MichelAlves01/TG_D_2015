@@ -1,5 +1,5 @@
 (function(){
-	var app = angular.module('empresaService' , []);
+	var app = angular.module('empresaService' , ['cidadeEstadoService']);
 	var urlBase = 'http://localhost:8080';
 
 

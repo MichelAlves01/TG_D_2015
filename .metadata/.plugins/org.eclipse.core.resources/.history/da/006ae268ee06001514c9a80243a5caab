@@ -1,0 +1,11 @@
+package delivery.api.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmpresaController {
+	
+	public Empresa iniciaCadastroEmpresa(){
+		
+	}
+}

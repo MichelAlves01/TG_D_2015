@@ -1,6 +1,6 @@
 
 (function() {
-  var app = angular.module('Login', ['empresaService' , 'Login-Pages']);
+  var app = angular.module('Login', ['empresaService' , 'Login-Pages', 'cidadeEstadoService']);
  	var nome = "";
   
   app.controller('CadastrarEmpresaInicio', function ($scope){

@@ -1,24 +1,25 @@
 package delivery.dao.api;
 
+import java.util.List;
+
+import delivery.api.mapper.CidadeImpl;
+import delivery.api.mapper.EstadoImpl;
 import delivery.api.mapper.UsuariosMobImpl;
+import delivery.model.Cidade;
+import delivery.model.Estado;
 import delivery.model.UsuarioMob;
 
 public class Teste {
 
 	public static void main(String[] args) {
-		UsuarioMob usuarioMob = new UsuarioMob();
-		String email = "talitatabata28@gmail.com";
-		UsuariosMobImpl usuariomobimpl = new UsuariosMobImpl();
-		//usuariomobimpl.cadastrarUsuarioMobDAO();
-		//usuarioMob = usuariomobimpl.selectUsuarioMobDAO(email);
-		//System.out.println("teste : " + usuarioMob.getNome());
+		CidadeImpl cidadeImpl = new CidadeImpl();
+		List<Cidade> cidades = cidadeImpl.getCidadesDAO(2);
+		int counter = 0;
+		for(Cidade city: cidades){
+			counter++;
+			System.out.println(counter + " " + city.getNome());
+		}
 		
-		usuarioMob.setEmail(email);
-		usuarioMob.setNome("Talita");
-		usuarioMob.setSobrenome("Oliveira");
-		usuariomobimpl.cadastrarUsuarioMobDAO(usuarioMob);
-		
-		//usuariomobimpl.inativarUsuarioMobDAO(email);
 		
 	}
 }

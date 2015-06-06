@@ -15,6 +15,12 @@
 
     <dependencies>
     	
+    	<dependency>
+    		<groupId>delivery.dao</groupId>
+			<artifactId>API_DELILERY_DAO</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
+    	
     	 <dependency>
 	    	<groupId>delivery</groupId>
 	  		<artifactId>DELIVERY_MODEL</artifactId>

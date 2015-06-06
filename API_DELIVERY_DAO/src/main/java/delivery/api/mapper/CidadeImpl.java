@@ -1,5 +1,7 @@
 package delivery.api.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 
 import delivery.api.connection.ConnectionFactory;
@@ -8,12 +10,12 @@ import delivery.model.Cidade;
 
 public class CidadeImpl {
 
-	public Cidade getCidadesDAO(int idCidade){
+	public List<Cidade> getCidadesDAO(int idEstado){
 		SqlSession session = ConnectionFactory.getSqlSessionFactory().openSession();
 		CidadeDAO cidadeDao = session.getMapper(CidadeDAO.class);
-		Cidade cidade = cidadeDao.getCidadesDAO(idCidade);
+		List<Cidade> cidades = cidadeDao.getCidadesDAO(idEstado);
 		session.close();
-		return cidade;
+		return cidades;
 	}
 	
 }

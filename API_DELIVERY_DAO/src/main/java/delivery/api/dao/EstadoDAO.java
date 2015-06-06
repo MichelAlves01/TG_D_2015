@@ -6,5 +6,6 @@ import delivery.model.Estado;
 
 public interface EstadoDAO {
 	
-	List<Estado> getEstadosDAO();
+	public List<Estado> getEstadosDAO();
+	
 }
