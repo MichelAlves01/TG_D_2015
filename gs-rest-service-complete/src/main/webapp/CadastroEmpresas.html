@@ -9,14 +9,14 @@
 			<script type="text/javascript" src="../angular/service/cidadeEstadoService.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.js"></script>
 			<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
 
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.css">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="../css/principal.css">
-	
-
 
 </head>
 <body ng-controller="cadastroEmpresaFim as fim">
@@ -24,19 +24,17 @@
 	<div id="cabecalho">
 		<label><font>Delivery Gerenciador</font></label>
 	</div>
-<div id="centro" data-ng-init="finishing()">
-					<div id="sub-cabecalho">
 	
-					</div>
+	<div id="centro" data-ng-init="finishing()">
+		<div id="sub-cabecalho"></div>
 
-			   <div id="form">
+			   <div id="form" ng-controller="CidadesEstados">
 			   		<div id="form-title"> 
 			   			<label><font color="#ffffff">Cadastro<font></label>
 			   		</div>
 			   		
-
 			   			<div class="tabbable tabs-left">
-						  <ul class="nav nav-tabs" id="painel-esquerda" >
+						  <ul class="nav nav-tabs" id="painel-esquerda-cadastro" >
 
 
 						    <li class="active"><a href="#tab1" data-toggle="tab"><font color="#48990E"><i class="icon-pencil"></i> Cadastrar </font></a></li>
@@ -44,92 +42,153 @@
     						<li><a href="#tab3" data-toggle="tab"><font color="#48990E"><i class=" icon-exclamation-sign"></i> Excluir</font></a></li>
 						  </ul>
 						  <div class="tab-content">
-						    <div class="tab-pane active" id="tab1" >
-						   	<form class="form-horizontal">
-						   		<fieldset>
-						   			
-									   <table class="form">
-											<tr>
-												<td>
-													<fieldset>
-														<table>
-															<tr>
-																<td><label>Nome da empresa :</label></td>
-																<td>{{empresa.nome}}</td>
-															</tr>
-															<tr>
-																<td><label>CPF/CNPJ</label></td>
-																<td>{{empresa.cpfCnpj}}</td>
-															</tr>
-														</table>
-													</fieldset>
+							  <div id="preenchido">	
+							   				<table>
+													<tr>												
+														<td><font size="3">Nome da empresa:</font></td>
+														<td><font size="4">{{empresa.nome}}</font></td>
+													</tr>
+													<tr>
+														<td><font size="3">CPF/CNPJ: </font></td>
+														<td><font size="4">{{empresa.cpfCnpj}}</font></td>
+													</tr>											
+											</table>
+								</div>
+
+						  <table>
+						  	<tr>
+						  		<td>
+						  			
+								    <div class="tab-pane active" id="tab-cadastro"  data-ng-init="getLatitudeLongitude()">
+								   	
+								   		<form class="form-horizontal">
+								   			<fieldset>	
+											   <table >											
+													<tr>
+														<td>
+															<fieldset>
+																<label>Tipo de Empresa</label>
+																<select>
+																	<option value="A"> Alimentos </option>
+																	<option value="U"> Utilitários</option>
+																	<option value="S"> Serviços</option>
+																</select>
+															</fieldset>
+														</td>
+													</tr>											
 													
-												</td>
-												
-											</tr>
-											
-											<tr>
-												<td>
-													<label>email</label>
-													<input type="email" class="input-xlarge" />
-												</td>
-										
-											</tr>
-											<tr>
-												<td>
-													<label>Endereço</label>
-													<input type="text" class="input-xxlarge" />
-												</td>
-											</tr>
-											<tr ng-controller="CidadesEstados">
-												<td data-ng-init="getEstados()">
-													<table>
-														<tr>
+													<tr >
+														<td data-ng-init="getEstados()">
+															<table style="padding-right: 10px;">
+																<tr>
+																	<td style="padding-right: 10px;">
+																		<label>Estado</label>
+																		<select  ng-options="estado.nome for estado in estados" ng-model="estado" ng-change="getCidades()">
+																			<option value="">Selecione seu estado</option>
+																		</select>
+																	</td>
+																	<td>
+																		<label>Cidade</label>
+																		<select ng-options="cidade.nome for cidade in cidades" ng-model="cidade" ng-change="getLatitudeLongitude()">
+																			<option value="">Selecione sua cidade</option>
+																		</select>
+																	</td>
+																</tr>
+																
+															</table>
+														</td>
+													</tr>
+													<tr style="padding: 51px;">
 															<td style="padding-right: 10px;">
-																<label>Estado</label>
-																<select  ng-options="estado.nome for estado in estados" ng-model="estado" ng-change="getCidades()">
-																	<option value="">Selecione seu estado</option>
-																</select>
-															</td>
-															<td>
-																<label>Cidade</label>
-																<select ng-options="cidade.nome for cidade in cidades" ng-model="idCidade">
-																	<option value="">Selecione sua cidade</option>
-																</select>
-															</td>
-														</tr>
-													</table>
+																<fieldset>
+																	<label>Bairro</label>
+																		<input type="text" ng-model="bairro" ng-blur="getLatitudeLongitude()"class="input-xxlarge" />
+																</fieldset>
+															</td>																
+													</tr>
+													<tr>
+														<td>
+															<label>Endereço</label>
+															<input type="text" ng-change="getLatitudeLongitude()" ng-model="endereco" ng-blur="getLatitudeLongitude()" class="input-xxlarge" />
+														</td>
+													</tr>
 													
-												</td>
-											</tr>
-											<tr>
-												<td height="80px">
+													
+													<tr>
+														<td>
+															<table>
+																<tr style="padding: 51px;">
+																	<td style="padding-right: 10px;">
+																		<fieldset>
+																			<label>CEP</label>
+																			<input type="text" class="input-large" />
+																		</fieldset>
+																	</td>
+																	<td>
+																		<fieldset>
+																			<label>Numero</label>
+																			<input type="text" ng-model="numero" ng-blur="getLatitudeLongitude()" class="input-small" />
+																		<fieldset>
+																	</td>														
+																</tr>
+																<tr style="padding: 51px;">
+																	<td style="padding-right: 10px;">
+																		<fieldset>
+																			<label>Telefone Fixo</label>
+																			<input type="text" class="input-large" />
+																		</fieldset>
+																	</td>
+																	<td>
+																		<fieldset>
+																			<label>Telefone Celular</label>
+																			<input type="text" class="input-large" />
+																		<fieldset>
+																	</td>
+																</tr>
+																
+															</table>													
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<label>email</label>
+															<input type="email" class="input-xlarge" />
+														</td>										
+													</tr>											
+												</table>
+												
+											</fieldset>
+										</form>			
+								    </div>
+						  		</td>
+
+						  		<td>
+						  			<div id="mapa-cadastro">
+						  				<div id="map-canvas" style="height: 100%; margin: 0px; padding: 0px;"> </div>
+						  			</div>
+						  		</td>
+
+						  	</tr>
+						  </table>
+						  
+						     <div id="buttons-cadastro-rodape">	
+										 <table>
+										 	<tr>
+										 		<td><input type="checkbox" /> Li os termos e concordo</td>
+												<td>
 													<button class="btn" type="button">Salvar</button>
 													<button class="btn" type="button">Cancelar</button>
 												</td>
 											</tr>
 										</table>
-
-								</fieldset>
-								</form>
-					
-
-						    </div>
-						    <div class="tab-pane" id="tab3">
-						      	<div id="form-right">
-						      	</div>
+							</div>
+						     <div class="tab-pane" id="tab3">
 						    </div>
 						  </div>
-						</div>
 
-						
-							
-			   		
+						</div>			   		
 				</div>
-
-
 	</div>
-	
 </body>
 </html>
 

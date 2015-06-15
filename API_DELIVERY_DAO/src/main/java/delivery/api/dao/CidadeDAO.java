@@ -8,4 +8,6 @@ public interface CidadeDAO {
 	
 	List<Cidade> getCidadesDAO(int idEstado);
 		
+	public Cidade getCidadeDAO(int idCidade);
+	
 }

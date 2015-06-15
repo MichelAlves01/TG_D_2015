@@ -1,6 +1,0 @@
-package delivery.api.controller;
-
-@RequestMapping("HelloController")
-public class TestController {
-
-}

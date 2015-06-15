@@ -8,15 +8,17 @@ public class Empresa {
 	private String nome;
 	private String endereco;
 	private Cidade cidade;
-	private int telefoneFixo;
-	private int telefoneMovel;
-	private int cep;
+	private String telefoneFixo;
+	private String telefoneMovel;
+	private String cep;
 	private String email;
 	private double raio;
 	private int usaAgenda;
+	private String tipo;
 	private double latitude;
 	private double longitude;
 	private double avaliacao;
+	private int status;
 	private List<Produto> produto;
 	private List<Users> users;
 	
@@ -44,22 +46,23 @@ public class Empresa {
 	public void setCidade(Cidade cidade) {
 		this.cidade = cidade;
 	}
-	public int getTelefoneFixo() {
+	
+	public String getTelefoneFixo() {
 		return telefoneFixo;
 	}
-	public void setTelefoneFixo(int telefoneFixo) {
+	public void setTelefoneFixo(String telefoneFixo) {
 		this.telefoneFixo = telefoneFixo;
 	}
-	public int getTelefoneMovel() {
+	public String getTelefoneMovel() {
 		return telefoneMovel;
 	}
-	public void setTelefoneMovel(int telefoneMovel) {
+	public void setTelefoneMovel(String telefoneMovel) {
 		this.telefoneMovel = telefoneMovel;
 	}
-	public int getCep() {
+	public String getCep() {
 		return cep;
 	}
-	public void setCep(int cep) {
+	public void setCep(String cep) {
 		this.cep = cep;
 	}
 	public String getEmail() {
@@ -79,6 +82,13 @@ public class Empresa {
 	}
 	public void setUsaAgenda(int usaAgenda) {
 		this.usaAgenda = usaAgenda;
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	public double getLatitude() {
 		return latitude;
@@ -110,5 +120,12 @@ public class Empresa {
 	public void setUsers(List<Users> users) {
 		this.users = users;
 	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	
 	
 }

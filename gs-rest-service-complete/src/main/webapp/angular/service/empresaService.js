@@ -1,5 +1,5 @@
 (function(){
-	var app = angular.module('empresaService' , ['cidadeEstadoService']);
+	var app = angular.module('empresaService' , []);
 	var urlBase = 'http://localhost:8080';
 
 
@@ -117,12 +117,16 @@
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
 
+
 			$scope.finishing = function(){
 				$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
 					$scope.empresa = data;
 				});
 			}
 
+
 		});
+
+
 
 })();

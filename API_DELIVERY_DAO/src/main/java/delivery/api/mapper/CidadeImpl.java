@@ -17,5 +17,12 @@ public class CidadeImpl {
 		session.close();
 		return cidades;
 	}
+	public Cidade geCidadeDAO(int idCidade){
+		SqlSession session = ConnectionFactory.getSqlSessionFactory().openSession();
+		CidadeDAO cidadeDao = session.getMapper(CidadeDAO.class);
+		Cidade cidade = cidadeDao.getCidadeDAO(idCidade);
+		session.close();
+		return cidade;
+	}
 	
 }
