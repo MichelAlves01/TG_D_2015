@@ -1,13 +1,9 @@
-
 (function() {
-  var app = angular.module('Login', ['empresaService' , 'Login-Pages', 'cidadeEstadoService']);
- 	var nome = "";
+  var app = angular.module('Login', ['empresaService' , 'Login-Pages']);
   
-  app.controller('CadastrarEmpresaInicio', function ($scope){
-     
+  app.controller('CadastrarEmpresaInicio', function ($scope){    
      $scope.redirect = function(){    	
-    	  nome = $scope.nome;
-     	
+    	  nome = $scope.nome;  	
      }
 
      $scope.inicioCadastro = function(){

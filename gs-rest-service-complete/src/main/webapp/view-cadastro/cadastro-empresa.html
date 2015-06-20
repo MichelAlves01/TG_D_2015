@@ -1,0 +1,98 @@
+<form class="form-horizontal">
+								   			<fieldset>	
+											   <table >											
+													<tr>
+														<td>
+															<fieldset>
+																<label>Tipo de Empresa</label>
+																<select ng-model="tipo">
+																	<option value="A"> Alimentos </option>
+																	<option value="U"> Utilitários</option>
+																	<option value="S"> Serviços</option>
+																</select>
+															</fieldset>
+														</td>
+													</tr>											
+													
+													<tr>
+														<td data-ng-init="getEstados()">
+															<table style="padding-right: 10px;">
+																<tr>
+																	<td style="padding-right: 10px;">
+																		<label>Estado</label>
+																		<select  ng-options="estado.nome for estado in estados" ng-model="estado" ng-change="getCidades()">
+																			<option value="">Selecione seu estado</option>
+																		</select>
+																	</td>
+																	<td>
+																		<label>Cidade</label>
+																		<select ng-options="cidade.nome for cidade in cidades" ng-model="cidade" ng-change="getLatitudeLongitude()">
+																			<option value="">Selecione sua cidade</option>
+																		</select>
+																	</td>
+																</tr>
+																
+															</table>
+														</td>
+													</tr>
+													<tr style="padding: 51px;">
+															<td style="padding-right: 10px;">
+																<fieldset>
+																	<label>Bairro</label>
+																		<input type="text" ng-model="bairro" ng-blur="getLatitudeLongitude()"class="input-xxlarge" />
+																</fieldset>
+															</td>																
+													</tr>
+													<tr>
+														<td>
+															<label>Endereço</label>
+															<input type="text" ng-model="endereco" ng-blur="getLatitudeLongitude()" class="input-xxlarge" />
+														</td>
+													</tr>
+													
+													
+													<tr>
+														<td>
+															<table>
+																<tr style="padding: 51px;">
+																	<td style="padding-right: 10px;">
+																		<fieldset>
+																			<label>CEP</label>
+																			<input type="text" ng-model="cep" class="input-large" />
+																		</fieldset>
+																	</td>
+																	<td>
+																		<fieldset>
+																			<label>Numero</label>
+																			<input type="text" ng-model="numero" class="input-small" />
+																		<fieldset>
+																	</td>														
+																</tr>
+																<tr style="padding: 51px;">
+																	<td style="padding-right: 10px;">
+																		<fieldset>
+																			<label>Telefone Fixo</label>
+																			<input type="text" ng-model="telFixo" class="input-large" />
+																		</fieldset>
+																	</td>
+																	<td>
+																		<fieldset>
+																			<label>Telefone Celular</label>
+																			<input type="text" ng-model="telMovel" class="input-large" />
+																		<fieldset>
+																	</td>
+																</tr>
+																
+															</table>													
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<label>email</label>
+															<input type="email" ng-model="email" class="input-xlarge" />
+														</td>										
+													</tr>											
+												</table>
+												
+											</fieldset>
+										</form>	
