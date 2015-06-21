@@ -31,11 +31,27 @@
 			   			<label><font color="#ffffff">Cadastro<font></label>
 			   		</div>
 			   		
-			   			<div class="tabbable tabs-left">
+			   			<div class="tabbable tabs-left" >
 						  <ul class="nav nav-tabs" id="painel-esquerda-cadastro" >
-						    <li class="active"><a href="#tab1" data-toggle="tab"><font color="#48990E"><i class="icon-pencil"></i> Cadastrar </font></a></li>
-    						<li><a href="#tab2" data-toggle="tab"><font color="#48990E"><i class="icon-edit"></i> Atualizar</font></a></li>
-    						<li><a href="#tab3" data-toggle="tab"><font color="#48990E"><i class=" icon-exclamation-sign"></i> Excluir</font></a></li>
+						    
+						    <li class="active" id="cadastro" disabled="true">
+						    	<a href="#tab-cadastro" data-toggle="tab">
+						    		<font color="#48990E"><i class="icon-pencil"></i> Cadastrar </font>
+						    	</a>
+						    </li>
+    						
+    						<li class="active" id="atualizar" disabled="true">
+    							<a href="#tab-update" data-toggle="tab">
+    								<font color="#48990E"><i class="icon-edit"></i> Atualizar</font>
+    							</a>
+    						</li>
+    						
+    						<li class="none" id="excluir" disabled="true">
+    							<a href="#tab-excluir" data-toggle="tab">
+    								<font color="#48990E"><i class=" icon-exclamation-sign"></i> Excluir</font>
+    							</a>
+    						</li>
+
 						  </ul>
 		
 						  <div class="tab-content">
@@ -44,7 +60,7 @@
 							  <table>
 							  	<tr>
 							  		<td>  
-									   	<div form></div>
+									   	<div id="form-cadastro" form></div>
 							  		</td>
 							  		<td>
 							  			<div id="mapa-cadastro">
@@ -55,9 +71,25 @@
 							  </table>
 							  <div buttons></div>
 						  </div>
-						     
-						     <div class="tab-pane" id="tab3">
-						    </div>
+						   <div class="tab-pane" id="tab-update" data-ng-init="getLatitudeLongitude()">
+						     	<div preenchido></div>
+							  <table>
+							  	<tr>
+							  		<td>  
+									   	<div id="form-cadastro" form></div>
+							  		</td>
+							  		<td>
+							  			<div id="mapa-cadastro">
+											<div id="map-canvas" style="height: 100%; margin: 0px; padding: 0px;"> </div>
+										</div>
+							  		</td>
+							  	</tr>
+							  </table>
+							  <div buttons></div>
+						   </div>
+						   <div class="tab-pane" id="tab-excluir">
+						   		teste
+						   </div>
 						  </div>
 
 						</div>			   		

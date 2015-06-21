@@ -1,11 +1,12 @@
-<form class="form-horizontal">
+										<form class="form-horizontal">
 								   			<fieldset>	
 											   <table >											
 													<tr>
 														<td>
 															<fieldset>
 																<label>Tipo de Empresa</label>
-																<select ng-model="tipo">
+																<select ng-model="tipo" id="tipo" >
+																	<option value="">selecione o tipo de empresa</option>
 																	<option value="A"> Alimentos </option>
 																	<option value="U"> Utilitários</option>
 																	<option value="S"> Serviços</option>
@@ -39,14 +40,15 @@
 															<td style="padding-right: 10px;">
 																<fieldset>
 																	<label>Bairro</label>
-																		<input type="text" ng-model="bairro" ng-blur="getLatitudeLongitude()"class="input-xxlarge" />
+																		<input type="text" ng-model="bairro" ng-blur="getLatitudeLongitude()"class="input-xxlarge"  placeholder="informe o bairro" required/>
+																		<i class="icon-ok" ng-show="bairro.$error.required"></i>
 																</fieldset>
 															</td>																
 													</tr>
 													<tr>
 														<td>
 															<label>Endereço</label>
-															<input type="text" ng-model="endereco" ng-blur="getLatitudeLongitude()" class="input-xxlarge" />
+															<input type="text" ng-model="endereco" ng-blur="getLatitudeLongitude()" class="input-xxlarge" placeholder="informe o endereço" required/>
 														</td>
 													</tr>
 													
@@ -58,13 +60,13 @@
 																	<td style="padding-right: 10px;">
 																		<fieldset>
 																			<label>CEP</label>
-																			<input type="text" ng-model="cep" class="input-large" />
+																			<input type="text" ng-model="cep" class="input-large" placeholder="CEP apenas numeros"/>
 																		</fieldset>
 																	</td>
 																	<td>
 																		<fieldset>
 																			<label>Numero</label>
-																			<input type="text" ng-model="numero" class="input-small" />
+																			<input type="text" ng-model="numero" class="input-small" placeholder="informe o numero"/>
 																		<fieldset>
 																	</td>														
 																</tr>
@@ -72,13 +74,13 @@
 																	<td style="padding-right: 10px;">
 																		<fieldset>
 																			<label>Telefone Fixo</label>
-																			<input type="text" ng-model="telFixo" class="input-large" />
+																			<input type="text" ng-model="telFixo" class="input-large" placeholder="informe o telefone fixo"/>
 																		</fieldset>
 																	</td>
 																	<td>
 																		<fieldset>
 																			<label>Telefone Celular</label>
-																			<input type="text" ng-model="telMovel" class="input-large" />
+																			<input type="text" ng-model="telMovel" class="input-large" placeholder="informe um celular"/>
 																		<fieldset>
 																	</td>
 																</tr>
@@ -88,9 +90,19 @@
 													</tr>
 													<tr>
 														<td>
-															<label>email</label>
-															<input type="email" ng-model="email" class="input-xlarge" />
-														</td>										
+															<table>
+																<tr>
+																	<td style="padding-right: 10px;">
+																		<label>email</label>
+																		<input type="email" ng-model="email" class="input-xlarge" placeholder="informe um email como nome de usuario"/>
+																	</td>										
+																	<td>
+																		<label>Senha</label>
+																		<input type="password" ng-model="senha" class="input-medium" placeholder="minimo 8 caracteres"/>
+																	</td>										
+																</tr>
+															</table>
+														</td>
 													</tr>											
 												</table>
 												

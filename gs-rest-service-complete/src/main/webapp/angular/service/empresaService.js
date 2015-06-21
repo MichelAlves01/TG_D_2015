@@ -1,20 +1,20 @@
 (function(){
 	var app = angular.module('empresaService' , []);
 	var urlBase = 'http://localhost:8080';
-
+	
 
 	app.controller('cadastroEmpresaInicio', function($scope, $http) {
 		     $http.defaults.headers.post["Content-Type"] = "application/jsonp";
-		     var statusCpfCnpj = false;
-		    
+		    var statusCpfCnpj = false;
+		    var longitude = null;
+		    var latitude = null;
+
 		    $scope.iniciaCadastroEmpresa = function (){
 		    	var data = $.param({nome: $scope.nome , cpfCnpj: $scope.cpfCnpj})
 
 		    	if(statusCpfCnpj && $scope.nome != null){
 		    	$http.post(urlBase + '/iniciaCadastroEmpresa?'+ data).
 	        													success(function(data,status) {
-	           													 $scope.empresa = data;
-	           													
 	           													 location.href="CadastroEmpresas.html"
 	           			});
 	            } else {
@@ -117,15 +117,43 @@
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
 
+			  
 
 			$scope.finishing = function(){
-				$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
+					$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
 					$scope.empresa = data;
+
+					if($scope.empresa.tipo == null){
+		    			$("#cadastro").removeAttr("disabled");
+		    			$("#atualizar").hide();
+		    			$("#excluir").hide();
+		    		}
+					
 				});
 			}
 
-			$scope.executarCadastro = function(){		
-				alert($scope.email);
+			$scope.executarCadastro = function(){
+				var tipo = $scope.tipo;
+				var cidade = $scope.cidade.id;
+				var endereco = $scope.bairro + "" + $scope.endereco + "" + $scope.numero;
+				var cep = $scope.cep;
+				var telFixo = $scope.telFixo;
+				var telMovel = $scope.telMovel;
+				var email = $scope.email;
+				var senha = $scope.senha;		
+				var data = $.param({tipo: tipo, 
+									idCidade: cidade,
+									endereco: endereco,
+									email: email,
+									telefoneFixo: telFixo,
+									telefoneMovel: telMovel,
+									cep: cep,
+									latitude: latitude,
+									longitude: longitude,
+									senha: senha});
+				var teste = urlBase + '/cadastrarEmpresaController?' + data;
+				alert(teste.length);
+				$http.post(urlBase + '/cadastrarEmpresaController?' + data).success();
 			}	
 
 			$scope.getEstados = function(){
@@ -175,8 +203,8 @@
 				   		var latLong = results[0].geometry.location;
 				   		console.log(latLong);
 				   		var resLatLong = latLong.toString().split(","); 
-				   		var latitude = resLatLong[0].replace("(", ""); 
-				   		var longitude = resLatLong[1].replace(")", "");
+				   		latitude = resLatLong[0].replace("(", ""); 
+				   		longitude = resLatLong[1].replace(")", "");
 
 				   	var marker = new google.maps.Marker({
 					     position: latLong,

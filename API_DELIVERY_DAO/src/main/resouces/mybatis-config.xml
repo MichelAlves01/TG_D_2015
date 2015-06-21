@@ -20,5 +20,6 @@
   <mappers>
       <mapper resource='estadoDAO.xml' />
       <mapper resource='cidadeDAO.xml' />
+      <mapper resource='EmpresaDAO.xml' />
   </mappers>
 </configuration>

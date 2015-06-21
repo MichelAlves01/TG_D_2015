@@ -7,7 +7,7 @@ public class Empresa {
 	private String cpfCnpj;
 	private String nome;
 	private String endereco;
-	private Cidade cidade;
+	private int    idCidade;
 	private String telefoneFixo;
 	private String telefoneMovel;
 	private String cep;
@@ -40,13 +40,13 @@ public class Empresa {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public Cidade getCidade() {
-		return cidade;
-	}
-	public void setCidade(Cidade cidade) {
-		this.cidade = cidade;
-	}
 	
+	public int getIdCidade() {
+		return idCidade;
+	}
+	public void setIdCidade(int idCidade) {
+		this.idCidade = idCidade;
+	}
 	public String getTelefoneFixo() {
 		return telefoneFixo;
 	}
