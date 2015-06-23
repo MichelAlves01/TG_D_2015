@@ -126,7 +126,7 @@ body{
 #sub-cabecalho{
 			height: 5%;
 			width: 100%;
-			padding-top: 15px;
+			padding-top: 8px;
 }
 
 #centro{
@@ -642,7 +642,7 @@ body{
 	}
 
 	#form {
-		height: 595px;
+		height: 630px;
 		width: 1200px;
 		margin: 0 auto;
 		background-color: #ffffff;
@@ -724,7 +724,8 @@ body{
 
 #form form{
 		margin: 0 auto;
-		padding: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
 }
 
 #form input{
@@ -800,6 +801,7 @@ body{
 
   #tab-cadastro{
   	height: 440px;
+  	width: 100%;
   	background: rgba(255,255,255,1);
 		background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.96) 47%, rgba(245,251,239,0.91) 100%);
 		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.96)), color-stop(100%, rgba(245,251,239,0.91)));
@@ -852,10 +854,10 @@ body{
   }
 
   #mapa-cadastro{
-  		background-color: #2E2EFE;
+  		padding-left: 4px;
   		border-left: 2px solid #888888;
-  		height: 435px;
-  		width: 510px;
+  		height: 496px;
+  		width: 500px;
   }
 
   .tab-content{
@@ -868,5 +870,6 @@ body{
   }
 
   #form-cadastro{
+  		padding-top: 10px;
   		overflow: auto;
   }

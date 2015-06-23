@@ -6,11 +6,11 @@
 															<fieldset>
 																<label>Tipo de Empresa</label>
 																<select ng-model="tipo" id="tipo" >
-																	<option value="">selecione o tipo de empresa</option>
 																	<option value="A"> Alimentos </option>
 																	<option value="U"> Utilitários</option>
 																	<option value="S"> Serviços</option>
 																</select>
+																<i class="icon-ok" ng-show="isValidTipo()"></i>
 															</fieldset>
 														</td>
 													</tr>											
@@ -30,6 +30,7 @@
 																		<select ng-options="cidade.nome for cidade in cidades" ng-model="cidade" ng-change="getLatitudeLongitude()">
 																			<option value="">Selecione sua cidade</option>
 																		</select>
+																		<i class="icon-ok" ng-show="isValidCidade()"></i>
 																	</td>
 																</tr>
 																
@@ -39,9 +40,9 @@
 													<tr style="padding: 51px;">
 															<td style="padding-right: 10px;">
 																<fieldset>
-																	<label>Bairro</label>
+																	<label>Bairro <i class="icon-ok" ng-show="isValidBairro()"></i></label>
 																		<input type="text" ng-model="bairro" ng-blur="getLatitudeLongitude()"class="input-xxlarge"  placeholder="informe o bairro" required/>
-																		<i class="icon-ok" ng-show="bairro.$error.required"></i>
+																		
 																</fieldset>
 															</td>																
 													</tr>
@@ -49,6 +50,7 @@
 														<td>
 															<label>Endereço</label>
 															<input type="text" ng-model="endereco" ng-blur="getLatitudeLongitude()" class="input-xxlarge" placeholder="informe o endereço" required/>
+															<i class="icon-ok" ng-show="isValidEndereco()"></i>
 														</td>
 													</tr>
 													
@@ -57,18 +59,19 @@
 														<td>
 															<table>
 																<tr style="padding: 51px;">
+																	<td>
+																		<fieldset>
+																			<label>Numero</label>
+																			<input type="text" ng-model="numero" class="input-small" placeholder="informe o numero"/>
+																			<i class="icon-ok" ng-show="isValidNumero()"></i>
+																		<fieldset>
+																	</td>	
 																	<td style="padding-right: 10px;">
 																		<fieldset>
 																			<label>CEP</label>
 																			<input type="text" ng-model="cep" class="input-large" placeholder="CEP apenas numeros"/>
 																		</fieldset>
-																	</td>
-																	<td>
-																		<fieldset>
-																			<label>Numero</label>
-																			<input type="text" ng-model="numero" class="input-small" placeholder="informe o numero"/>
-																		<fieldset>
-																	</td>														
+																	</td>																	
 																</tr>
 																<tr style="padding: 51px;">
 																	<td style="padding-right: 10px;">
@@ -90,14 +93,21 @@
 													</tr>
 													<tr>
 														<td>
+															<label>email</label>
+															<input type="email" ng-model="email" class="input-xxlarge" placeholder="informe um email como nome de usuario"/>
+														</td>
+													</tr>
+													<tr>
+														<td>
 															<table>
-																<tr>
+																		
+																<tr>										
 																	<td style="padding-right: 10px;">
-																		<label>email</label>
-																		<input type="email" ng-model="email" class="input-xlarge" placeholder="informe um email como nome de usuario"/>
-																	</td>										
-																	<td>
 																		<label>Senha</label>
+																		<input type="password" ng-model="senha" class="input-medium" placeholder="minimo 8 caracteres"/>
+																	</td>
+																	<td>
+																		<label>Confirme a senha</label>
 																		<input type="password" ng-model="senha" class="input-medium" placeholder="minimo 8 caracteres"/>
 																	</td>										
 																</tr>

@@ -2,12 +2,14 @@
 	var app = angular.module('empresaService' , []);
 	var urlBase = 'http://localhost:8080';
 	
+	
 
 	app.controller('cadastroEmpresaInicio', function($scope, $http) {
 		     $http.defaults.headers.post["Content-Type"] = "application/jsonp";
 		    var statusCpfCnpj = false;
 		    var longitude = null;
 		    var latitude = null;
+		    
 
 		    $scope.iniciaCadastroEmpresa = function (){
 		    	var data = $.param({nome: $scope.nome , cpfCnpj: $scope.cpfCnpj})
@@ -116,8 +118,8 @@
 
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
-
-			  
+			var latLongTest = null;
+			var latLong = null; 
 
 			$scope.finishing = function(){
 					$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
@@ -127,6 +129,8 @@
 		    			$("#cadastro").removeAttr("disabled");
 		    			$("#atualizar").hide();
 		    			$("#excluir").hide();
+		    		} else {
+		    			
 		    		}
 					
 				});
@@ -171,7 +175,7 @@
 		}
 
 		$scope.getLatitudeLongitude = function(){
-					var myLatlng = new google.maps.LatLng(-23.5505199,-46.63330939999997);
+					latLong = new google.maps.LatLng(-23.5505199,-46.63330939999997);
 					var valorZoom;
 					if($scope.estado == null){
 						valorZoom = 4;
@@ -180,7 +184,7 @@
 					}
 					var mapOptions = {
 					    zoom: valorZoom,
-					    center: myLatlng
+					    center: latLong
 					  }
 
 					var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -200,24 +204,71 @@
 				  	geocoder.geocode( { 'address': address}, function(results, status) {
 				    if (status == google.maps.GeocoderStatus.OK) {
 				      	map.setCenter(results[0].geometry.location);
-				   		var latLong = results[0].geometry.location;
+				   		latLong = results[0].geometry.location;
 				   		console.log(latLong);
 				   		var resLatLong = latLong.toString().split(","); 
 				   		latitude = resLatLong[0].replace("(", ""); 
 				   		longitude = resLatLong[1].replace(")", "");
 
+				   	if(address != "Brasil , Brasilia"){	
 				   	var marker = new google.maps.Marker({
 					     position: latLong,
 					     map: map,
 					     draggable:true,
     					animation: google.maps.Animation.DROP
 					  });
+					  }
+
+					
 
 				    } else {
 				      alert('Geocode was not successful for the following reason: ' + status);
 				    }
 				  });
 		}
+
+		$scope.isValidTipo = function(){			
+			if($scope.tipo != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidCidade = function(){
+			if($scope.cidade != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+
+		$scope.isValidBairro = function(){				
+			if(latLong != latLongTest && latLongTest != null){
+				return true;
+			} else {
+				latLongTest = new google.maps.LatLng(latlong);
+				return false;
+			}
+		}
+
+		$scope.isValidEndereco = function(){
+			if($scope.endereco != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValid = function(){
+			if($scope.numero != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+		
 		});
 
 })();
