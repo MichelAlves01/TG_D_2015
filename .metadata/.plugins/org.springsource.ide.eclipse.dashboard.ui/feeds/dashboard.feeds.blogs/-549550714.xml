@@ -5,7 +5,46 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-06-19T19:39:17Z</updated>
+  <updated>2015-06-25T12:08:00Z</updated>
+  <entry>
+    <title>Spring REST Docs 1.0.0.M1</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/06/25/spring-rest-docs-1-0-0-m1" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2015-06-24:2171</id>
+    <updated>2015-06-25T12:08:00Z</updated>
+    <content type="html">&lt;p&gt;I&amp;rsquo;m delighted to announce that &lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; has reached its first milestone and that 1.0.0.M1 is available from &lt;a href="https://repo.spring.io/milestone"&gt;https://repo.spring.io/milestone&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Spring REST Docs helps you to document RESTful services. It combines hand-written documentation written with &lt;a href="http://asciidoctor.org"&gt;Asciidoctor&lt;/a&gt; and auto-generated snippets produced with &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle#spring-mvc-test-framework"&gt;Spring MVC Test&lt;/a&gt;. This approach frees you from the limitations imposed by tools like &lt;a href="http://swagger.io"&gt;Swagger&lt;/a&gt;. It helps you to produce documentation that is accurate, concise, and well-structured. This documentation then allows your users to get the information they need with a minimum of fuss.&lt;/p&gt;&lt;h1&gt;&lt;a href="#getting-started" class="anchor" name="getting-started"&gt;&lt;/a&gt;Getting started&lt;/h1&gt;&lt;p&gt;To get started with Spring REST Docs, please refer to the &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.x/reference/html5/#getting-started"&gt;getting started section&lt;/a&gt; of the &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.0.x/reference/html5"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;If you&amp;rsquo;d like to learn more about the thinking behind Spring REST Docs and how it can help you, this &lt;a href="https://www.youtube.com/watch?v=knH5ihPNiUs&amp;feature=youtu.be"&gt;presentation on YouTube&lt;/a&gt; may also be of interest.&lt;/p&gt;&lt;h1&gt;&lt;a href="#springone-2015" class="anchor" name="springone-2015"&gt;&lt;/a&gt;SpringOne 2015&lt;/h1&gt;&lt;p&gt;I&amp;rsquo;ll be talking about &lt;a href="https://2015.event.springone2gx.com/schedule/sessions/documenting_restful_apis.html"&gt;documenting RESTful APIs&lt;/a&gt; at this year&amp;rsquo;s &lt;a href="http://springone2gx.com"&gt;SpringOne&lt;/a&gt; in Washington, DC. I&amp;rsquo;d love to see you there.&lt;/p&gt;&lt;h3&gt;&lt;a href="#discounts" class="anchor" name="discounts"&gt;&lt;/a&gt;Discounts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The Early Bird price tier (June 13th - August 14th) is discounted $150.&lt;/li&gt;
+  &lt;li&gt;Register 4 and get the 5th pass free. Contact us with the names of your first 4 registrants for your complimentary pass code (conference admission only).&lt;/li&gt;
+  &lt;li&gt;Alumni, contact us for your discount code ($150 off any option).&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - June 23, 2015</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/06/23/this-week-in-spring-june-23-2015" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2015-06-23:2170</id>
+    <updated>2015-06-23T11:00:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I was in London, last week, for &lt;a href="http://www.devoxx.co.uk/"&gt;Devoxx UK&lt;/a&gt;. The show was a rousing success all around. I gave a talk, a workshop, and was delighted to participate in the closing keynote, too! This week I&amp;rsquo;m in Kraków, Poland, for &lt;a href="http://devoxx.pl/"&gt;Devoxx Poland&lt;/a&gt; (né 33rd Degree) which seems to be an amazing success as well! I want to thank the organizers (&lt;a href="http://twitter.com/mrhazell"&gt;Mark Hazell&lt;/a&gt; and &lt;a href="https://twitter.com/grzegorzduda"&gt;Grzegorz Duda&lt;/a&gt; of Devoxx UK and PL respectively) for inviting me - I haven&amp;rsquo;t had this much fun in a while and I &lt;em&gt;love&lt;/em&gt; the communities that both events serve.&lt;/p&gt;&lt;p&gt;In addition to being in the keynote, I was privileged enough to be in this keynote-selfie for a brief moment where Arun Gupta, left, took a moment to recognize recently nominated Java Champions (second-to-left) Trisha Gee, and David Blevins and myself). Thanks very much, Arun! I post it here because it&amp;rsquo;s pretty darned special to me. ;-)&lt;/p&gt;&lt;p&gt;&lt;img src ="https://pbs.twimg.com/media/CH4qGFAWoAAVTR1.jpg" width = "400"/&gt;&lt;/p&gt;&lt;p&gt;So, that said, on to that which is most special: the tide of awesome that is the great stuff in this week&amp;rsquo;s &lt;em&gt;This Week in Spring&lt;/em&gt;!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring XD ninja &lt;a href="http://spring.io/blog/2015/06/19/spring-integration-kafka-1-2-is-available-with-0-8-2-support-and-performance-enhancements"&gt;Marius Bogoevici announced Spring Integration Kafka 1.2&lt;/a&gt;. The new release includes support for Kafka 0.8.2, performance improvements and improved documentation. All in a worthwhile and recomended upgrade!&lt;/li&gt;
+  &lt;li&gt;Spring guides ninja Greg Turnquist looks at the Spring team&amp;rsquo;s Java 8-first approach and then announces that the epic &lt;a href="http://spring.io/guides"&gt;guides&lt;/a&gt; have been moved to Java 8 by default.&lt;/li&gt;
+  &lt;li&gt;There&amp;rsquo;s a nice introduction by &lt;a href="https://twitter.com/bijukunjummen"&gt;Biju Kunjummen&lt;/a&gt; to Spring Cloud Eureka and the Spring Cloud Config Server over on DZone - as succint as it is useful!&lt;/li&gt;
+  &lt;li&gt;Our resident Spring Boot sorceror, Phil Webb, &lt;a href="http://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3"&gt;looks at the &lt;code&gt;spring-boot-devtools&lt;/code&gt;&lt;/a&gt; in this amazing blog post. Seriously, go read this. I&amp;rsquo;ll wait.. (did you watch the video? isn&amp;rsquo;t that crazy cool?)&lt;/li&gt;
+  &lt;li&gt;Big-data doc Dr. Pollack just announced &lt;a href="http://spring.io/blog/2015/06/17/spring-xd-1-2-ga-spring-xd-1-1-3-and-flo-for-spring-xd-beta-released"&gt;Spring XD 1.2 GA, Spring XD 1.1.3, and the Spring XD Flo beta&lt;/a&gt;. There&amp;rsquo;s so much cool stuff in these releases! I particularly love the Spring XD Flo beta (there&amp;rsquo;s even a super cool video included)!&lt;/li&gt;
+  &lt;li&gt;Spring XD ninja &lt;a href="http://spring.io/blog/2015/06/17/spring-xd-benchmarks-part-1"&gt;Glenn Renfro has been working on benchmarking&lt;/a&gt; (not &lt;em&gt;benchmarketing&lt;/em&gt;) Spring XD and documents his journey in this first installment.&lt;/li&gt;
+  &lt;li&gt;Our pal Eugen Paraschiv is back at it again, this time &lt;a href="http://www.baeldung.com/spring-boot-application-configuration"&gt;with a list of super-convenient configuration options for Spring Boot&lt;/a&gt; applications. I&amp;rsquo;d &lt;em&gt;definitely&lt;/em&gt; give this a review!&lt;/li&gt;
+  &lt;li&gt;One of the really nice bits about being here in Poland is that I finally got to meet &lt;a href="https://twitter.com/MGrzejszczak"&gt;Marcin Grzejszczak&lt;/a&gt; and the rest of the amazing 4Finance IT team! They&amp;rsquo;re responsible for some really meaty contributions to Spring Cloud, including improvements to &lt;a href="https://github.com/spring-cloud/spring-cloud-zookeeper/pull/2"&gt;Spring Cloud Zookeeper&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud-incubator/spring-cloud-sleuth/pull/1"&gt;Spring Cloud Sleuth&lt;/a&gt; which provides tracing through microservices - exciting! These improvements are contributions from their other work - a project called micro-infra-spring - which are being merged into Spring Cloud. Dzi?kuj?, my friends!&lt;/li&gt;
+  &lt;li&gt;Not &lt;em&gt;nearly&lt;/em&gt; so awesome, but I&amp;rsquo;m pretty proud of the recently merged support &lt;a href="https://github.com/spring-cloud/spring-cloud-cloudfoundry/commit/24aca83e9676daa74380bf903d21df055b5dfde7"&gt;for a Spring Cloud &lt;code&gt;DiscoveryClient&lt;/code&gt; implementation for Cloud Foundry&lt;/a&gt;. This means that, soon, we&amp;rsquo;ll have &lt;code&gt;DiscoveryClient&lt;/code&gt; implementations for Netflix&amp;rsquo;s Eureka, Zookeeper, Consul, Lattice and now Cloud Foundry!&lt;/li&gt;
+  &lt;li&gt;Speaking of Spring XD, I&amp;rsquo;d like to specifically call attention to these introductory videos, &lt;a href="https://www.youtube.com/watch?v=IL3XnlOI9vQ&amp;utm_content=buffer87797&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer"&gt;&lt;em&gt;Building Streams&lt;/em&gt;&lt;/a&gt; and &lt;a href="https://www.youtube.com/watch?v=os3WgPa-Axk&amp;utm_content=buffer62fca&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer"&gt;&lt;em&gt;Advanced Stream Creation&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Integration Kafka 1.2 is available, with 0.8.2 support and performance enhancements</title>
     <link rel="alternate" href="https://spring.io/blog/2015/06/19/spring-integration-kafka-1-2-is-available-with-0-8-2-support-and-performance-enhancements" />
@@ -689,56 +728,5 @@ drwxrwxrwx   - spring-xd hdfs          0 2015-06-01 07:29 /xd/hdfstest&#xD;
   &lt;li&gt;Register 4 and get the 5th pass free. Contact us with the names of your first 4 registrants for your complimentary pass code (conference admission only).&lt;/li&gt;
   &lt;li&gt;Alumni, contact us for your discount code ($150 off any option).&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring XD 1.2 RC1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/02/spring-xd-1-2-rc1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Pollack</name>
-    </author>
-    <id>tag:spring.io,2015-06-02:2150</id>
-    <updated>2015-06-02T21:30:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the Spring XD team, I am very pleased to announce that the Spring XD 1.2 Release Candidate is now &lt;a href="http://repo.spring.io/simple/libs-milestone-local/org/springframework/xd/spring-xd/1.2.0.RC1/spring-xd-1.2.0.RC1-dist.zip"&gt;available for download&lt;/a&gt;. You can also install using &lt;a href="http://docs.spring.io/spring-xd/docs/1.2.0.RC1/reference/html/#redhatcentos-installation"&gt;rpm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The 1.2 RC1 release includes bug fixes as well as several new features and enhancements.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Apache Ambari plugin to automate the deployment of Spring XD to a Hadoop cluster. Read more in the &lt;a href="https://spring.io/blog/2015/06/02/apache-ambari-meets-spring-xd"&gt;release blog for the plugin&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;A new Analytics tab in the UI that allows you to easily view gauges, counters, field-value counters and aggregate counters.&lt;/li&gt;
-  &lt;li&gt;Performance improvements for the Kafka Message Bus that places it on par with the performance benchmark applications that ship with Kafka. An upcoming blog will discuss XD performance in more detail&lt;/li&gt;
-  &lt;li&gt;Improved HA support for the Rabbit Message Bus, XD containers connect to the Rabbit Broker that hosts the queue that is being consumed&lt;/li&gt;
-  &lt;li&gt;Support for the Sqoop metastore and other &lt;a href="https://jira.spring.io/browse/XD-2938"&gt;Sqoop integration improvements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Support for multiple topics in the Kafka source.&lt;/li&gt;
-  &lt;li&gt;Add rolloverTime option to HDFS sink&lt;/li&gt;
-  &lt;li&gt;Support incremental data import with jdbchdfs job&lt;/li&gt;
-  &lt;li&gt;Ability to tap Spark streaming processors&lt;/li&gt;
-  &lt;li&gt;Support arbitrary JavaMail properties in the mail source&lt;/li&gt;
-  &lt;li&gt;Several new source/sink modules
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd-modules/tree/master/videocap"&gt;Video Capture source&lt;/a&gt; (community contributed)&lt;/li&gt;
-    &lt;li&gt;FTP source and sink (community contributed)&lt;/li&gt;
-    &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd-modules/tree/master/load-generator-source"&gt;load-generator&lt;/a&gt; source and &lt;a href="https://github.com/spring-projects/spring-xd-modules/tree/master/throughput"&gt;throughput&lt;/a&gt; sink&lt;/li&gt;
-    &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd-modules/tree/master/xslt-transformer"&gt;xslt-transformer&lt;/a&gt; (community contributed)&lt;/li&gt;
-    &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-xd-modules/tree/master/spring-xd-lang-detector"&gt;language classifier processor&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;&lt;/li&gt;
-  &lt;li&gt;The gpfdist sink is now included in the XD distribution&lt;/li&gt;
-  &lt;li&gt;Performance improvements for reactor based processor&lt;/li&gt;
-  &lt;li&gt;Support for Oracle as a batch repository&lt;/li&gt;
-  &lt;li&gt;Change from log4j to Logback logging framework&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;The full list of &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=11401&amp;version=14959"&gt;issues fixed for 1.2 RC1&lt;/a&gt; is available in JIRA.&lt;/p&gt;&lt;p&gt;Feedback is very important, so please get in touch with questions and comments via&lt;br/&gt;* &lt;a href="http://stackoverflow.com/questions/tagged/spring-xd"&gt;StackOverflow&lt;/a&gt; &lt;code&gt;spring-xd&lt;/code&gt; tag&lt;br/&gt;* &lt;a href="https://jira.spring.io/browse/XD/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel"&gt;Spring JIRA&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-xd/issues"&gt;GitHub Issues&lt;/a&gt;&lt;/p&gt;&lt;h1&gt;&lt;a href="#springone-2gx-2015-is-around-the-corner" class="anchor" name="springone-2gx-2015-is-around-the-corner"&gt;&lt;/a&gt;SpringOne 2GX 2015 is around the corner!&lt;/h1&gt;&lt;p&gt;Book your place at &lt;a href="http://www.springone2gx.com"&gt;SpringOne2GX in Washington, DC soon&lt;/a&gt;. Super Early Bird Price expires June 12th! It&amp;rsquo;s simply the best opportunity to find out first hand all that&amp;rsquo;s going on and to provide direct feedback.&lt;/p&gt;&lt;h1&gt;&lt;a href="#discounts" class="anchor" name="discounts"&gt;&lt;/a&gt;Discounts&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;The Super Early Bird price tier ($300 discount) expires June 12th. The Early Bird price tier (June 13th - August 14th) is discounted $150.&lt;/li&gt;
-  &lt;li&gt;Register 4 and get the 5th pass free. Contact us with the names of your first 4 registrants for your complimentary pass code (conference admission only).&lt;/li&gt;
-  &lt;li&gt;Alumni, contact us for your discount code ($150 off any option).&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring 4 and Java 8 adoption</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/02/spring-4-and-java-8-adoption" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Juergen Hoeller</name>
-    </author>
-    <id>tag:spring.io,2015-06-02:2151</id>
-    <updated>2015-06-02T21:25:30Z</updated>
-    <content type="html">&lt;p&gt;As Josh mentioned in &amp;ldquo;This Week in Spring&amp;rdquo; already, Eugen Paraschiv recently did a noteworthy survey on the adoption of Spring 4 and Java 8 as well as Spring Boot:&lt;br/&gt;&lt;a href="http://www.baeldung.com/java-8-spring-4-and-spring-boot-adoption"&gt;http://www.baeldung.com/java-8-spring-4-and-spring-boot-adoption&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Those are interesting numbers for us. Within the Spring universe, Java 8 adoption seems to be approaching 40%! And in terms of Spring Framework versions, Spring 4 is at 65% already, which I&amp;rsquo;m really happy to see. Even taking into account that a large part of the corporate use of Spring might not be represented in those numbers, that&amp;rsquo;s a great trend. And Pivotal&amp;rsquo;s early production support for Spring 4 on JDK 8 certainly helped in the corporate world as well.&lt;/p&gt;&lt;p&gt;It&amp;rsquo;s equally great to see that a third of the responders are using Spring Boot in the meantime. In other words, half of the Spring 4 userbase is also using Spring Boot, which is impressive for such a young project. Spring Boot&amp;rsquo;s immediate inclusion in our Spring I/O Platform with full production support last year might have boosted its adoption quite a bit. But even more importantly, it simply seems to be a fit for today&amp;rsquo;s application development challenges&amp;hellip;&lt;/p&gt;</content>
   </entry>
 </feed>

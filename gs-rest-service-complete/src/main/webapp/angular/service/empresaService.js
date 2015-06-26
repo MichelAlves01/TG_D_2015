@@ -5,11 +5,12 @@
 	
 
 	app.controller('cadastroEmpresaInicio', function($scope, $http) {
-		     $http.defaults.headers.post["Content-Type"] = "application/jsonp";
+		    $http.defaults.headers.post["Content-Type"] = "application/jsonp";
 		    var statusCpfCnpj = false;
 		    var longitude = null;
 		    var latitude = null;
-		    
+		    var latLongTest = null;
+			var latLong = null; 
 
 		    $scope.iniciaCadastroEmpresa = function (){
 		    	var data = $.param({nome: $scope.nome , cpfCnpj: $scope.cpfCnpj})
@@ -118,9 +119,9 @@
 
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
-			var latLongTest = null;
-			var latLong = null; 
+			 
 
+			/*verifica quais abas devem estar ativas*/
 			$scope.finishing = function(){
 					$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
 					$scope.empresa = data;
@@ -130,7 +131,7 @@
 		    			$("#atualizar").hide();
 		    			$("#excluir").hide();
 		    		} else {
-		    			
+		    			/*To do*/
 		    		}
 					
 				});
@@ -174,6 +175,7 @@
 			})
 		}
 
+		/*Obtem informações de latitude e longitude e atualiza o mapa */
 		$scope.getLatitudeLongitude = function(){
 					latLong = new google.maps.LatLng(-23.5505199,-46.63330939999997);
 					var valorZoom;
@@ -227,6 +229,7 @@
 				  });
 		}
 
+		/*Validaçoes de campos no cadastro de empresas*/
 		$scope.isValidTipo = function(){			
 			if($scope.tipo != null){
 				return true;
@@ -243,14 +246,33 @@
 			}
 		}
 
+		latLongTest = new google.maps.LatLng(0,0);
+		var typeNeighBor = null;
+		$scope.isValidBairro = function(){
+		if(typeNeighBor == $scope.bairro || typeNeighBor == null){
+			if(	latLong.A.toFixed(1) != latLongTest.A.toFixed(1) && 
+				latLong.F != latLongTest.F && 
+				latLongTest.A != 0 && 
+				latLongTest.F != 0 && 
+				$scope.bairro != null){
 
-		$scope.isValidBairro = function(){				
-			if(latLong != latLongTest && latLongTest != null){
+				typeNeighBor = $scope.bairro;
 				return true;
 			} else {
-				latLongTest = new google.maps.LatLng(latlong);
+				latLongTest = alterLatLongTest();
 				return false;
 			}
+		} else {
+				latLongTest = alterLatLongTest();
+				typeNeighBor = null;
+				return false;
+		}
+
+		function alterLatLongTest(){
+			var la = latLong.A;
+			var lo = latLong.F;
+			return new google.maps.LatLng(la,lo); 
+		}
 		}
 
 		$scope.isValidEndereco = function(){

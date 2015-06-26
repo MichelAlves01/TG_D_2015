@@ -4,13 +4,15 @@
 													<tr>
 														<td>
 															<fieldset>
-																<label>Tipo de Empresa</label>
+																<label>Tipo de Empresa 	<i class="icon-hand-down" ng-hide="isValidTipo()"></i>
+																						<i class="icon-ok" ng-show="isValidTipo()"></i>
+																</label>
 																<select ng-model="tipo" id="tipo" >
 																	<option value="A"> Alimentos </option>
 																	<option value="U"> Utilitários</option>
 																	<option value="S"> Serviços</option>
 																</select>
-																<i class="icon-ok" ng-show="isValidTipo()"></i>
+																
 															</fieldset>
 														</td>
 													</tr>											
@@ -26,11 +28,13 @@
 																		</select>
 																	</td>
 																	<td>
-																		<label>Cidade</label>
+																		<label>Cidade 	<i class="icon-hand-down" ng-hide="isValidCidade()"></i>
+																						<i class="icon-ok" ng-show="isValidCidade()"></i>
+																		</label>
 																		<select ng-options="cidade.nome for cidade in cidades" ng-model="cidade" ng-change="getLatitudeLongitude()">
 																			<option value="">Selecione sua cidade</option>
 																		</select>
-																		<i class="icon-ok" ng-show="isValidCidade()"></i>
+																		
 																	</td>
 																</tr>
 																
@@ -40,17 +44,19 @@
 													<tr style="padding: 51px;">
 															<td style="padding-right: 10px;">
 																<fieldset>
-																	<label>Bairro <i class="icon-ok" ng-show="isValidBairro()"></i></label>
-																		<input type="text" ng-model="bairro" ng-blur="getLatitudeLongitude()"class="input-xxlarge"  placeholder="informe o bairro" required/>
+																		<label>Bairro <i class="icon-hand-down" ng-hide="isValidBairro()"></i><i class="icon-ok" ng-show="isValidBairro()"></i></label>
+																		<input type="text" ng-model="bairro" ng-blur="isValidBairro()" class="input-xxlarge"  placeholder="informe o bairro" required/>
 																		
 																</fieldset>
 															</td>																
 													</tr>
 													<tr>
 														<td>
-															<label>Endereço</label>
+															<label>Endereço <i class="icon-hand-down" ng-hide="isValidEndereco()"></i>
+																			<i class="icon-ok" ng-show="isValidEndereco()"></i>
+															</label>
 															<input type="text" ng-model="endereco" ng-blur="getLatitudeLongitude()" class="input-xxlarge" placeholder="informe o endereço" required/>
-															<i class="icon-ok" ng-show="isValidEndereco()"></i>
+															
 														</td>
 													</tr>
 													
@@ -61,14 +67,19 @@
 																<tr style="padding: 51px;">
 																	<td>
 																		<fieldset>
-																			<label>Numero</label>
+																			<label>Numero 
+																				<i class="icon-hand-down" ng-hide="isValidNumero()"></i>
+																				<i class="icon-ok" ng-show="isValidNumero()"></i>
+																			</label>
 																			<input type="text" ng-model="numero" class="input-small" placeholder="informe o numero"/>
-																			<i class="icon-ok" ng-show="isValidNumero()"></i>
+																			
 																		<fieldset>
 																	</td>	
 																	<td style="padding-right: 10px;">
 																		<fieldset>
-																			<label>CEP</label>
+																			<label>CEP 	<i class="icon-hand-down" ng-hide="isValidNumero()"></i>
+																						<i class="icon-ok" ng-show="isValidNumero()"></i>
+																			</label>
 																			<input type="text" ng-model="cep" class="input-large" placeholder="CEP apenas numeros"/>
 																		</fieldset>
 																	</td>																	
