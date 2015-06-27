@@ -22,6 +22,35 @@ public class Empresa {
 	private List<Produto> produto;
 	private List<Users> users;
 	
+	
+	public Empresa(){
+		
+	}
+	public Empresa(String cpfCnpj, String nome, String endereco, int idCidade,
+			String telefoneFixo, String telefoneMovel, String cep,
+			String email, double raio, int usaAgenda, String tipo,
+			double latitude, double longitude, double avaliacao, int status,
+			List<Produto> produto, List<Users> users) {
+		super();
+		this.cpfCnpj = cpfCnpj;
+		this.nome = nome;
+		this.endereco = endereco;
+		this.idCidade = idCidade;
+		this.telefoneFixo = telefoneFixo;
+		this.telefoneMovel = telefoneMovel;
+		this.cep = cep;
+		this.email = email;
+		this.raio = raio;
+		this.usaAgenda = usaAgenda;
+		this.tipo = tipo;
+		this.latitude = latitude;
+		this.longitude = longitude;
+		this.avaliacao = avaliacao;
+		this.status = status;
+		this.produto = produto;
+		this.users = users;
+	}
+	
 	public String getCpfCnpj() {
 		return cpfCnpj;
 	}

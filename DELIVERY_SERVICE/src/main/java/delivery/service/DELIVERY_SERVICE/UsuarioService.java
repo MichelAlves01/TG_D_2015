@@ -1,6 +1,7 @@
 package delivery.service.DELIVERY_SERVICE;
 
-import delivery.DELIVERY_MODELO.UsuarioMob;
+import delivery.model.UsuarioMob;
+
 
 public class UsuarioService {
 	

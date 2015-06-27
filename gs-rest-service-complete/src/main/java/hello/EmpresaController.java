@@ -11,19 +11,26 @@ import delivery.api.mapper.CidadeImpl;
 import delivery.api.mapper.EmpresaImpl;
 import delivery.model.Cidade;
 import delivery.model.Empresa;
+import delivery.service.DELIVERY_SERVICE.EmpresaService;
 
 @RestController
 public class EmpresaController {
-	private Empresa empresa = new Empresa();
+	private Empresa empresa;
 	EmpresaImpl empresaImpl = null;
+	private EmpresaService empresaService;
 	
 	@RequestMapping(value="/iniciaCadastroEmpresa", method=RequestMethod.POST)
-	public void iniciaCadastro( 	@RequestParam(value="nome") String nome,
+	public Empresa iniciaCadastro( 	@RequestParam(value="nome") String nome,
 									@RequestParam(value="cpfCnpj") String cpfCnpj){
 		
+		empresa = new Empresa();
 		empresa.setNome(nome);
 		empresa.setCpfCnpj(cpfCnpj);
-		System.out.println("nome = " + nome + " e " + cpfCnpj);
+		System.out.println("nome = " + empresa.getNome() + " e " + empresa.getCpfCnpj());
+		empresaService = new EmpresaService();
+		empresaService.verificaCpf(empresa);
+		System.out.println("status" + empresa.getStatus());
+		return empresa;
 	}
 	
 	@RequestMapping(value="/getEmpresaCadastro", method=RequestMethod.GET)

@@ -64,7 +64,7 @@
  	</update>
  	
  	<select id="getEmpresaDAO" parameterType="java.lang.String" resultType="delivery.model.Empresa">
- 		SELECT 	cpf_cnpj AS cpfCnpj, 
+ 		SELECT 	cnpj_cpf AS cpfCnpj, 
  				nome, 
  				endereco, 
  				id_Cidade AS idCidade , 
@@ -79,26 +79,30 @@
  				longitude, 
  				avaliacao,
  				status
+ 		FROM
+ 				empresa
  		WHERE
  				cpf_cnpj = #{cpfCnpj}
  	</select>
  	
  	<select id="getEmpresasDAO" resultType="delivery.model.Empresa">
- 		select 	cpf_cnpj as cpfCnpj, 
+ 		select 	cnpj_cpf AS cpfCnpj, 
  				nome, 
  				endereco, 
- 				id_Cidade as idCidade , 
- 				telefone_fixo as telefoneFixo, 
- 				telefone_movel as telefoneMovel, 
+ 				id_Cidade AS idCidade , 
+ 				telefone_fixo AS telefoneFixo, 
+ 				telefone_movel AS telefoneMovel, 
  				cep, 
  				email, 
- 				tipo_empresa as tipo, 
- 				raio, 
- 				usa_agenda as usaAgenda, 
+ 				tipo_empresa AS tipo, 
+ 				raio_entrega, 
+ 				usa_agenda AS usaAgenda, 
  				latitude, 
  				longitude, 
  				avaliacao,
  				status
+ 		FROM
+ 				empresa
  	</select>
  	
  	<select id="getEmpresasPorTipoDAO" parameterType="java.lang.String" resultType="delivery.model.Empresa">

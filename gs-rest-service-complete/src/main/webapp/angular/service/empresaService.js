@@ -10,7 +10,8 @@
 		    var longitude = null;
 		    var latitude = null;
 		    var latLongTest = null;
-			var latLong = null; 
+			var latLong = null;
+			 
 
 		    $scope.iniciaCadastroEmpresa = function (){
 		    	var data = $.param({nome: $scope.nome , cpfCnpj: $scope.cpfCnpj})
@@ -18,7 +19,14 @@
 		    	if(statusCpfCnpj && $scope.nome != null){
 		    	$http.post(urlBase + '/iniciaCadastroEmpresa?'+ data).
 	        													success(function(data,status) {
-	           													 location.href="CadastroEmpresas.html"
+	        														$scope.empresa = data;
+	        														console.log("$scope.empresa.status : " + $scope.empresa.status);
+	        													if($scope.empresa.status == 1){
+																	console.log("CPF ou CNPJ já cadastrado");
+																} else {
+																	location.href="CadastroEmpresas.html"
+																}	
+	           													 
 	           			});
 	            } else {
 	            	if(!statusCpfCnpj){
@@ -119,7 +127,7 @@
 
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
-			 
+			 var fieldsValid = true;
 
 			/*verifica quais abas devem estar ativas*/
 			$scope.finishing = function(){
@@ -137,29 +145,57 @@
 				});
 			}
 
+			function setValidFields() {
+				if($scope.tipo != null &&
+				$scope.cidade != null &&
+				$scope.bairro != null && 
+				$scope.endereco != null && 
+				$scope.numero != null &&
+				$scope.cep != null &&
+				$scope.telFixo != null &&
+				$scope.telMovel != null &&
+				$scope.email != null &&
+				$scope.senha != null){
+
+					fieldsValid = true;
+				} else {
+					fieldsValid = false;
+				}
+
+				return fieldsValid;
+				
+			}
+
 			$scope.executarCadastro = function(){
-				var tipo = $scope.tipo;
-				var cidade = $scope.cidade.id;
-				var endereco = $scope.bairro + "" + $scope.endereco + "" + $scope.numero;
-				var cep = $scope.cep;
-				var telFixo = $scope.telFixo;
-				var telMovel = $scope.telMovel;
-				var email = $scope.email;
-				var senha = $scope.senha;		
-				var data = $.param({tipo: tipo, 
-									idCidade: cidade,
-									endereco: endereco,
-									email: email,
-									telefoneFixo: telFixo,
-									telefoneMovel: telMovel,
-									cep: cep,
-									latitude: latitude,
-									longitude: longitude,
-									senha: senha});
-				var teste = urlBase + '/cadastrarEmpresaController?' + data;
-				alert(teste.length);
-				$http.post(urlBase + '/cadastrarEmpresaController?' + data).success();
-			}	
+				if(setValidFields()){
+					var tipo = $scope.tipo;
+					var cidade = $scope.cidade.id;
+					var endereco = $scope.bairro + "" + $scope.endereco + "" + $scope.numero;
+					var cep = $scope.cep;
+					var telFixo = $scope.telFixo;
+					var telMovel = $scope.telMovel;
+					var email = $scope.email;
+					var senha = $scope.senha;		
+					var data = $.param({tipo: tipo, 
+										idCidade: cidade,
+										endereco: endereco,
+										email: email,
+										telefoneFixo: telFixo,
+										telefoneMovel: telMovel,
+										cep: cep,
+										latitude: latitude,
+										longitude: longitude,
+										senha: senha});
+					var teste = urlBase + '/cadastrarEmpresaController?' + data;
+							console.log("enviando para o servidor");
+							
+								$http.post(urlBase + '/cadastrarEmpresaController?' + data).success();
+								location.href="PaginaPrincipal.html"
+				} else {
+					console.log("Existem campos não preenchido");
+				} 
+			}
+				
 
 			$scope.getEstados = function(){
 			$http.get('http://localhost:8080/getEstados').success(function(data){
@@ -230,6 +266,12 @@
 		}
 
 		/*Validaçoes de campos no cadastro de empresas*/
+		
+		$scope.isValidAll = function(){	
+				console.log("fieldsValid : " + fieldsValid)	
+				return fieldsValid;
+		}
+
 		$scope.isValidTipo = function(){			
 			if($scope.tipo != null){
 				return true;
@@ -245,6 +287,8 @@
 				return false;
 			}
 		}
+
+
 
 		latLongTest = new google.maps.LatLng(0,0);
 		var typeNeighBor = null;
@@ -283,8 +327,65 @@
 			}
 		}
 
-		$scope.isValid = function(){
+
+		$scope.isValidNumero = function(){
 			if($scope.numero != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidCep = function(){
+			if($scope.cep != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidTelFixo = function(){
+			if($scope.telFixo != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidTelMovel = function(){
+			if($scope.telMovel != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidTelMovel = function(){
+			if($scope.telMovel != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidEmail = function(){
+			if($scope.email != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidSenha = function(){
+			if($scope.senha != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.isValidConfirmaSenha = function(){
+			if($scope.confirmaSenha != null){
 				return true;
 			} else {
 				return false;

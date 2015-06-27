@@ -38,5 +38,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/API_DELIVERY_DAO"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DELIVERY_SERVICE"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

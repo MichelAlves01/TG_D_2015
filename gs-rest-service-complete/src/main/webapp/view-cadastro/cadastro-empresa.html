@@ -4,8 +4,11 @@
 													<tr>
 														<td>
 															<fieldset>
-																<label>Tipo de Empresa 	<i class="icon-hand-down" ng-hide="isValidTipo()"></i>
+																<label>Tipo de Empresa 	
+																					<font ng-hide="isValidAll()">
+																						<i class="icon-hand-down" ng-hide="isValidTipo()"></i>
 																						<i class="icon-ok" ng-show="isValidTipo()"></i>
+																					</font>
 																</label>
 																<select ng-model="tipo" id="tipo" >
 																	<option value="A"> Alimentos </option>
@@ -28,8 +31,10 @@
 																		</select>
 																	</td>
 																	<td>
-																		<label>Cidade 	<i class="icon-hand-down" ng-hide="isValidCidade()"></i>
-																						<i class="icon-ok" ng-show="isValidCidade()"></i>
+																		<label>Cidade 	<font ng-hide="isValidAll()">
+																							<i class="icon-hand-down" ng-hide="isValidCidade()"></i>
+																							<i class="icon-ok" ng-show="isValidCidade()"></i>
+																						</font>
 																		</label>
 																		<select ng-options="cidade.nome for cidade in cidades" ng-model="cidade" ng-change="getLatitudeLongitude()">
 																			<option value="">Selecione sua cidade</option>
@@ -44,7 +49,9 @@
 													<tr style="padding: 51px;">
 															<td style="padding-right: 10px;">
 																<fieldset>
-																		<label>Bairro <i class="icon-hand-down" ng-hide="isValidBairro()"></i><i class="icon-ok" ng-show="isValidBairro()"></i></label>
+																		<label>Bairro <font ng-hide="isValidAll()"> 
+																				<i class="icon-hand-down" ng-hide="isValidBairro()"></i><i class="icon-ok" ng-show="isValidBairro()"></i></font>
+																		</label>
 																		<input type="text" ng-model="bairro" ng-blur="isValidBairro()" class="input-xxlarge"  placeholder="informe o bairro" required/>
 																		
 																</fieldset>
@@ -52,8 +59,9 @@
 													</tr>
 													<tr>
 														<td>
-															<label>Endereço <i class="icon-hand-down" ng-hide="isValidEndereco()"></i>
+															<label>Endereço <font ng-hide="isValidAll()"><i class="icon-hand-down" ng-hide="isValidEndereco()"></i>
 																			<i class="icon-ok" ng-show="isValidEndereco()"></i>
+																			</font>
 															</label>
 															<input type="text" ng-model="endereco" ng-blur="getLatitudeLongitude()" class="input-xxlarge" placeholder="informe o endereço" required/>
 															
@@ -67,34 +75,42 @@
 																<tr style="padding: 51px;">
 																	<td>
 																		<fieldset>
-																			<label>Numero 
+																			<label>Numero <font ng-hide="isValidAll()">
 																				<i class="icon-hand-down" ng-hide="isValidNumero()"></i>
 																				<i class="icon-ok" ng-show="isValidNumero()"></i>
+																				</font>
 																			</label>
-																			<input type="text" ng-model="numero" class="input-small" placeholder="informe o numero"/>
+																			<input type="text" ng-model="numero" class="input-small" placeholder="informe o numero" required/>
 																			
 																		<fieldset>
 																	</td>	
 																	<td style="padding-right: 10px;">
 																		<fieldset>
-																			<label>CEP 	<i class="icon-hand-down" ng-hide="isValidNumero()"></i>
-																						<i class="icon-ok" ng-show="isValidNumero()"></i>
+																			<label>CEP 	<font ng-hide="isValidAll()"><i class="icon-hand-down" ng-hide="isValidCep()"></i>
+																						<i class="icon-ok" ng-show="isValidCep()"></i></font>
 																			</label>
-																			<input type="text" ng-model="cep" class="input-large" placeholder="CEP apenas numeros"/>
+																			<input type="text" ng-model="cep" class="input-large" placeholder="CEP apenas numeros" required/>
 																		</fieldset>
 																	</td>																	
 																</tr>
 																<tr style="padding: 51px;">
 																	<td style="padding-right: 10px;">
 																		<fieldset>
-																			<label>Telefone Fixo</label>
-																			<input type="text" ng-model="telFixo" class="input-large" placeholder="informe o telefone fixo"/>
+																			<label>Telefone Fixo <font ng-hide="isValidAll()">
+																				<i class="icon-hand-down" ng-hide="isValidTelFixo()"></i>
+																				<i class="icon-ok" ng-show="isValidTelFixo()"></i></font>
+																			</label>
+																			<input type="text" ng-model="telFixo" class="input-large" placeholder="informe o telefone fixo" required/>
 																		</fieldset>
 																	</td>
 																	<td>
 																		<fieldset>
-																			<label>Telefone Celular</label>
-																			<input type="text" ng-model="telMovel" class="input-large" placeholder="informe um celular"/>
+																			<label>Telefone Celular
+																			<p  ng-hide="isValidAll()">	
+																			<font color="red" size="1" ng-hide="isValidTelMovel()"><i class="icon-hand-down" ></i> informe pelo menos um numero de telefone</font>
+																				<i class="icon-ok" ng-show="isValidTelMovel()"></i></p>
+																			</label>
+																			<input type="text" ng-model="telMovel" class="input-large" placeholder="informe um celular" required/>
 																		<fieldset>
 																	</td>
 																</tr>
@@ -104,8 +120,10 @@
 													</tr>
 													<tr>
 														<td>
-															<label>email</label>
-															<input type="email" ng-model="email" class="input-xxlarge" placeholder="informe um email como nome de usuario"/>
+															<label>email 	<font ng-hide="isValidAll()"><i class="icon-hand-down" ng-hide="isValidEmail()"></i>
+																			<i class="icon-ok" ng-show="isValidEmail()"></i></font>
+															</label>
+															<input type="email" ng-model="email" class="input-xxlarge" placeholder="informe um email como nome de usuario" required/>
 														</td>
 													</tr>
 													<tr>
@@ -114,12 +132,17 @@
 																		
 																<tr>										
 																	<td style="padding-right: 10px;">
-																		<label>Senha</label>
-																		<input type="password" ng-model="senha" class="input-medium" placeholder="minimo 8 caracteres"/>
+																		<label>Senha <font ng-hide="isValidAll()"><i class="icon-hand-down" ng-hide="isValidSenha()"></i>
+																					 <i class="icon-ok" ng-show="isValidSenha()"></i></font>
+																		</label>
+																		<input type="password" ng-model="senha" class="input-medium" placeholder="minimo 8 caracteres" required/>
 																	</td>
 																	<td>
-																		<label>Confirme a senha</label>
-																		<input type="password" ng-model="senha" class="input-medium" placeholder="minimo 8 caracteres"/>
+																		<label>Confirme a senha <font ng-hide="isValidAll()">
+																				<i class="icon-hand-down" ng-hide="isValidConfirmaSenha()"></i>
+																				<i class="icon-ok" ng-show="isValidConfirmaSenha()"></i></font>
+																		</label>
+																		<input type="password" ng-model="confirmaSenha" class="input-medium" placeholder="minimo 8 caracteres" required/>
 																	</td>										
 																</tr>
 															</table>

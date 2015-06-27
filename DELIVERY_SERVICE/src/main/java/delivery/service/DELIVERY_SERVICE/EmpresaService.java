@@ -3,12 +3,16 @@ package delivery.service.DELIVERY_SERVICE;
 import java.util.ArrayList;
 import java.util.List;
 
-import delivery.DELIVERY_MODELO.Empresa;
+import delivery.api.mapper.EmpresaImpl;
+import delivery.model.Empresa;
 
 public class EmpresaService {
 	private Empresa empresa;
 	
-	public void cadastrarEmpresaService(Empresa empresa){
+	private EmpresaImpl empresaImpl;
+	
+	
+	public void cadastrarEmpresaService(final Empresa empresa){
 		
 	}
 	
@@ -24,5 +28,24 @@ public class EmpresaService {
 	public List<Empresa> getEmpresasService(){
 		List<Empresa> empresas = new ArrayList<Empresa>();
 		return empresas;
+	}
+	
+	public void verificaCpf(Empresa empresa){
+		empresaImpl = new EmpresaImpl();
+		List<Empresa> empresas = empresaImpl.getEmpresasDAO();
+		boolean cpfNotExiste = true;
+		
+		for (Empresa emp : empresas) {
+			if(emp.getCpfCnpj() == empresa.getCpfCnpj()){
+				cpfNotExiste = false;
+			}
+		}
+		
+		if(cpfNotExiste){
+			empresa.setStatus(0);
+		} else {
+			empresa.setStatus(1);
+		}
+		System.out.println("serviceStatus : " + empresa.getStatus());
 	}
 }

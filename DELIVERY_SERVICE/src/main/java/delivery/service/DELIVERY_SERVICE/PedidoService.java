@@ -1,6 +1,7 @@
 package delivery.service.DELIVERY_SERVICE;
 
-import delivery.DELIVERY_MODELO.Pedido;
+import delivery.model.Pedido;
+
 
 public class PedidoService {
 	public void cadastrarPedidoService(Pedido pedido){

@@ -3,7 +3,8 @@ package delivery.service.DELIVERY_SERVICE;
 import java.util.ArrayList;
 import java.util.List;
 
-import delivery.DELIVERY_MODELO.Produto;
+import delivery.model.Produto;
+
 
 public class ProdutoService {
 	

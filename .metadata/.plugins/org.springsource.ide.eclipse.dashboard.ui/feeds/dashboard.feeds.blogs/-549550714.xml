@@ -5,7 +5,83 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-06-25T12:08:00Z</updated>
+  <updated>2015-06-26T12:41:00Z</updated>
+  <entry>
+    <title>Spring Cloud service release: Angel.SR3</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/06/26/spring-cloud-service-release-angel-sr3" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2015-06-26:2172</id>
+    <updated>2015-06-26T12:41:00Z</updated>
+    <content type="html">&lt;p&gt;The latest version of &lt;a href="http://projects.spring.io/spring-cloud/"&gt;Spring Cloud&lt;/a&gt; is &amp;ldquo;Angel.SR3&amp;rdquo; and it is available now from the usual repositories (note the new naming convention, more detail below). Most components are now at 1.0.2.RELEASE, but spring-cloud-netflix is at 1.0.3.RELEASE. The starters and cli and also at 1.0.3.RELEASE, reflecting their dependency on Netflix. Angel.SR3 is a bugfix release for Angel.SR2 (formerly known as 1.0.2) and all existing projects are encouraged to upgrade to take advantage.&lt;/p&gt;&lt;p&gt;There are a few new features, the biggest of which is the new naming convention for the starter parent project (see below). Highlights include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;Support for slashes in git labels (via a special character sequence in the HTTP resource paths)&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Optional git initialization on Config Server startup&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Additional options for config clients to handle decryption themselves, including the ability to decrypt properties in &lt;code&gt;bootstrap.yml&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Additional cryptography configuration options for new RSA and AES algorithms&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;A strategy for key rotation with a &lt;code&gt;TextEncryptorLocator&lt;/code&gt; strategy that users can implement to look up keys dynamically.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#release-train" class="anchor" name="release-train"&gt;&lt;/a&gt;Release Train&lt;/h2&gt;&lt;p&gt;Spring Cloud is an umbrella project consisting of independent projects with, in principle, different release cadences. To manage the protfolio a BOM (Bill of Materials) is published with a curated set of dependencies on the individual project (see below). The release trains have names, not versions, to avoid confusion with the sub-projects. The names are an alphabetic sequence (so you can sort them chronologically) with names of London Tube stations (&amp;ldquo;Angel&amp;rdquo; is the first release, &amp;ldquo;Brixton&amp;rdquo; is the second). When point releases of the individual projects accumulate to a critical mass, or if there is a critical bug in one of them that needs to be available to everyone, the release train will push out &amp;ldquo;service releases&amp;rdquo; with names ending &amp;ldquo;.SRX&amp;rdquo;, where &amp;ldquo;X&amp;rdquo; is a number.&lt;/p&gt;&lt;p&gt;The release train is a new thing with this release (Angel.SR3) but the older releases have been re-released (same artifact, different version) as &amp;ldquo;Angel,[RELEASE,SR1,SR2]&amp;rdquo; corresponding to 1.0.0, 1.0.1, 1.0.2 respectively. The release train label is actually only used explicitly in one artifact: &amp;ldquo;spring-cloud-starter-parent&amp;rdquo; (all the others have normal &amp;ldquo;Spring&amp;rdquo; release labels tied to their parent project). The starter parent is the one you can use as a BOM for dependency management or as a parent POM (Maven only). Example using the latest version with the config client and eureka (change the artifact ids to pull in other starters), with Maven with a parent POM:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
+  &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+  &amp;lt;artifactId&amp;gt;spring-cloud-statrer-parent&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;version&amp;gt;Angel.SR3&amp;lt;/version&amp;gt;&#xD;
+&amp;lt;/parent&amp;gt;&#xD;
+&amp;lt;dependencies&amp;gt;&#xD;
+  &amp;lt;dependency&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+      &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;dependency&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-eureka&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;/dependency&amp;gt;&#xD;
+  ...&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or as a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencyManagement&amp;gt;&#xD;
+  &amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;version&amp;gt;Angel.SR3&amp;lt;/version&amp;gt;&#xD;
+    &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;&#xD;
+    &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;&#xD;
+  &amp;lt;/dependencies&amp;gt;&#xD;
+&amp;lt;/dependencyManagement&amp;gt;&#xD;
+&amp;lt;dependencies&amp;gt;&#xD;
+  &amp;lt;dependency&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;/dependency&amp;gt;&#xD;
+  &amp;lt;dependency&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-eureka&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;/dependency&amp;gt;&#xD;
+  ...&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or with gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint groovy"&gt;buildscript {&#xD;
+  dependencies {&#xD;
+    classpath &amp;quot;io.spring.gradle:dependency-management-plugin:0.4.0.RELEASE&amp;quot;&#xD;
+  }&#xD;
+}&#xD;
+&#xD;
+apply plugin: &amp;quot;io.spring.dependency-management&amp;quot;&#xD;
+&#xD;
+dependencyManagement {&#xD;
+  imports {&#xD;
+    mavenBom &amp;#39;org.springframework.cloud:spring-cloud:Angel.SR3&amp;#39;&#xD;
+  }&#xD;
+}&#xD;
+&#xD;
+dependencies {&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-config&amp;#39;&#xD;
+    compile &amp;#39;org.springframework.cloud:spring-cloud-starter-eureka&amp;#39;&#xD;
+    ...&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#springone-2015" class="anchor" name="springone-2015"&gt;&lt;/a&gt;SpringOne 2015&lt;/h2&gt;&lt;p&gt;I’ll be talking about Spring Cloud at this year’s SpringOne in Washington, DC. I’d love to see you there.&lt;/p&gt;&lt;h3&gt;&lt;a href="#discounts" class="anchor" name="discounts"&gt;&lt;/a&gt;Discounts&lt;/h3&gt;&lt;p&gt;The Early Bird price tier (June 13th - August 14th) is discounted $150.&lt;br/&gt;Register 4 and get the 5th pass free. Contact us with the names of your first 4 registrants for your complimentary pass code (conference admission only).&lt;br/&gt;Alumni, contact us for your discount code ($150 off any option).&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring REST Docs 1.0.0.M1</title>
     <link rel="alternate" href="https://spring.io/blog/2015/06/25/spring-rest-docs-1-0-0-m1" />
@@ -678,55 +754,5 @@ public class WebConfig extends WebMvcConfigurerAdapter {&#xD;
     <id>tag:spring.io,2015-06-04:2155</id>
     <updated>2015-06-04T11:46:00Z</updated>
     <content type="html">&lt;p&gt;Spring Boot 1.2.4 has been released and is available now from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.2.4"&gt;small number of fixes&lt;/a&gt; and is a recommended upgrade for all users.&lt;/p&gt;&lt;p&gt;The first milestone of Spring Boot 1.3 will be released in the coming days and adds &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.0.M1"&gt;many exciting features&lt;/a&gt;. Stay tuned!&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Apache Ambari meets Spring XD</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/02/apache-ambari-meets-spring-xd" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Janne Valkealahti</name>
-    </author>
-    <id>tag:spring.io,2015-06-02:2146</id>
-    <updated>2015-06-02T21:30:54Z</updated>
-    <content type="html">&lt;p&gt;We’re pleased to announce the first version of the &lt;a href="https://ambari.apache.org/"&gt;Apache Ambari&lt;/a&gt; plugin for &lt;a href="https://projects.spring.io/spring-xd/"&gt;Spring XD&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Ambari is a cluster provisioning tool to install and manage various Apache projects like HDFS, YARN, Zookeeper or Kafka. Ambari has a concept of a stack definition which is used by both Pivotal and Hortonworks. The stack definition is usually made up of components supported by the maintainer.&lt;/p&gt;&lt;p&gt;This Ambari integration adds support for provisioning Spring XD with &lt;a href="http://pivotal.io/big-data/pivotal-hd"&gt;Pivotal HD 3.0&lt;/a&gt; and &lt;a href="http://hortonworks.com/hdp/"&gt;Hortonworks HDP 2.2&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Spring XD is not part of the main Ambari distribution for PHD or HDP. However, it is easy to extend an existing Ambari installation via a simple RPM installation which modifies existing stack definitions.&lt;/p&gt;&lt;p&gt;We&amp;rsquo;ve prepared &lt;a href="https://github.com/spring-projects/spring-xd-ambari/blob/master/src/docs/asciidoc/InstallingXDwithAmbari.asciidoc"&gt;installation instructions&lt;/a&gt; in our repo &lt;a href="https://github.com/spring-projects/spring-xd-ambari"&gt;Github spring-xd-ambari&lt;/a&gt; together with the source code for this plugin.&lt;/p&gt;&lt;p&gt;Spring XD on Pivotal HD 3.0 with external Redis as a message bus:&lt;br/&gt;&lt;img src="https://raw.githubusercontent.com/spring-projects/spring-xd-ambari/master/src/docs/asciidoc/images/xdphd.png" alt="PIC PHD" /&gt;&lt;/p&gt;&lt;p&gt;Spring XD on Hortonworks HDP 2.2 with Ambari hosted Kafka as a message bus:&lt;br/&gt;&lt;img src="https://raw.githubusercontent.com/spring-projects/spring-xd-ambari/master/src/docs/asciidoc/images/xdhdp.png" alt="PIC HDP" /&gt;&lt;/p&gt;&lt;p&gt;After cluster provisioning has been completed successfully, it is easy to connect to a running Spring XD cluster from the XD shell. A command script &lt;code&gt;/etc/springxd/conf/xd-shell.init&lt;/code&gt; is created automatically with correct settings that you can load into the XD shell.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint text"&gt;$ export JAVA_HOME=/usr/jdk64/jdk1.7.0_67&#xD;
-$ xd-shell&#xD;
-server-unknown:&amp;gt;script --file /etc/springxd/conf/xd-shell.init&#xD;
-admin config server http://ambari-2.localdomain:9393&#xD;
-Successfully targeted http://ambari-2.localdomain:9393&#xD;
-hadoop config fs --namenode hdfs://ambari-2.localdomain:8020&#xD;
-Script required 0.625 seconds to execute&#xD;
-&#xD;
-xd:&amp;gt;runtime containers&#xD;
-  Container Id                          Host                  IP Address      PID    Groups  Custom Attributes&#xD;
-  ------------------------------------  --------------------  --------------  -----  ------  -----------------&#xD;
-  44c34156-8b8a-4ada-ad46-e5d955b6f995  ambari-6.localdomain  172.16.101.146  6327&#xD;
-  d8273536-c688-4fdd-b370-6bc0f68bdc25  ambari-5.localdomain  172.16.101.145  31199&#xD;
-&#xD;
-&#xD;
-xd:&amp;gt;hadoop fs ls /&#xD;
-Found 9 items&#xD;
-drwxrwxrwx   - yarn      hadoop           0 2015-06-01 04:55 /app-logs&#xD;
-drwxr-xr-x   - gpadmin   gpadmin          0 2015-06-01 04:52 /hawq_data&#xD;
-drwxr-xr-x   - mapred    hdfs             0 2015-06-01 04:50 /mapred&#xD;
-drwxr-xr-x   - hdfs      hdfs             0 2015-06-01 04:50 /mr-history&#xD;
-drwxr-xr-x   - hdfs      hdfs             0 2015-06-01 04:51 /phd&#xD;
-drwxr-xr-x   - hdfs      hdfs             0 2015-06-01 04:52 /system&#xD;
-drwxrwxrwx   - hdfs      hdfs             0 2015-06-01 04:53 /tmp&#xD;
-drwxr-xr-x   - hdfs      hdfs             0 2015-06-01 04:53 /user&#xD;
-drwxrwxrwx   - spring-xd hdfs             0 2015-06-01 07:29 /xd
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Writing into HDFS works out of the box.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint text"&gt;xd:&amp;gt;stream create --name hdfstest --definition &amp;quot;time|hdfs&amp;quot; --deploy&#xD;
-xd:&amp;gt;stream destroy --name hdfstest&#xD;
-&#xD;
-xd:&amp;gt;hadoop fs ls --recursive true --dir /xd&#xD;
-drwxrwxrwx   - spring-xd hdfs          0 2015-06-01 07:29 /xd/hdfstest&#xD;
--rw-r--r--   3 spring-xd hdfs        680 2015-06-01 07:29 /xd/hdfstest/hdfstest-0.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;&lt;a href="#springone-2gx-2015-is-around-the-corner" class="anchor" name="springone-2gx-2015-is-around-the-corner"&gt;&lt;/a&gt;SpringOne 2GX 2015 is around the corner!&lt;/h1&gt;&lt;p&gt;Book your place at &lt;a href="http://www.springone2gx.com"&gt;SpringOne2GX in Washington, DC soon&lt;/a&gt;. Super Early Bird Price expires June 12th! It&amp;rsquo;s simply the best opportunity to find out first hand all that&amp;rsquo;s going on and to provide direct feedback.&lt;/p&gt;&lt;h1&gt;&lt;a href="#discounts" class="anchor" name="discounts"&gt;&lt;/a&gt;Discounts&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;The Super Early Bird price tier ($300 discount) expires June 12th. The Early Bird price tier (June 13th - August 14th) is discounted $150.&lt;/li&gt;
-  &lt;li&gt;Register 4 and get the 5th pass free. Contact us with the names of your first 4 registrants for your complimentary pass code (conference admission only).&lt;/li&gt;
-  &lt;li&gt;Alumni, contact us for your discount code ($150 off any option).&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

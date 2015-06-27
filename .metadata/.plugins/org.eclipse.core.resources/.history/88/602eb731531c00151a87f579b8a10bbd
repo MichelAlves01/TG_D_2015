@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+ <mapper namespace="delivery.api.dao.EmpresaDAO">
+ 	
+ 	<insert id="cadastrarEmpresaDAO" parameterType="delivery.model.Empresa">
+ 		insert into empresa (	cnpj_cpf, 
+ 								nome, 
+ 								endereco, 
+ 								idCidade, 
+ 								telefone_fixo, 
+ 								telefone_movel, 
+ 								cep, 
+ 								email, 
+ 								tipo_empresa, 
+ 								raio, 
+ 								usa_agenda, 
+ 								latitude, 
+ 								longitude, 
+ 								avaliacao,
+ 								status
+ 							) values (
+ 								#{cpfCnpj},
+ 								#{nome},
+ 								#{endereco},
+ 								#{idCidade},
+ 								#{telefoneFixo},
+ 								#{telefoneMovel},
+ 								#{cep},
+ 								#{email},
+ 								#{tipo},
+ 								#{raio},
+ 								#{usaAgenda},
+ 								#{latitude},
+ 								#{longitude},
+ 								#{avaliacao},
+ 								0
+ 							)
+ 	</insert>
+ 	
+ 	<update id="atualizarEmpresaDAO" parameterType="delivery.model.Empresa">
+ 		update Empresa set 
+ 								cpf_cnpj = #{cpfCnpj}, 
+ 								nome = #{nome}, 
+ 								endereco = #{endereco}, 
+ 								idCidade = #{id_Cidade}, 
+ 								telefone_fixo = #{telefone_fixo}, 
+ 								telefone_movel = #{telefone_movel}, 
+ 								cep = #{cep}, 
+ 								email = #{email}, 
+ 								tipo_empresa = #{tipo}, 
+ 								raio = #{raio}, 
+ 								usa_agenda = #{usaAgenda}, 
+ 								latitude = #{latitude}, 
+ 								longitude = #{longitude}, 
+ 								avaliacao = #{avaliacao},
+ 								status = 0
+ 	</update>
+ 	
+ 	<update id="excluirEmpresaDAO" parameterType="java.lang.String">
+ 		update Empresa set status = 1
+ 	</update>
+ 	
+ 	<select id="getEmpresaDAO" parameterType="java.lang.String" resultType="delivery.model.Empresa">
+ 		SELECT 	cnpj_cpf AS cpfCnpj, 
+ 				nome, 
+ 				endereco, 
+ 				id_Cidade AS idCidade , 
+ 				telefone_fixo AS telefoneFixo, 
+ 				telefone_movel AS telefoneMovel, 
+ 				cep, 
+ 				email, 
+ 				tipo_empresa AS tipo, 
+ 				raio, 
+ 				usa_agenda AS usaAgenda, 
+ 				latitude, 
+ 				longitude, 
+ 				avaliacao,
+ 				status
+ 		FROM
+ 				empresa
+ 		WHERE
+ 				cpf_cnpj = #{cpfCnpj}
+ 	</select>
+ 	
+ 	<select id="getEmpresasDAO" resultType="delivery.model.Empresa">
+ 		select 	cnpj_cpf AS cpfCnpj, 
+ 				nome, 
+ 				endereco, 
+ 				id_Cidade AS idCidade , 
+ 				telefone_fixo AS telefoneFixo, 
+ 				telefone_movel AS telefoneMovel, 
+ 				cep, 
+ 				email, 
+ 				tipo_empresa AS tipo, 
+ 				raio, 
+ 				usa_agenda AS usaAgenda, 
+ 				latitude, 
+ 				longitude, 
+ 				avaliacao,
+ 				status
+ 		FROM
+ 				empresa
+ 	</select>
+ 	
+ 	<select id="getEmpresasPorTipoDAO" parameterType="java.lang.String" resultType="delivery.model.Empresa">
+ 		select 	cpf_cnpj as cpfCnpj, 
+ 				nome, 
+ 				endereco, 
+ 				id_Cidade as idCidade , 
+ 				telefone_fixo as telefoneFixo, 
+ 				telefone_movel as telefoneMovel, 
+ 				cep, 
+ 				email, 
+ 				tipo_empresa as tipo, 
+ 				raio, 
+ 				usa_agenda as usaAgenda, 
+ 				latitude, 
+ 				longitude, 
+ 				avaliacao,
+ 				status
+ 	</select>
+ 	
+ 	
+ </mapper>

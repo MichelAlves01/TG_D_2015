@@ -21,6 +21,12 @@
 			<version>0.0.1-SNAPSHOT</version>
     	</dependency>
     	
+    	<dependency>
+    		<groupId>delivery.service</groupId>
+			<artifactId>DELIVERY_SERVICE</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
+    	
     	 <dependency>
 	    	<groupId>delivery</groupId>
 	  		<artifactId>DELIVERY_MODEL</artifactId>
