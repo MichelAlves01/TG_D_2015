@@ -1,8 +1,8 @@
 		
 		<font><center>Preencha os campos abaixo para se cadastrar</center></font>	
-			<form class="horizontal-form" ng-controller="cadastroEmpresaInicio">	
+			<form class="horizontal-form" ng-controller="cadastroEmpresaInicio">
 				<table>
-					<tr>
+					<tr>	
 						<td>
 							<label>Nome da sua empresa</label>						
 							<input type="text" name="nome" class="input-xxlarge"  ng-model="nome" placeholder="Minha emoresa" class="ng-pristine ng-invalid" maxlength="200" required="true"/>
@@ -16,4 +16,7 @@
 						</td>
 					</tr>
 				</table>
+				<div class="alert alert-error" style="z-index: -1;" ng-show="thisCpfExiste()">
+						  		Este CPF ou CNPJ já está cadastrado.
+							</div>
 			</form>

@@ -29,17 +29,14 @@ public class EmpresaService {
 		List<Empresa> empresas = new ArrayList<Empresa>();
 		return empresas;
 	}
-	/**
-	 * esta função verifica se o cpf ou cnpj não existe no banco de dados
-	 * @param empresa
-	 */
+	
 	public void verificaCpf(Empresa empresa){
 		empresaImpl = new EmpresaImpl();
 		List<Empresa> empresas = empresaImpl.getEmpresasDAO();
 		boolean cpfNotExiste = true;
 		
 		for (Empresa emp : empresas) {
-			if(emp.getCpfCnpj().equals(empresa.getCpfCnpj())){
+			if(emp.getCpfCnpj() == empresa.getCpfCnpj()){
 				cpfNotExiste = false;
 			}
 		}

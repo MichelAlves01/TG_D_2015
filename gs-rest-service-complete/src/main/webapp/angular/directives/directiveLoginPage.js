@@ -1,5 +1,4 @@
 (function(){
-  
   var app = angular.module('Login-Pages' , []);
   app.directive('login', function(){
   	return{

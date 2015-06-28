@@ -11,6 +11,7 @@
 		    var latitude = null;
 		    var latLongTest = null;
 			var latLong = null;
+			var cpfExiste = false;
 			 
 
 		    $scope.iniciaCadastroEmpresa = function (){
@@ -20,11 +21,10 @@
 		    	$http.post(urlBase + '/iniciaCadastroEmpresa?'+ data).
 	        													success(function(data,status) {
 	        														$scope.empresa = data;
-	        														console.log("$scope.empresa.status : " + $scope.empresa.status);
 	        													if($scope.empresa.status == 1){
-																	console.log("CPF ou CNPJ já cadastrado");
+																	cpfExiste = true;
 																} else {
-																	location.href="CadastroEmpresas.html"
+																	location.href="index.html"
 																}	
 	           													 
 	           			});
@@ -34,6 +34,7 @@
 	            	}
 	        	}
 		    }	
+
 
 		    $scope.validaCpfCnpj = function(){
 
@@ -63,7 +64,6 @@
 
 		    		var cnpj = $scope.cpfCnpj;
 		    		cnpj = cnpj.replace(/[^\d]+/g,'');
-		    		alert(cnpj);
 
 				    if(cnpj == '') return false;
 
@@ -122,12 +122,21 @@
 		    $scope.isValidCpfCnpj = function(){
 		    	return statusCpfCnpj;
 		    }
+
+		    $scope.thisCpfExiste = function(){
+		    	if($scope.cpfCnpj == null){
+		    		cpfExiste = false;
+		    	}
+		    	return cpfExiste;
+
+		    }
 		    
 	  });
 
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
 			 var fieldsValid = true;
+			 var depoisCadastro = false;
 
 			/*verifica quais abas devem estar ativas*/
 			$scope.finishing = function(){
@@ -139,7 +148,9 @@
 		    			$("#atualizar").hide();
 		    			$("#excluir").hide();
 		    		} else {
-		    			/*To do*/
+		    			$("#cadastro").Attr("disabled");
+		    			$("#atualizar").hide();
+		    			$("#excluir").hide();
 		    		}
 					
 				});
@@ -190,7 +201,8 @@
 							console.log("enviando para o servidor");
 							
 								$http.post(urlBase + '/cadastrarEmpresaController?' + data).success();
-								location.href="PaginaPrincipal.html"
+								depoisCadastro = true;
+								console.log("depoisCadastro : " + depoisCadastro);
 				} else {
 					console.log("Existem campos não preenchido");
 				} 
@@ -243,7 +255,6 @@
 				    if (status == google.maps.GeocoderStatus.OK) {
 				      	map.setCenter(results[0].geometry.location);
 				   		latLong = results[0].geometry.location;
-				   		console.log(latLong);
 				   		var resLatLong = latLong.toString().split(","); 
 				   		latitude = resLatLong[0].replace("(", ""); 
 				   		longitude = resLatLong[1].replace(")", "");
@@ -268,7 +279,6 @@
 		/*Validaçoes de campos no cadastro de empresas*/
 		
 		$scope.isValidAll = function(){	
-				console.log("fieldsValid : " + fieldsValid)	
 				return fieldsValid;
 		}
 
@@ -390,6 +400,11 @@
 			} else {
 				return false;
 			}
+		}
+
+		$scope.depoisCadastroEmpresa = function(){
+			console.log("depoisCadatro 2: " + depoisCadastro);
+			return depoisCadastro;
 		}
 		
 		});
