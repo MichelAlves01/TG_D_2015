@@ -5,7 +5,50 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-06-26T12:41:00Z</updated>
+  <updated>2015-06-30T22:39:11Z</updated>
+  <entry>
+    <title>Spring Framework 4.2.RC2 Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/06/30/spring-framework-4-2-rc2-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2015-06-30:2176</id>
+    <updated>2015-06-30T22:39:11Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team I am pleased to announce the second release candidate of Spring Framework 4.2 is now available from our &lt;a href="http://repo.spring.io/milestone/"&gt;milestone repository&lt;/a&gt;. This release includes &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10000&amp;version=15096"&gt;over 70 fixes and improvements&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/SPR"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/4.2.0.RC2/spring-framework-reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 4.1.7 &amp; 3.2.14 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/06/30/spring-framework-4-1-7-3-2-14-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2015-06-30:2173</id>
+    <updated>2015-06-30T18:15:04Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;&lt;p&gt;I&amp;rsquo;m pleased to announce that the Spring Framework &lt;a href="https://jira.spring.io/browse/SPR/fixforversion/14936"&gt;4.1.7&lt;/a&gt; and &lt;a href="https://jira.spring.io/browse/SPR/fixforversion/14932"&gt;3.2.14&lt;/a&gt; maintenance releases are &lt;a href="http://projects.spring.io/spring-framework/"&gt;available now&lt;/a&gt;. Aside from fixing &lt;a href="https://jira.spring.io/issues/?jql=project%20%3D%20SPR%20AND%20fixVersion%20%3D%204.1.7"&gt;various minor issues&lt;/a&gt; across the framework, these releases also address an &lt;a href="http://pivotal.io/security/cve-2015-3192"&gt;XML parsing vulnerability&lt;/a&gt; through disabling DTD processing by default when parsing untrusted XML input in Spring MVC endpoints.&lt;/p&gt;&lt;p&gt;Note that Spring Framework 3.2.x has its End-of-Life scheduled for &lt;a href="https://spring.io/blog/2015/06/15/spring-framework-3-2-x-eol-on-dec-31-2016"&gt;December 31, 2016&lt;/a&gt;. Based on demand and vulnerability reports, further maintenance releases will be made available up until then. At the same time, we strongly recommend a &lt;a href="https://github.com/spring-projects/spring-framework/wiki/Migrating-from-earlier-versions-of-the-spring-framework"&gt;migration&lt;/a&gt; to Spring Framework 4.1.7 or the upcoming &lt;a href="https://jira.spring.io/browse/SPR/fixforversion/14954"&gt;4.2&lt;/a&gt; at this point; please plan accordingly!&lt;/p&gt;&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;&lt;p&gt;&lt;i&gt;P.S.: Stay tuned for Spring Framework 4.2 RC2, following right away!&lt;/i&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tool Suite 3.7.0 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/06/30/spring-tool-suite-3-7-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2015-06-30:2174</id>
+    <updated>2015-06-30T14:13:11Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;&lt;p&gt;I am happy to announce the 3.7.0 release of the Spring Tool Suite, our Eclipse-based tooling.&lt;/p&gt;&lt;p&gt;Highlights from this release include:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;updated to Eclipse Mars 4.5 GA (including many fixes and improvements for Java8)&lt;/li&gt;&#xD;
+&lt;li&gt;Spring Boot YML properties editor (including content-assist, hovers, navigation, and errors/warnings)&lt;/li&gt;&#xD;
+&lt;li&gt;improved support for Cloud Foundry&lt;/li&gt;&#xD;
+&lt;li&gt;Pivotal tc Server updated to 3.1.1&lt;/li&gt;&#xD;
+&lt;li&gt;early support for Spring Roo 2.0.0.M1 (thanks to Disid)&lt;/li&gt;&#xD;
+&lt;/ul&gt;&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Spring Tool Suite: &lt;a href="https://spring.io/tools/sts/all"&gt;https://spring.io/tools/sts/all&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;/ul&gt;&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v370/NewAndNoteworthy.html"&gt;STS 3.7.0 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;STS 3.7.1 is scheduled to ship in early October 2015, shortly after the Eclipse Mars SR1 release.&lt;/p&gt;&lt;p&gt;Enjoy!&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud service release: Angel.SR3</title>
     <link rel="alternate" href="https://spring.io/blog/2015/06/26/spring-cloud-service-release-angel-sr3" />
@@ -22,10 +65,10 @@
   &lt;li&gt;&lt;p&gt;Additional options for config clients to handle decryption themselves, including the ability to decrypt properties in &lt;code&gt;bootstrap.yml&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
   &lt;li&gt;&lt;p&gt;Additional cryptography configuration options for new RSA and AES algorithms&lt;/p&gt;&lt;/li&gt;
   &lt;li&gt;&lt;p&gt;A strategy for key rotation with a &lt;code&gt;TextEncryptorLocator&lt;/code&gt; strategy that users can implement to look up keys dynamically.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#release-train" class="anchor" name="release-train"&gt;&lt;/a&gt;Release Train&lt;/h2&gt;&lt;p&gt;Spring Cloud is an umbrella project consisting of independent projects with, in principle, different release cadences. To manage the protfolio a BOM (Bill of Materials) is published with a curated set of dependencies on the individual project (see below). The release trains have names, not versions, to avoid confusion with the sub-projects. The names are an alphabetic sequence (so you can sort them chronologically) with names of London Tube stations (&amp;ldquo;Angel&amp;rdquo; is the first release, &amp;ldquo;Brixton&amp;rdquo; is the second). When point releases of the individual projects accumulate to a critical mass, or if there is a critical bug in one of them that needs to be available to everyone, the release train will push out &amp;ldquo;service releases&amp;rdquo; with names ending &amp;ldquo;.SRX&amp;rdquo;, where &amp;ldquo;X&amp;rdquo; is a number.&lt;/p&gt;&lt;p&gt;The release train is a new thing with this release (Angel.SR3) but the older releases have been re-released (same artifact, different version) as &amp;ldquo;Angel,[RELEASE,SR1,SR2]&amp;rdquo; corresponding to 1.0.0, 1.0.1, 1.0.2 respectively. The release train label is actually only used explicitly in one artifact: &amp;ldquo;spring-cloud-starter-parent&amp;rdquo; (all the others have normal &amp;ldquo;Spring&amp;rdquo; release labels tied to their parent project). The starter parent is the one you can use as a BOM for dependency management or as a parent POM (Maven only). Example using the latest version with the config client and eureka (change the artifact ids to pull in other starters), with Maven with a parent POM:&lt;/p&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#release-train" class="anchor" name="release-train"&gt;&lt;/a&gt;Release Train&lt;/h2&gt;&lt;p&gt;Spring Cloud is an umbrella project consisting of independent projects with, in principle, different release cadences. To manage the portfolio a BOM (Bill of Materials) is published with a curated set of dependencies on the individual project (see below). The release trains have names, not versions, to avoid confusion with the sub-projects. The names are an alphabetic sequence (so you can sort them chronologically) with names of London Tube stations (&amp;ldquo;Angel&amp;rdquo; is the first release, &amp;ldquo;Brixton&amp;rdquo; is the second). When point releases of the individual projects accumulate to a critical mass, or if there is a critical bug in one of them that needs to be available to everyone, the release train will push out &amp;ldquo;service releases&amp;rdquo; with names ending &amp;ldquo;.SRX&amp;rdquo;, where &amp;ldquo;X&amp;rdquo; is a number.&lt;/p&gt;&lt;p&gt;The release train is a new thing with this release (Angel.SR3) but the older releases have been re-released (same artifact, different version) as &amp;ldquo;Angel,[RELEASE,SR1,SR2]&amp;rdquo; corresponding to 1.0.0, 1.0.1, 1.0.2 respectively. The release train label is actually only used explicitly in one artifact: &amp;ldquo;spring-cloud-starter-parent&amp;rdquo; (all the others have normal &amp;ldquo;Spring&amp;rdquo; release labels tied to their parent project). The starter parent is the one you can use as a BOM for dependency management or as a parent POM (Maven only). Example using the latest version with the config client and eureka (change the artifact ids to pull in other starters), with Maven with a parent POM:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;parent&amp;gt;&#xD;
   &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-cloud-statrer-parent&amp;lt;/artifactId&amp;gt;&#xD;
+  &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;&#xD;
   &amp;lt;version&amp;gt;Angel.SR3&amp;lt;/version&amp;gt;&#xD;
 &amp;lt;/parent&amp;gt;&#xD;
 &amp;lt;dependencies&amp;gt;&#xD;
@@ -618,141 +661,5 @@ EvernoteOAuthToken accessToken = (EvernoteOAuthToken)oAuth1Operations.exchangeFo
   &lt;li&gt;I loved Camille Fournier&amp;rsquo;s interview &lt;a href="http://www.infoq.com/interviews/fournier-consensus"&gt;on various consensus software (like ZooKeeper, and Etcd)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;I gave a talk at the local San Francisco Java User Group last month &lt;a href="https://www.youtube.com/watch?v=sbPSjI4tt10&amp;feature=youtu.be"&gt;introducing Spring Boot&lt;/a&gt; and people seem to like it. I hope you will to.&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>CORS support in Spring Framework</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/08/cors-support-in-spring-framework" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Sébastien Deleuze</name>
-    </author>
-    <id>tag:spring.io,2015-05-27:2140</id>
-    <updated>2015-06-08T11:45:00Z</updated>
-    <content type="html">&lt;p&gt;For security reasons, browsers prohibit AJAX calls to resources residing outside the current origin. For example, as you&amp;rsquo;re checking your bank account in one tab, you could have the evil.com website in another tab. The scripts from evil.com shouldn’t be able to make AJAX requests to your bank API (withdrawing money from your account!) using your credentials.&lt;/p&gt;&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing"&gt;Cross-origin resource sharing&lt;/a&gt; (CORS) is a &lt;a href="http://www.w3.org/TR/cors/"&gt;W3C specification&lt;/a&gt; implemented by &lt;a href="http://caniuse.com/#feat=cors"&gt;most browsers&lt;/a&gt; that allows you to specify in a flexible way what kind of cross domain requests are authorized, instead of using some less secured and less powerful hacks like IFrame or JSONP.&lt;/p&gt;&lt;p&gt;The recently released &lt;a href="https://spring.io/blog/2015/05/26/spring-framework-4-2-goes-rc1"&gt;Spring Framework 4.2 RC1&lt;/a&gt; provides &lt;a href="https://jira.spring.io/browse/SPR-9278"&gt;first class support for CORS&lt;/a&gt; out-of-the-box, giving you an easier and more powerful way to configure it than typical &lt;a href="http://software.dzhuvinov.com/cors-filter.html"&gt;filter based&lt;/a&gt; solutions.&lt;/p&gt;&lt;p&gt;Spring MVC provides high-level configuration facilities, described bellow.&lt;/p&gt;&lt;h2&gt;&lt;a href="#controller-method-cors-configuration" class="anchor" name="controller-method-cors-configuration"&gt;&lt;/a&gt;Controller method CORS configuration&lt;/h2&gt;&lt;p&gt;You can add to your &lt;code&gt;@RequestMapping&lt;/code&gt; annotated handler method a &lt;a href="http://docs.spring.io/spring-framework/docs/4.2.x/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html"&gt;&lt;code&gt;@CrossOrigin&lt;/code&gt;&lt;/a&gt; annotation in order to enable CORS on it (by default &lt;code&gt;@CrossOrigin&lt;/code&gt; allows all origins and the HTTP methods specified in the &lt;code&gt;@RequestMapping&lt;/code&gt; annotation):&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@RestController&#xD;
-@RequestMapping(&amp;quot;/account&amp;quot;)&#xD;
-public class AccountController {&#xD;
-&#xD;
-	@CrossOrigin&#xD;
-	@RequestMapping(&amp;quot;/{id}&amp;quot;)&#xD;
-	public Account retrieve(@PathVariable Long id) {&#xD;
-		// ...&#xD;
-	}&#xD;
-&#xD;
-	@RequestMapping(method = RequestMethod.DELETE, value = &amp;quot;/{id}&amp;quot;)&#xD;
-	public void remove(@PathVariable Long id) {&#xD;
-		// ...&#xD;
-	}&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It is also possible to enable CORS for the whole controller:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@CrossOrigin(origins = &amp;quot;http://domain2.com&amp;quot;, maxAge = 3600)&#xD;
-@RestController&#xD;
-@RequestMapping(&amp;quot;/account&amp;quot;)&#xD;
-public class AccountController {&#xD;
-&#xD;
-	@RequestMapping(&amp;quot;/{id}&amp;quot;)&#xD;
-	public Account retrieve(@PathVariable Long id) {&#xD;
-		// ...&#xD;
-	}&#xD;
-&#xD;
-	@RequestMapping(method = RequestMethod.DELETE, value = &amp;quot;/{id}&amp;quot;)&#xD;
-	public void remove(@PathVariable Long id) {&#xD;
-		// ...&#xD;
-	}&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example CORS support is enabled for both &lt;code&gt;retrieve()&lt;/code&gt; and &lt;code&gt;remove()&lt;/code&gt; handler methods, and you can also see how you can customize the CORS configuration using &lt;code&gt;@CrossOrigin&lt;/code&gt; attributes.&lt;/p&gt;&lt;p&gt;You can even use both controller and method level CORS configurations, Spring will then combine both annotation attributes to create a merged CORS configuration.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@CrossOrigin(maxAge = 3600)&#xD;
-@RestController&#xD;
-@RequestMapping(&amp;quot;/account&amp;quot;)&#xD;
-public class AccountController {&#xD;
-&#xD;
-	@CrossOrigin(origins = &amp;quot;http://domain2.com&amp;quot;)&#xD;
-	@RequestMapping(&amp;quot;/{id}&amp;quot;)&#xD;
-	public Account retrieve(@PathVariable Long id) {&#xD;
-		// ...&#xD;
-	}&#xD;
-&#xD;
-	@RequestMapping(method = RequestMethod.DELETE, value = &amp;quot;/{id}&amp;quot;)&#xD;
-	public void remove(@PathVariable Long id) {&#xD;
-		// ...&#xD;
-	}&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#global-cors-configuration" class="anchor" name="global-cors-configuration"&gt;&lt;/a&gt;Global CORS configuration&lt;/h2&gt;&lt;p&gt;In addition to fine-grained, annotation-based configuration you&amp;rsquo;ll probably want to define some global CORS configuration as well. This is similar to using filters but can be declared withing Spring MVC and combined with fine-grained &lt;code&gt;@CrossOrigin&lt;/code&gt; configuration. By default all origins and &lt;code&gt;GET&lt;/code&gt;, &lt;code&gt;HEAD&lt;/code&gt; and &lt;code&gt;POST&lt;/code&gt; methods are allowed.&lt;/p&gt;&lt;p&gt;The global configuration API &lt;a href="https://github.com/spring-projects/spring-framework/commit/0c3b34f7d5448f26b4484856bdabb5f225d37453"&gt;has changed&lt;/a&gt; after Spring Framework 4.2 RC1, so be sure to use current 4.2.0.BUILD-SNAPSHOT builds or the upcoming 4.2.0.RC2 release.&lt;/p&gt;&lt;h3&gt;&lt;a href="#javaconfig" class="anchor" name="javaconfig"&gt;&lt;/a&gt;JavaConfig&lt;/h3&gt;&lt;p&gt;Enabling CORS for the whole application is as simple as:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableWebMvc&#xD;
-public class WebConfig extends WebMvcConfigurerAdapter {&#xD;
-&#xD;
-	@Override&#xD;
-	public void addCorsMappings(CorsRegistry registry) {&#xD;
-		registry.addMapping(&amp;quot;/**&amp;quot;);&#xD;
-	}&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can easily change any properties, as well as only apply this CORS configuration to a specific path pattern:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableWebMvc&#xD;
-public class WebConfig extends WebMvcConfigurerAdapter {&#xD;
-&#xD;
-	@Override&#xD;
-	public void addCorsMappings(CorsRegistry registry) {&#xD;
-		registry.addMapping(&amp;quot;/api/**&amp;quot;)&#xD;
-			.allowedOrigins(&amp;quot;http://domain2.com&amp;quot;)&#xD;
-			.allowedMethods(&amp;quot;PUT&amp;quot;, &amp;quot;DELETE&amp;quot;)&#xD;
-			.allowedHeaders(&amp;quot;header1&amp;quot;, &amp;quot;header2&amp;quot;, &amp;quot;header3&amp;quot;)&#xD;
-			.exposedHeaders(&amp;quot;header1&amp;quot;, &amp;quot;header2&amp;quot;)&#xD;
-			.allowCredentials(false).maxAge(3600);&#xD;
-	}&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#xml-namespace" class="anchor" name="xml-namespace"&gt;&lt;/a&gt;XML namespace&lt;/h3&gt;&lt;p&gt;As of Spring Framework 4.2 RC2, it will also be possible to configure CORS with the &lt;a href="https://jira.spring.io/browse/SPR-13046"&gt;mvc XML namespace&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This minimal XML configuration enable CORS on &lt;code&gt;/**&lt;/code&gt; path pattern with the same default properties than the JavaConfig one:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;mvc:cors&amp;gt;&#xD;
-	&amp;lt;mvc:mapping path=&amp;quot;/**&amp;quot; /&amp;gt;&#xD;
-&amp;lt;/mvc:cors&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It is also possible to declare several CORS mappings with customized properties:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;mvc:cors&amp;gt;&#xD;
-&#xD;
-	&amp;lt;mvc:mapping path=&amp;quot;/api/**&amp;quot;&#xD;
-		allowed-origins=&amp;quot;http://domain1.com, http://domain2.com&amp;quot;&#xD;
-		allowed-methods=&amp;quot;GET, PUT&amp;quot;&#xD;
-		allowed-headers=&amp;quot;header1, header2, header3&amp;quot;&#xD;
-		exposed-headers=&amp;quot;header1, header2&amp;quot; allow-credentials=&amp;quot;false&amp;quot;&#xD;
-		max-age=&amp;quot;123&amp;quot; /&amp;gt;&#xD;
-&#xD;
-	&amp;lt;mvc:mapping path=&amp;quot;/resources/**&amp;quot;&#xD;
-		allowed-origins=&amp;quot;http://domain1.com&amp;quot; /&amp;gt;&#xD;
-&#xD;
-&amp;lt;/mvc:cors&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#how-does-it-work" class="anchor" name="how-does-it-work"&gt;&lt;/a&gt;How does it work?&lt;/h2&gt;&lt;p&gt;CORS requests (&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-webmvc/src/main/java/org/springframework/web/servlet/FrameworkServlet.java#L906"&gt;including preflight ones with an &lt;code&gt;OPTIONS&lt;/code&gt; method&lt;/a&gt;) are automatically dispatched to the various &lt;code&gt;HandlerMapping&lt;/code&gt;s registered. They handle CORS preflight requests and intercept CORS simple and actual requests thanks to a &lt;a href="http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/web/cors/CorsProcessor.html"&gt;CorsProcessor&lt;/a&gt; implementation (&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/cors/DefaultCorsProcessor.java"&gt;DefaultCorsProcessor&lt;/a&gt; by default) in order to add the relevant CORS response headers (like &lt;code&gt;Access-Control-Allow-Origin&lt;/code&gt;). &lt;a href="http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/web/cors/CorsConfiguration.html"&gt;CorsConfiguration&lt;/a&gt; allows you to specify how the CORS requests should be processed: allowed origins, headers, methods, etc. It can be provided in various ways:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/web/servlet/handler/AbstractHandlerMapping.html#setCorsConfiguration-java.util.Map-"&gt;&lt;code&gt;AbstractHandlerMapping#setCorsConfiguration()&lt;/code&gt;&lt;/a&gt; allows to specify a &lt;code&gt;Map&lt;/code&gt; with several &lt;a href="http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/web/cors/CorsConfiguration.html"&gt;CorsConfiguration&lt;/a&gt; mapped on path patterns like &lt;code&gt;/api/**&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Subclasses can provide their own &lt;code&gt;CorsConfiguration&lt;/code&gt; by overriding &lt;code&gt;AbstractHandlerMapping#getCorsConfiguration(Object, HttpServletRequest)&lt;/code&gt; method&lt;/li&gt;
-  &lt;li&gt;Handlers can implement &lt;a href="http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/web/cors/CorsConfigurationSource.html"&gt;&lt;code&gt;CorsConfigurationSource&lt;/code&gt;&lt;/a&gt; interface (like &lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-webmvc/src/main/java/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.java"&gt;&lt;code&gt;ResourceHttpRequestHandler&lt;/code&gt;&lt;/a&gt; now does) in order to provide a &lt;a href="http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/web/cors/CorsConfiguration.html"&gt;CorsConfiguration&lt;/a&gt; for each request.&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#spring-boot-integration" class="anchor" name="spring-boot-integration"&gt;&lt;/a&gt;Spring Boot integration&lt;/h2&gt;&lt;p&gt;CORS support will be available in the upcoming Spring Boot 1.3 release, and is already available in the 1.3.0.BUILD-SNAPSHOT builds.&lt;/p&gt;&lt;p&gt;If fine grained CORS configuration is already a perfect fit for Spring Boot applications, a more &amp;ldquo;Bootiful&amp;rdquo; way to configure global CORS configuration (based on &lt;a href="http://docs.spring.io/spring/docs/4.2.x/javadoc-api/org/springframework/web/cors/CorsConfiguration.html"&gt;CorsConfiguration&lt;/a&gt; or &lt;a href="http://docs.spring.io/spring-framework/docs/4.2.0.BUILD-SNAPSHOT/javadoc-api/org/springframework/web/servlet/config/annotation/CorsRegistry.html"&gt;CorsRegistry&lt;/a&gt; bean declaration) is likely to be provided with Spring Boot 1.3. See &lt;a href="https://github.com/spring-projects/spring-boot/issues/3052#issuecomment-106235392"&gt;this issue&lt;/a&gt; for more details.&lt;/p&gt;&lt;p&gt;As usual, feedbacks are welcome!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Happy second birthday, Java EE 7! How is it going in production?</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/04/happy-second-birthday-java-ee-7-how-is-it-going-in-production" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Juergen Hoeller</name>
-    </author>
-    <id>tag:spring.io,2015-06-02:2149</id>
-    <updated>2015-06-04T17:00:00Z</updated>
-    <content type="html">&lt;p&gt;&lt;i&gt;Note that there&amp;rsquo;s a follow-up blog post about &lt;a href="https://spring.io/blog/2015/06/10/feedback-welcome-spring-5-system-requirements"&gt;Spring 5 system requirements&lt;/a&gt;. You might want to start there if you&amp;rsquo;re primarily interested in the Spring 5 planning process.&lt;/i&gt;&lt;/p&gt;&lt;p&gt;In our quest for Java EE integration, we&amp;rsquo;re trying to actively embrace the latest generation of specifications such as JPA, Bean Validation and of course the Servlet and JMS APIs. As of Spring 4, we&amp;rsquo;re supporting the &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/new-in-4.0.html#_java_ee_6_and_7"&gt;Java EE 6 and 7 level of specifications side by side&lt;/a&gt;. We would like to raise it to the EE 7+ level (JPA 2.1, Bean Validation 1.1, and in particular Servlet 3.1 and JMS 2.0) soon but are facing a fundamental problem: &lt;b&gt;the lack of EE 7 platform adoption.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The &lt;a href="https://jcp.org/en/jsr/detail?id=342"&gt;Java EE 7 platform&lt;/a&gt; has been released in May 2013 and is therefore two years old now. Surprisingly, it&amp;rsquo;s hardly to be found in production yet. But then that&amp;rsquo;s not so surprising really: While &lt;a href="http://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html"&gt;a few projects have been certified for EE 7 in the meantime&lt;/a&gt;, the lack of major vendors is apparent: There are no major EE 7 servers with production support yet, not for the web profile and not for the full platform either. As of June 2015, the common EE vendors still sell licenses for servers based on &lt;a href="https://jcp.org/en/jsr/detail?id=316"&gt;2009-era Java EE 6 APIs&lt;/a&gt;. And it&amp;rsquo;s not just the traditional suspects:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Tomitribe provides support for &lt;a href="http://tomee.apache.org/"&gt;TomEE 1.7&lt;/a&gt;, a Tomcat 7 based EE 6 Web Profile stack, based on 2009-era EE 6 APIs but compatible with JSR-356 WebSockets and JDK 8 at least. TomEE 7.0 (as recently rebranded from TomEE 2.0) will be a Java EE 7 Web Profile offering based on Tomcat 8 but hasn&amp;rsquo;t been released yet (as of June 2015).&lt;/li&gt;
-  &lt;li&gt;Red Hat&amp;rsquo;s most recent support offering is &lt;a href="http://www.jboss.org/products/eap/overview/"&gt;JBoss EAP 6.4&lt;/a&gt;, a JBoss 7 based EE 6 stack with JSR-356 WebSockets and JDK 8 support. Note that, from Red Hat&amp;rsquo;s perspective, WildFly is an R&amp;amp;D project: It comes with frequent feature releases (thumbs up for that) but unfortunately without maintenance releases or any kind of production support.&lt;/li&gt;
-  &lt;li&gt;Oracle ships &lt;a href="https://docs.oracle.com/middleware/1213/wls/INTRO/compatibility.htm#INTRO112"&gt;WebLogic 12.1.3&lt;/a&gt;, an EE 6 server with a bit of EE 7 (JPA 2.1, JAX-RS 2.0, JSR-356 WebSockets) and JDK 8 support. WebLogic 12.2.1 (formerly announced as 12.1.4 for a while) as a full EE 7 server is still not released (as of June 2015). And from Oracle&amp;rsquo;s perspective, GlassFish 4 is just an RI, with WebLogic as the production upgrade path.&lt;/li&gt;
-  &lt;li&gt;The IBM WebSphere team does a fine job implementing EE 7 specs for the &lt;a href="https://developer.ibm.com/wasdev/blog/2015/05/20/java-ee-7-in-liberty-so-far/"&gt;WebSphere Liberty Profile&lt;/a&gt; (WAS 8.5.5) but hasn&amp;rsquo;t completed the effort yet. At least, some EE 7 modules and JDK 8 are supported in production already, as a kind of feature pack for the Liberty Profile, and WebSphere&amp;rsquo;s full Java EE 7 certification is likely to happen in 2015 still.&lt;br/&gt;&lt;b&gt;HOT NEWS (June 9):&lt;/b&gt; An EE 7 fixpack for WAS 8.5.5 will go GA on &lt;a href="https://developer.ibm.com/wasdev/blog/2015/06/09/java-ee-7-full-platform-support-in-websphere-liberty-coming-26-june/"&gt;June 26&lt;/a&gt;. Kudos, IBM!&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;While several specifications from the EE 7 umbrella have seen individual adoption, e.g. &lt;a href="https://jcp.org/en/jsr/detail?id=338"&gt;JPA 2.1&lt;/a&gt; through Hibernate 4.3 and &lt;a href="https://jcp.org/en/jsr/detail?id=340"&gt;Servlet 3.1&lt;/a&gt; / &lt;a href="https://jcp.org/en/jsr/detail?id=356"&gt;JSR-356 WebSockets&lt;/a&gt; through Tomcat 8 and Jetty 9, it is fair to say that Java EE 7 failed to enter the market as a platform overall. After all, the point of a “platform” is widespread mainstream availability. Ironically, the later-released JDK 8 (March 2014) got embraced in production rather quickly, even in EE land! So the state of the art as of mid 2015 is a vendor-supported Java EE 6 server running on JDK 8 in production&amp;hellip;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Our consequence:&lt;/b&gt; Given the adoption levels of &lt;a href="https://spring.io/blog/2015/06/02/spring-4-and-java-8-adoption"&gt;Spring 4 and Java 8&lt;/a&gt;, we&amp;rsquo;ll raise the minimum to JDK 8+ in our Spring Framework 5 generation. However, due to the lack of Java EE 7 platform adoption, we&amp;rsquo;ll have to retain compatibility with the current generation of application servers: allowing for upcoming Spring 5 applications to be deployed to the JDK 8 based EE 6 servers commonly found in production - just like we do with Spring 4 already, but at least with the extra benefit of going JDK 8+ for our framework codebase and all of its core interfaces.&lt;/p&gt;&lt;p&gt;&lt;b&gt;P.S. (June 6):&lt;/b&gt;&lt;/p&gt;&lt;p&gt;FWIW, I really appreciate &lt;a href="https://glassfish.java.net/"&gt;GlassFish&lt;/a&gt; and &lt;a href="http://wildfly.org/"&gt;WildFly&lt;/a&gt; as open source engineering efforts. Spring has dedicated support for both, and the &lt;a href="http://undertow.io/"&gt;Undertow&lt;/a&gt; HTTP server (under the WildFly umbrella) is a great fit for embedded deployments with Spring Boot. This doesn&amp;rsquo;t change the fact that the project owners (Oracle and Red Hat, respectively) refrain from supporting them, choosing to invest into WebLogic 12 and JBoss EAP 6 for production purposes instead. External support from the likes of Payara (for GlassFish) can only mitigate this to some degree, with large parts of the Java EE market bound to the vendor production offerings - all EE 6 based - in 2015.&lt;/p&gt;&lt;p&gt;For an example for fine production support from the open source project itself, look no further than &lt;a href="http://tomcat.apache.org/"&gt;Tomcat&lt;/a&gt;. The Tomcat project has an admirable track record of fixing bugs and in particular security vulnerabilities very quickly, even across the past three major generations of the server. So I&amp;rsquo;m not arguing for commercial support per se, I&amp;rsquo;m arguing for proper maintenance releases like Tomcat does (and dare I say: like Spring does), whether from the open source project itself or from a commercial support subscription. WildFly for example doesn&amp;rsquo;t have either of those; GlassFish comes with no support from Oracle but at least has a support option via Payara.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.2.4 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/04/spring-boot-1-2-4-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2015-06-04:2155</id>
-    <updated>2015-06-04T11:46:00Z</updated>
-    <content type="html">&lt;p&gt;Spring Boot 1.2.4 has been released and is available now from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.2.4"&gt;small number of fixes&lt;/a&gt; and is a recommended upgrade for all users.&lt;/p&gt;&lt;p&gt;The first milestone of Spring Boot 1.3 will be released in the coming days and adds &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.0.M1"&gt;many exciting features&lt;/a&gt;. Stay tuned!&lt;/p&gt;&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

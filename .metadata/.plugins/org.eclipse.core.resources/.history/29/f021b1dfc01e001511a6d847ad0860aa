@@ -40,7 +40,7 @@ public class EmpresaController {
 	}
 	
 	@RequestMapping(value="/cadastrarEmpresaController", method=RequestMethod.POST)
-	public Empresa cadastrarEmpresa(	@RequestParam(value="tipo") String tipo,
+	public void cadastrarEmpresa(	@RequestParam(value="tipo") String tipo,
 									@RequestParam(value="idCidade") int idCidade,
 									@RequestParam(value="endereco") String endereco,
 									@RequestParam(value="email") String email,
@@ -69,8 +69,6 @@ public class EmpresaController {
 		empresa.setLongitude(lon);
 		
 		empresaImpl = new EmpresaImpl();
-		empresaImpl.cadastrarEmpresaDAO(empresa);
-		
-		return empresa;
+		empresaImpl.cadastrarEmpresaDAO(empresa);		
 	}
 }

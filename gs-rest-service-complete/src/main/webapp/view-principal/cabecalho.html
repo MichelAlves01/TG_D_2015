@@ -1,7 +1,7 @@
 <!--código responsável pelo cabelho(Logo, status e configurações )-->			
 	<div id="cabecalho">
 		<table class="cabecalho-table">
-			<tr >
+			<tr>
 				<td class="logo">
 					<label><font size="5"><b>Delivery Gerenciador</b></font></label>
 				</td>
@@ -26,20 +26,15 @@
 					
 				</td>
 				<td class="conta-config">
-				
-					<label><font>
-						 		Configurações
-							</font></label>
 						<div class="dropdown">
-						  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="../img/tres-barras.png" />
-						  	
-						   </a>
-						  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-						    <li>configurar conta</li>
-						     <li>configurar conta 2</li>
-						  </ul>
+						  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="../img/tres-barras.png" /></a>
+						  	<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						    	<li> <a ng-click="editarCadastro()" href="#"><i class="icon-pencil"></i> Editar conta</a></li>
+						    	<li> <a href="#"><i class="icon-trash"></i> Desativar conta</a></li>
+						  	</ul>
 						</div>		
 				</td>				
 			</tr>
 		</table>
 	</div>
+

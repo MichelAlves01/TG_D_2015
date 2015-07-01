@@ -34,9 +34,11 @@ public class EmpresaController {
 	}
 	
 	@RequestMapping(value="/getEmpresaCadastro", method=RequestMethod.GET)
-	public Empresa getEmpresaCadastro(){
-		
-		return empresa;
+	public String getEmpresaCadastro(@RequestParam(value="opcao") String opcao){
+		if(opcao.equals(0) && empresa.getTipo().equals(null)){
+			opcao = "1";
+		}
+		return opcao;
 	}
 	
 	@RequestMapping(value="/cadastrarEmpresaController", method=RequestMethod.POST)

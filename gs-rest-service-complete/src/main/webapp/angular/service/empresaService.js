@@ -1,7 +1,7 @@
 (function(){
 	var app = angular.module('empresaService' , []);
 	var urlBase = 'http://localhost:8080';
-	
+	var depoisCadastro = true;
 	
 
 	app.controller('cadastroEmpresaInicio', function($scope, $http) {
@@ -12,6 +12,7 @@
 		    var latLongTest = null;
 			var latLong = null;
 			var cpfExiste = false;
+			
 			 
 
 		    $scope.iniciaCadastroEmpresa = function (){
@@ -24,7 +25,10 @@
 	        													if($scope.empresa.status == 1){
 																	cpfExiste = true;
 																} else {
-																	location.href="index.html"
+																	location.href="index.html";
+																	if($scope.empresa.tipo != null){
+																		depoisCadastro = true;
+																	}
 																}	
 	           													 
 	           			});
@@ -136,7 +140,13 @@
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
 			 var fieldsValid = true;
-			 var depoisCadastro = false;
+
+			 $scope.editarCadastro = function(){
+			 		depoisCadastro = false;
+			 		$("#cadastro").hide();
+		    		$("#atualizar").show();
+		    		$("#excluir").hide();
+			 }
 
 			/*verifica quais abas devem estar ativas*/
 			$scope.finishing = function(){
@@ -144,13 +154,14 @@
 					$scope.empresa = data;
 
 					if($scope.empresa.tipo == null){
+						depoisCadastro = false;
 		    			$("#cadastro").removeAttr("disabled");
 		    			$("#atualizar").hide();
 		    			$("#excluir").hide();
 		    		} else {
-		    			$("#cadastro").Attr("disabled");
-		    			$("#atualizar").hide();
-		    			$("#excluir").hide();
+		    			$scope.bairro = $scope.empresa.bairro;
+		    			alert($scope.empresa.endereco);
+		    			depoisCadastro = true;
 		    		}
 					
 				});
@@ -197,12 +208,14 @@
 										latitude: latitude,
 										longitude: longitude,
 										senha: senha});
-					var teste = urlBase + '/cadastrarEmpresaController?' + data;
-							console.log("enviando para o servidor");
-							
-								$http.post(urlBase + '/cadastrarEmpresaController?' + data).success();
+								
+								console.log("enviando para o servidor");
+								$http.post(urlBase + '/cadastrarEmpresaController?' + data).success(function(data,status){
+									$scope.empresa = data;
+								});
+
 								depoisCadastro = true;
-								console.log("depoisCadastro : " + depoisCadastro);
+
 				} else {
 					console.log("Existem campos não preenchido");
 				} 
@@ -277,7 +290,6 @@
 		}
 
 		/*Validaçoes de campos no cadastro de empresas*/
-		
 		$scope.isValidAll = function(){	
 				return fieldsValid;
 		}
@@ -402,10 +414,10 @@
 			}
 		}
 
-		$scope.depoisCadastroEmpresa = function(){
-			console.log("depoisCadatro 2: " + depoisCadastro);
+		$scope.depoisCadastro = function(){
 			return depoisCadastro;
 		}
+		
 		
 		});
 

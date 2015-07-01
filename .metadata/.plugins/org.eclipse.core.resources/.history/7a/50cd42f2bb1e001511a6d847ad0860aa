@@ -30,7 +30,7 @@ public class EmpresaService {
 		return empresas;
 	}
 	/**
-	 * esta função verifica se o cpf ou cnpj existe no banco de dados
+	 * esta função verifica se o cpf ou cnpj não existe no banco de dados
 	 * @param empresa
 	 */
 	public void verificaCpf(Empresa empresa){

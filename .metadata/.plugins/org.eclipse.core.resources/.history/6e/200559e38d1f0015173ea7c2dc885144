@@ -35,7 +35,6 @@ public class EmpresaController {
 	
 	@RequestMapping(value="/getEmpresaCadastro", method=RequestMethod.GET)
 	public Empresa getEmpresaCadastro(){
-		
 		return empresa;
 	}
 	
