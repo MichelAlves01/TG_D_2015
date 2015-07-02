@@ -322,7 +322,7 @@
 		<div id="cabecalho">
 				<label><font>Delivery Gerenciador</font></label>
 			</div>
-			<div id="centro" ng-controller="cadastroEmpresaFim" data-ng-init="finishing(0)">
+			<div id="centro" ng-controller="cadastroEmpresaFim" data-ng-init="starting()">
 			<div id="sub-cabecalho"></div>
 				   <div id="form">
 				   		<div id="form-title"> 
@@ -344,7 +344,7 @@
 	    							</a>
 	    						</li>
 	    						
-	    						<li class="none" id="excluir" disabled="true">
+	    						<li class="active" id="excluir" disabled="true">
 	    							<a href="#tab-excluir" data-toggle="tab">
 	    								<font color="#48990E"><i class=" icon-exclamation-sign"></i> Excluir</font>
 	    							</a>
@@ -353,12 +353,12 @@
 							  </ul>
 			
 							  <div class="tab-content">
-							  <div class="tab-pane active" id="tab-cadastro"  data-ng-init="getLatitudeLongitude()">
+							  <div class="tab-pane" id="tab-cadastro"  data-ng-init="getLatitudeLongitude()">
 								 <div preenchido></div>
 								  <table>
 								  	<tr>
 								  		<td>  
-										   	<div id="form-cadastro" form></div>
+										   	<div id="form-cadastro" cadastro></div>
 								  		</td>
 								  		<td>
 								  			<div id="mapa-cadastro">
@@ -369,21 +369,20 @@
 								  </table>
 								  <div buttons></div>
 							  </div>
-							   <div class="tab-pane" id="tab-update" data-ng-init="getLatitudeLongitude()">
-							     	<div preenchido></div>
+							   <div class="tab-pane" id="tab-update" data-ng-init="getLatitudeLongitude()" ng-controller="atualizarEmpresa">
 								  <table>
 								  	<tr>
 								  		<td>  
-										   	<div id="form-cadastro" form></div>
+										   	<div id="form-cadastro" atualizar></div>
 								  		</td>
 								  		<td>
 								  			<div id="mapa-cadastro">
-												<div id="map-canvas" style="height: 100%; margin: 0px; padding: 0px;"> </div>
+												<div id="map-canvas2" style="height: 100%; margin: 0px; padding: 0px;"> </div>
 											</div>
 								  		</td>
 								  	</tr>
 								  </table>
-								  <div buttons></div>
+								  <div ebuttons></div>
 							   </div>
 							   <div class="tab-pane" id="tab-excluir">
 							   		teste

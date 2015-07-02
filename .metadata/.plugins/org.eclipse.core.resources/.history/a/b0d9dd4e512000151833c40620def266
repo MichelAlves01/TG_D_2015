@@ -74,9 +74,7 @@ public class EmpresaController {
 	}
 	
 	@RequestMapping(value="/atualizarEmpresaController", method=RequestMethod.POST)
-	public Empresa atualizarEmpresa(@RequestParam(value="nome") String nome,
-									@RequestParam(value="cpfCnpj") String cpfCnpj,
-									@RequestParam(value="tipo") String tipo,
+	public Empresa atualizarEmpresa(	@RequestParam(value="tipo") String tipo,
 									@RequestParam(value="idCidade") int idCidade,
 									@RequestParam(value="endereco") String endereco,
 									@RequestParam(value="email") String email,
@@ -90,8 +88,6 @@ public class EmpresaController {
 		double lat = Double.parseDouble(latitude);
 		double lon = Double.parseDouble(longitude);
 		
-		empresa.setNome(nome);
-		empresa.setCpfCnpj(cpfCnpj);
 		empresa.setTipo(tipo);
 		empresa.setEmail(email);
 		empresa.setEndereco(endereco);
@@ -107,7 +103,7 @@ public class EmpresaController {
 		empresa.setLongitude(lon);
 		
 		empresaImpl = new EmpresaImpl();
-		empresaImpl.atualizarEmpresaDAO(empresa);
+		empresaImpl.cadastrarEmpresaDAO(empresa);
 		
 		return empresa;
 	}

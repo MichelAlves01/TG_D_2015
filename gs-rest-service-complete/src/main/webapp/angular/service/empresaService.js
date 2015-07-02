@@ -10,7 +10,6 @@
 		    var longitude = null;
 		    var latitude = null;
 		    var latLongTest = null;
-			var latLong = null;
 			var cpfExiste = false;
 			
 			 
@@ -140,16 +139,19 @@
 
 		app.controller('cadastroEmpresaFim', function($scope, $http) {
 			 var fieldsValid = true;
+			 var latLong = null;
 
 			 $scope.editarCadastro = function(){
 			 		depoisCadastro = false;
 			 		$("#cadastro").hide();
 		    		$("#atualizar").show();
 		    		$("#excluir").hide();
+		    		$('#tab-update').toggleClass( "active" );
+		    		$('#tab-cadastro').removeClass( "active" );
 			 }
 
 			/*verifica quais abas devem estar ativas*/
-			$scope.finishing = function(){
+			$scope.starting = function(){
 					$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
 					$scope.empresa = data;
 
@@ -158,10 +160,14 @@
 		    			$("#cadastro").removeAttr("disabled");
 		    			$("#atualizar").hide();
 		    			$("#excluir").hide();
+		    			$('#tab-update').removeClass( "active" );
+		    			$('#tab-cadastro').toggleClass( "active" );
 		    		} else {
 		    			$scope.bairro = $scope.empresa.bairro;
 		    			alert($scope.empresa.endereco);
 		    			depoisCadastro = true;
+		    			latLong = latLong = new google.maps.LatLng($scope.empresa.latitude,$scope.empresa.longitude);
+
 		    		}
 					
 				});
@@ -238,7 +244,9 @@
 
 		/*Obtem informações de latitude e longitude e atualiza o mapa */
 		$scope.getLatitudeLongitude = function(){
-					latLong = new google.maps.LatLng(-23.5505199,-46.63330939999997);
+					if(latLong == null){
+						latLong = new google.maps.LatLng(-23.5505199,-46.63330939999997);
+					}
 					var valorZoom;
 					if($scope.estado == null){
 						valorZoom = 4;
@@ -251,6 +259,7 @@
 					  }
 
 					var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+					var map = new google.maps.Map(document.getElementById('map-canvas2'), mapOptions);
 					var geocoder = new google.maps.Geocoder();
 
 					if($scope.estado != null){
@@ -419,6 +428,68 @@
 		}
 		
 		
+		});
+
+		app.controller('atualizarEmpresa' , function($http,$scope){
+
+			$scope.executaAtualizacao = function(){
+				if(setValidFields()){
+					var nome = $scope.nome;
+					var cpfCnpj = $scope.cpfCnpj;
+					var tipo = $scope.tipo;
+					var cidade = $scope.cidade.id;
+					var endereco = $scope.bairro + "" + $scope.endereco + "" + $scope.numero;
+					var cep = $scope.cep;
+					var telFixo = $scope.telFixo;
+					var telMovel = $scope.telMovel;
+					var email = $scope.email;
+					var senha = $scope.senha;		
+					var data = $.param({cpfCnpj: cpfCnpj,
+										nome: nome,
+										tipo: tipo, 
+										idCidade: cidade,
+										endereco: endereco,
+										email: email,
+										telefoneFixo: telFixo,
+										telefoneMovel: telMovel,
+										cep: cep,
+										latitude: latitude,
+										longitude: longitude,
+										senha: senha});
+								
+								console.log("enviando para o servidor");
+								$http.post(urlBase + '/atualizarEmpresaController?' + data).success(function(data,status){
+									$scope.empresa = data;
+								});
+
+								depoisCadastro = true;
+
+				} else {
+					console.log("Existem campos não preenchido");
+				}
+
+			}
+
+			function setValidFields() {
+				if($scope.tipo != null &&
+				$scope.cidade != null &&
+				$scope.bairro != null && 
+				$scope.endereco != null && 
+				$scope.numero != null &&
+				$scope.cep != null &&
+				$scope.telFixo != null &&
+				$scope.telMovel != null &&
+				$scope.email != null &&
+				$scope.senha != null){
+
+					fieldsValid = true;
+				} else {
+					fieldsValid = false;
+				}
+
+				return fieldsValid;
+				
+			}
 		});
 
 })();

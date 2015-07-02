@@ -90,8 +90,6 @@ public class EmpresaController {
 		double lat = Double.parseDouble(latitude);
 		double lon = Double.parseDouble(longitude);
 		
-		empresa.setNome(nome);
-		empresa.setCpfCnpj(cpfCnpj);
 		empresa.setTipo(tipo);
 		empresa.setEmail(email);
 		empresa.setEndereco(endereco);

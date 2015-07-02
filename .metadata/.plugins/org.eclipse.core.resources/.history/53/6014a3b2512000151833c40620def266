@@ -41,23 +41,22 @@
  	</insert>
  	
  	<update id="atualizarEmpresaDAO" parameterType="delivery.model.Empresa">
- 		update Empresa set  
+ 		update Empresa set 
+ 								cpf_cnpj = #{cpfCnpj}, 
  								nome = #{nome}, 
  								endereco = #{endereco}, 
- 								id_cidade = #{idCidade}, 
- 								telefone_fixo = #{telefoneFixo}, 
- 								telefone_movel = #{telefoneMovel}, 
+ 								idCidade = #{id_Cidade}, 
+ 								telefone_fixo = #{telefone_fixo}, 
+ 								telefone_movel = #{telefone_movel}, 
  								cep = #{cep}, 
  								email = #{email}, 
  								tipo_empresa = #{tipo}, 
- 								raio_entrega = #{raio}, 
+ 								raio = #{raio}, 
  								usa_agenda = #{usaAgenda}, 
  								latitude = #{latitude}, 
  								longitude = #{longitude}, 
  								avaliacao = #{avaliacao},
  								status = 0
- 							where
- 								cnpj_cpf = #{cpfCnpj}
  	</update>
  	
  	<update id="excluirEmpresaDAO" parameterType="java.lang.String">

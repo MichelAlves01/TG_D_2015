@@ -1,10 +1,17 @@
 (function(){
 	var app = angular.module('cadastro-empresa-pages',[]);
 
-	app.directive('form', function(){
+	app.directive('cadastro', function(){
 		return{
 			restrict: 'A',
 			templateUrl: 'view-cadastro/cadastro-empresa.html'
+		};
+	});
+
+	app.directive('atualizar', function(){
+		return{
+			restrict: 'A',
+			templateUrl: 'view-cadastro/atualizar-empresa.html'
 		};
 	});
 
@@ -26,6 +33,13 @@
 		return{
 			restrict: 'A',
 			templateUrl: 'view-cadastro/buttons.html'
+		};
+	});
+
+	app.directive('ebuttons', function(){
+		return{
+			restrict: 'A',
+			templateUrl: 'view-cadastro/Ebuttons.html'
 		};
 	});
 
