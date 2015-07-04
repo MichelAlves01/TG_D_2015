@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.postgresql.core.ConnectionFactory"/>
-<fullyQualifiedTypeName name="delivery.api.dao.ItemProdutoDAO"/>
-<fullyQualifiedTypeName name="delivery.api.dao.EmpresaDAO"/>
-<fullyQualifiedTypeName name="delivery.api.dao.UserDAO"/>
-<fullyQualifiedTypeName name="delivery.api.dao.AgendaDAO"/>
 <fullyQualifiedTypeName name="delivery.api.dao.PedidoDAO"/>
 <fullyQualifiedTypeName name="delivery.api.dao.ItemPedidoDAO"/>
 <fullyQualifiedTypeName name="delivery.api.dao.CidadeDAO"/>
@@ -51,8 +46,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="delivery.api.mapper.CidadeImpl"/>
-<fullyQualifiedTypeName name="delivery.model.Cidade"/>
 <fullyQualifiedTypeName name="delivery.model.Empresa"/>
 <fullyQualifiedTypeName name="delivery.api.mapper.EmpresaImpl"/>
 <fullyQualifiedTypeName name="delivery.service.DELIVERY_SERVICE.EmpresaService"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="delivery.model.Pedido"/>
 <fullyQualifiedTypeName name="delivery.model.Produto"/>
 <fullyQualifiedTypeName name="delivery.model.UsuarioMob"/>
+<fullyQualifiedTypeName name="delivery.api.mapper.CidadeImpl"/>
+<fullyQualifiedTypeName name="delivery.model.UserRole"/>
+<fullyQualifiedTypeName name="delivery.api.mapper.UserImpl"/>
+<fullyQualifiedTypeName name="org.apache.catalina.User"/>
+<fullyQualifiedTypeName name="delivery.model.Users"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Select"/>
+<fullyQualifiedTypeName name="delivery.model.Cidade"/>
 </qualifiedTypeNameHistroy>

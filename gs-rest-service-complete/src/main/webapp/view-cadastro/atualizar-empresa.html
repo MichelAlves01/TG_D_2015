@@ -4,7 +4,7 @@
 											   		<tr style="padding: 51px;">
 															<td style="padding-right: 10px;">
 																<fieldset>
-																		<label>Nome da Empresa <font ng-hide="isValidAll()"> 
+																		<label>Nome da Empresa<font ng-hide="isValidAll()"> 
 																				<i class="icon-hand-down" ng-hide="isValidBairro()"></i><i class="icon-ok" ng-show="isValidBairro()"></i></font>
 																		</label>
 																		<input type="text" ng-model="nome" class="input-xxlarge"  placeholder="informe o nome da empresa" required/>
@@ -14,30 +14,33 @@
 													</tr>
 													<tr style="padding: 51px;">
 															<td style="padding-right: 10px;">
-																<fieldset>
-																		<label>CPF / CNPJ </label>
-																		<input type="text" ng-model="cpfCnpj" class="input-xxlarge" required/>	</fieldset>
+																<table>
+																	<tr>
+																		<td style="padding-right: 10px;">
+																			<fieldset>
+																				<label>CPF / CNPJ </label>
+																				<input type="text" ng-model="cpfCnpj" class="input-medium" disabled/>	
+																			</fieldset>
+																		</td>
+																		<td>
+																			<fieldset>
+																				<label>Tipo de Empresa 	
+																				<font ng-hide="isValidAll()">
+																					<i class="icon-hand-down" ng-hide="isValidTipo()"></i>
+																					<i class="icon-ok" ng-show="isValidTipo()"></i>
+																				</font>
+																				</label>
+																				<select ng-model="tipo" id="tipo" >
+																					<option value="A"> Alimentos </option>
+																					<option value="U"> Utilitários</option>
+																					<option value="S"> Serviços</option>
+																				</select>
+																			</fieldset>
+																		</td>
+																	</tr>
+																</table>
 															</td>																
-													</tr>										
-													<tr>
-														<td>
-															<fieldset>
-																<label>Tipo de Empresa 	
-																					<font ng-hide="isValidAll()">
-																						<i class="icon-hand-down" ng-hide="isValidTipo()"></i>
-																						<i class="icon-ok" ng-show="isValidTipo()"></i>
-																					</font>
-																</label>
-																<select ng-model="tipo" id="tipo" >
-																	<option value="A"> Alimentos </option>
-																	<option value="U"> Utilitários</option>
-																	<option value="S"> Serviços</option>
-																</select>
-																
-															</fieldset>
-														</td>
-													</tr>											
-													
+													</tr>																				
 													<tr>
 														<td data-ng-init="getEstados()">
 															<table style="padding-right: 10px;">

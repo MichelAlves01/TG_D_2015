@@ -5031,3 +5031,378 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated 
 2015-07-01 22:24:34,425 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
 2015-07-01 22:24:34,472 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-07-01 22:24:34,503 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 16:47:11,589 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:11,823 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-02 16:47:11,855 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:11,886 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-02 16:47:13,851 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:13,851 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-02 16:47:13,867 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:13,883 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-02 16:47:15,365 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:15,380 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\main\resources
+2015-07-02 16:47:15,380 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:15,380 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\test\resources
+2015-07-02 16:47:33,102 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:33,102 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 16:47:33,102 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 16:47:33,133 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 16:47:33,149 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:18:09,531 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:18:09,721 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:18:09,721 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:18:09,752 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:18:09,784 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:23:52,456 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:23:52,456 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:23:52,456 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:23:52,456 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:23:52,472 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:29:41,580 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:29:41,596 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:29:41,596 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:29:41,611 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:29:41,611 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:32:26,306 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:32:26,306 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:32:26,306 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:32:26,306 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:32:26,322 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:33:02,940 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:33:02,940 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:33:02,940 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:33:02,958 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:33:02,960 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:38:41,031 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:38:41,237 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:38:41,237 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:38:41,237 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:38:41,252 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:39:27,852 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:39:27,852 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:39:27,852 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:39:27,884 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:39:27,884 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 17:54:57,911 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:54:58,337 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:54:58,337 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 17:54:58,439 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 17:54:58,504 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:06:04,412 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:04,412 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:04,412 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:04,428 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:04,428 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:06:09,966 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:09,966 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:09,966 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:10,044 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:10,044 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:06:15,070 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:15,070 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:15,070 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:15,117 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:15,117 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:06:21,041 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:21,041 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:21,041 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:06:21,166 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:06:21,166 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:11:36,966 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:11:36,966 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:11:36,966 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:11:36,981 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:11:36,981 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:11:43,752 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:11:43,752 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:11:43,752 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:11:43,768 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:11:43,768 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:11:52,613 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:11:52,644 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:11:52,644 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:11:52,769 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:11:52,769 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:22:58,506 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:22:58,849 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:22:58,849 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:22:58,911 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:22:58,911 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 18:45:18,029 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:45:18,326 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:45:18,388 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 18:45:18,497 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 18:45:18,513 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 21:09:45,827 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:09:45,858 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-02 21:09:45,858 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:09:45,889 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-02 21:09:47,199 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:09:47,199 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-02 21:09:47,231 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:09:47,246 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-02 21:09:48,307 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:09:48,338 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\main\resources
+2015-07-02 21:09:48,338 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:09:48,338 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\test\resources
+2015-07-02 21:10:02,066 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:10:02,066 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:10:02,066 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:10:02,082 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:10:02,144 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 21:52:02,778 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:52:02,919 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:52:02,919 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:52:02,934 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:52:02,950 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 21:53:24,274 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:53:24,337 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:53:24,337 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:53:24,352 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:53:24,352 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 21:53:29,235 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:53:29,235 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:53:29,235 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-02 21:53:29,235 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:53:29,251 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-02 21:55:38,419 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:55:38,419 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-02 21:55:38,481 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 21:55:38,512 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-02 22:24:48,116 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 22:24:48,428 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-02 22:24:48,506 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-02 22:24:48,538 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 17:47:23,544 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:23,590 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-03 17:47:23,606 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:23,606 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-03 17:47:25,182 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:25,197 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 17:47:25,213 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:25,228 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 17:47:25,962 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:25,977 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\main\resources
+2015-07-03 17:47:25,993 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:25,993 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\test\resources
+2015-07-03 17:47:34,963 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:34,963 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 17:47:34,963 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 17:47:34,978 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 17:47:35,010 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:43:25,721 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:43:25,818 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 18:43:25,849 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:43:25,849 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 18:43:42,904 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:43:42,919 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-03 18:43:42,919 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:43:42,951 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-03 18:45:35,955 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:45:35,955 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-03 18:45:35,955 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:45:35,971 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-03 18:45:39,006 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:45:39,006 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:45:39,006 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:45:39,021 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:45:39,037 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:48:15,294 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:48:15,294 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:48:15,294 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:48:15,294 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:48:15,294 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:48:16,715 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:48:16,715 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:48:16,715 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:48:16,731 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:48:16,731 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:48:25,950 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:48:25,950 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:48:25,950 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:48:25,965 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:48:25,965 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:49:41,381 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:49:41,381 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:49:41,381 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:49:41,381 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:49:41,381 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:50:06,274 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:50:06,274 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:50:06,274 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:50:06,320 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:50:06,320 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:50:09,493 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:50:09,493 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:50:09,493 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:50:09,508 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:50:09,508 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:50:36,109 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:50:36,109 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:50:36,109 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:50:36,125 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:50:36,125 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:51:24,374 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:51:24,390 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:51:24,390 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:51:24,390 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:51:24,390 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:52:16,504 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:52:16,504 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:52:16,504 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:52:16,504 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:52:16,504 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:52:25,504 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:52:25,504 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:52:25,504 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:52:25,519 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:52:25,519 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:52:37,069 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:52:37,069 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:52:37,069 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:52:37,100 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:52:37,100 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 18:53:34,761 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:34,761 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-03 18:53:34,776 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:34,776 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-03 18:53:36,461 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:36,461 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 18:53:36,476 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:36,476 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 18:53:36,898 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:36,898 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\main\resources
+2015-07-03 18:53:36,913 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:36,913 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_SERVICE\src\test\resources
+2015-07-03 18:53:57,059 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:57,059 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:53:57,059 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 18:53:57,059 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 18:53:57,059 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:02:57,351 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:02:57,382 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:02:57,398 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:02:57,398 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 19:08:18,131 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:08:18,147 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:08:18,147 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:08:18,147 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 19:31:49,741 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:31:49,850 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:31:49,850 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:31:49,897 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:31:49,912 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:32:04,170 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:32:04,170 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:32:04,170 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:32:04,201 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:32:04,201 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:32:47,869 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:32:47,869 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:32:47,869 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:32:47,916 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:32:47,916 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:36:59,019 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:36:59,175 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:36:59,175 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:36:59,191 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:36:59,191 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:40:41,762 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:40:41,762 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:40:41,762 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:40:41,762 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:40:41,762 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:40:57,563 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:40:57,563 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:40:57,563 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:40:57,579 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:40:57,579 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:41:01,554 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:41:01,554 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:41:01,554 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\main\resources
+2015-07-03 19:41:01,562 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:41:01,564 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\gs-rest-service-complete\src\test\resources
+2015-07-03 19:42:11,397 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:42:11,397 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:42:11,428 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:42:11,428 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 19:42:54,799 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:42:54,799 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:42:54,814 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:42:54,814 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 19:45:26,771 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:45:26,771 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:45:26,771 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:45:26,771 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 19:45:33,007 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:45:33,007 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:45:33,012 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:45:33,014 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 19:45:54,081 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:45:54,081 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:45:54,096 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:45:54,096 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 19:51:37,576 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:51:37,576 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 19:51:37,607 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 19:51:37,607 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 20:00:31,673 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:00:31,673 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 20:00:31,688 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:00:31,704 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 20:00:45,775 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:00:45,775 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 20:00:45,775 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:00:45,775 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 20:06:52,536 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:06:52,552 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-03 20:06:52,598 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:06:52,630 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-03 20:07:20,500 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:07:20,500 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-03 20:07:20,515 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:07:20,515 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources
+2015-07-03 20:14:57,967 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:14:57,967 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 20:14:57,967 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:14:57,967 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 20:15:32,757 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:15:32,757 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 20:15:32,773 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:15:32,773 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 20:25:36,524 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:25:36,618 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 20:25:36,633 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:25:36,649 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 20:29:27,078 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:29:27,078 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 20:29:27,078 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:29:27,078 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 20:38:17,017 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:38:17,017 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 20:38:17,024 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 20:38:17,027 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 21:35:24,409 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:35:24,799 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 21:35:24,970 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:35:24,970 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 21:40:18,024 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:40:18,024 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 21:40:18,024 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:40:18,024 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 21:49:27,486 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:49:27,642 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 21:49:27,720 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:49:27,736 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 21:58:41,622 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:58:41,669 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 21:58:41,669 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:58:41,669 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 21:59:23,881 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:59:23,881 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\main\resources
+2015-07-03 21:59:23,881 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 21:59:23,881 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\API_DELIVERY_DAO\src\test\resources
+2015-07-03 23:06:51,592 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 23:06:51,810 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\main\resources
+2015-07-03 23:06:51,888 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-07-03 23:06:51,920 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Michel\Desktop\Workspace_TG\TG_D_2015\DELIVERY_MODEL\src\test\resources

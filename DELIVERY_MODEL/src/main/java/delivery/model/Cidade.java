@@ -6,7 +6,7 @@ public class Cidade {
 	
 	private int id;
 	private String nome;
-	private int idEstado;
+	private Estado estado;
 	private List<Empresa> empresa;
 	
 	public int getId() {
@@ -21,13 +21,13 @@ public class Cidade {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getIdEstado() {
-		return idEstado;
-	}
-	public void setIdEstado(int idEstado) {
-		this.idEstado = idEstado;
-	}
 	
+	public Estado getEstado() {
+		return estado;
+	}
+	public void setEstado(Estado estado) {
+		this.estado = estado;
+	}
 	public List<Empresa> getEmpresa() {
 		return empresa;
 	}

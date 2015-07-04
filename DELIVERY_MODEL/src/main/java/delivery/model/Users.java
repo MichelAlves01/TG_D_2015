@@ -5,6 +5,7 @@ public class Users {
 	private String username;
 	private String password;
 	private Empresa empresa;
+	private int status; 
 	
 	public String getUsername() {
 		return username;
@@ -23,6 +24,12 @@ public class Users {
 	}
 	public void setEmpresa(Empresa empresa) {
 		this.empresa = empresa;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
 	}
 	
 }

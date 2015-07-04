@@ -1,7 +1,5 @@
 package hello;
 
-import java.util.List;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,15 +7,29 @@ import org.springframework.web.bind.annotation.RestController;
 
 import delivery.api.mapper.CidadeImpl;
 import delivery.api.mapper.EmpresaImpl;
+import delivery.api.mapper.UserImpl;
 import delivery.model.Cidade;
 import delivery.model.Empresa;
+import delivery.model.UserRole;
+import delivery.model.Users;
 import delivery.service.DELIVERY_SERVICE.EmpresaService;
 
 @RestController
 public class EmpresaController {
+	
 	private Empresa empresa;
-	EmpresaImpl empresaImpl = null;
-	private EmpresaService empresaService;
+	
+	private static EmpresaImpl empresaImpl;
+	
+	private static CidadeImpl cidadeImpl;
+	
+	private static EmpresaService empresaService;
+	
+	private Users user;
+	
+	private Cidade cidade;
+	
+	private static UserImpl userImpl;
 	
 	@RequestMapping(value="/iniciaCadastroEmpresa", method=RequestMethod.POST)
 	public Empresa iniciaCadastro( 	@RequestParam(value="nome") String nome,
@@ -38,6 +50,13 @@ public class EmpresaController {
 		return empresa;
 	}
 	
+	@RequestMapping(value="/getEmpresaController")
+	public Empresa getEmpresaController(@RequestParam(value="cpfCnpj")String cpfCnpj){
+		empresaImpl = new EmpresaImpl();
+		empresa = empresaImpl.getEmpresaDAO(cpfCnpj);
+		return empresa;
+	}
+	
 	@RequestMapping(value="/cadastrarEmpresaController", method=RequestMethod.POST)
 	public Empresa cadastrarEmpresa(	@RequestParam(value="tipo") String tipo,
 									@RequestParam(value="idCidade") int idCidade,
@@ -52,11 +71,14 @@ public class EmpresaController {
 		
 		double lat = Double.parseDouble(latitude);
 		double lon = Double.parseDouble(longitude);
+		cidadeImpl = new CidadeImpl();
+		cidade = cidadeImpl.geCidadeDAO(idCidade);
+		user = new Users();
 		
 		empresa.setTipo(tipo);
 		empresa.setEmail(email);
 		empresa.setEndereco(endereco);
-		empresa.setIdCidade(idCidade);
+		empresa.setCidade(cidade);
 		empresa.setTelefoneFixo(telefoneFixo);
 		empresa.setTelefoneMovel(telefoneMovel);
 		empresa.setCep(cep);
@@ -67,8 +89,15 @@ public class EmpresaController {
 		empresa.setLatitude(lat);
 		empresa.setLongitude(lon);
 		
+		user.setUsername(email);
+		user.setPassword(senha);
+		user.setEmpresa(empresa);
+		
 		empresaImpl = new EmpresaImpl();
 		empresaImpl.cadastrarEmpresaDAO(empresa);
+		
+		userImpl = new UserImpl();
+		userImpl.cadastrarUsuarioDAO(user);
 		
 		return empresa;
 	}
@@ -89,13 +118,15 @@ public class EmpresaController {
 		
 		double lat = Double.parseDouble(latitude);
 		double lon = Double.parseDouble(longitude);
+		cidadeImpl = new CidadeImpl();
+		Cidade cidade = cidadeImpl.geCidadeDAO(idCidade);
 		
 		empresa.setNome(nome);
 		empresa.setCpfCnpj(cpfCnpj);
 		empresa.setTipo(tipo);
 		empresa.setEmail(email);
 		empresa.setEndereco(endereco);
-		empresa.setIdCidade(idCidade);
+		empresa.setCidade(cidade);
 		empresa.setTelefoneFixo(telefoneFixo);
 		empresa.setTelefoneMovel(telefoneMovel);
 		empresa.setCep(cep);

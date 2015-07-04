@@ -25,7 +25,7 @@
  								#{cpfCnpj},
  								#{nome},
  								#{endereco},
- 								#{idCidade},
+ 								#{cidade.id},
  								#{telefoneFixo},
  								#{telefoneMovel},
  								#{cep},
@@ -44,7 +44,7 @@
  		update Empresa set  
  								nome = #{nome}, 
  								endereco = #{endereco}, 
- 								id_cidade = #{idCidade}, 
+ 								id_cidade = #{cidade.id}, 
  								telefone_fixo = #{telefoneFixo}, 
  								telefone_movel = #{telefoneMovel}, 
  								cep = #{cep}, 
@@ -68,13 +68,13 @@
  		SELECT 	cnpj_cpf AS cpfCnpj, 
  				nome, 
  				endereco, 
- 				id_Cidade AS idCidade , 
+ 				id_Cidade AS "cidade.id", 
  				telefone_fixo AS telefoneFixo, 
  				telefone_movel AS telefoneMovel, 
  				cep, 
  				email, 
  				tipo_empresa AS tipo, 
- 				raio, 
+ 				raio_entrega AS raio, 
  				usa_agenda AS usaAgenda, 
  				latitude, 
  				longitude, 
@@ -83,7 +83,7 @@
  		FROM
  				empresa
  		WHERE
- 				cpf_cnpj = #{cpfCnpj}
+ 				cnpj_cpf = #{cpfCnpj}
  	</select>
  	
  	<select id="getEmpresasDAO" resultType="delivery.model.Empresa">

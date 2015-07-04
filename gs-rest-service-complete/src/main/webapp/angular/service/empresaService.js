@@ -2,6 +2,7 @@
 	var app = angular.module('empresaService' , []);
 	var urlBase = 'http://localhost:8080';
 	var depoisCadastro = true;
+	var cpfCnpj; 
 	
 
 	app.controller('cadastroEmpresaInicio', function($scope, $http) {
@@ -17,7 +18,7 @@
 		    $scope.iniciaCadastroEmpresa = function (){
 		    	var data = $.param({nome: $scope.nome , cpfCnpj: $scope.cpfCnpj})
 
-		    	if(statusCpfCnpj && $scope.nome != null){
+		    	if(statusCpfCnpj && $scope.nome != null && $scope.tipo == null){
 		    	$http.post(urlBase + '/iniciaCadastroEmpresa?'+ data).
 	        													success(function(data,status) {
 	        														$scope.empresa = data;
@@ -137,23 +138,16 @@
 	  });
 
 
-		app.controller('cadastroEmpresaFim', function($scope, $http) {
+		app.controller('EmpresaCtrl', function($scope, $http) {
 			 var fieldsValid = true;
 			 var latLong = null;
-
-			 $scope.editarCadastro = function(){
-			 		depoisCadastro = false;
-			 		$("#cadastro").hide();
-		    		$("#atualizar").show();
-		    		$("#excluir").hide();
-		    		$('#tab-update').toggleClass( "active" );
-		    		$('#tab-cadastro').removeClass( "active" );
-			 }
 
 			/*verifica quais abas devem estar ativas*/
 			$scope.starting = function(){
 					$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
 					$scope.empresa = data;
+					cpfCnpj = data.cpfCnpj;
+					alert("dados do cpfCnpj : " +  cpfCnpj);
 
 					if($scope.empresa.tipo == null){
 						depoisCadastro = false;
@@ -163,9 +157,10 @@
 		    			$('#tab-update').removeClass( "active" );
 		    			$('#tab-cadastro').toggleClass( "active" );
 		    		} else {
-		    			$scope.bairro = $scope.empresa.bairro;
-		    			alert($scope.empresa.endereco);
 		    			depoisCadastro = true;
+		    			alert(depoisCadastro);
+		    			$('#tab-cadastro').removeClass( "active" );
+		    			$('#tab-update').removeClass( "active" );
 		    			latLong = latLong = new google.maps.LatLng($scope.empresa.latitude,$scope.empresa.longitude);
 
 		    		}
@@ -198,7 +193,7 @@
 				if(setValidFields()){
 					var tipo = $scope.tipo;
 					var cidade = $scope.cidade.id;
-					var endereco = $scope.bairro + "" + $scope.endereco + "" + $scope.numero;
+					var endereco = $scope.bairro + "||" + $scope.endereco + "||" + $scope.numero;
 					var cep = $scope.cep;
 					var telFixo = $scope.telFixo;
 					var telMovel = $scope.telMovel;
@@ -218,6 +213,9 @@
 								console.log("enviando para o servidor");
 								$http.post(urlBase + '/cadastrarEmpresaController?' + data).success(function(data,status){
 									$scope.empresa = data;
+									$scope.nome = data.nome;
+									$scope.cpfCnpj = data.cpfCnpj;
+									alert(data.nome);
 								});
 
 								depoisCadastro = true;
@@ -427,10 +425,32 @@
 			return depoisCadastro;
 		}
 		
-		
-		});
+		$scope.getEmpresaController = function(){
+					depoisCadastro = false;
+			 		$("#cadastro").hide();
+		    		$("#atualizar").show();
+		    		$("#excluir").hide();
+		    		$('#tab-update').toggleClass( "active" );
+		    		$('#tab-cadastro').removeClass( "active" );
 
-		app.controller('atualizarEmpresa' , function($http,$scope){
+				var data = $.param({cpfCnpj: cpfCnpj});
+				$http.post(urlBase + '/getEmpresaController?' + data).success(function(data,status){
+					$scope.nome = data.nome;
+					$scope.cpfCnpj = data.cpfCnpj;
+					$scope.tipo = data.tipo;
+					$scope.cidade = data.cidade;
+					var enderecoS = data.endereco.split("||");
+					$scope.bairro = enderecoS[0];
+					$scope.endereco = enderecoS[1];
+					$scope.numero = enderecoS[2];
+					$scope.cep = data.cep;
+					$scope.telFixo = data.telefoneFixo;
+					$scope.telMovel = data.telefoneMovel;
+					$scope.email = data.email;
+				});
+
+						
+			}
 
 			$scope.executaAtualizacao = function(){
 				if(setValidFields()){
@@ -438,7 +458,7 @@
 					var cpfCnpj = $scope.cpfCnpj;
 					var tipo = $scope.tipo;
 					var cidade = $scope.cidade.id;
-					var endereco = $scope.bairro + "" + $scope.endereco + "" + $scope.numero;
+					var endereco = $scope.bairro + "||" + $scope.endereco + "||" + $scope.numero;
 					var cep = $scope.cep;
 					var telFixo = $scope.telFixo;
 					var telMovel = $scope.telMovel;
@@ -490,6 +510,8 @@
 				return fieldsValid;
 				
 			}
+		
 		});
+
 
 })();
