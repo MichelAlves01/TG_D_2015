@@ -13,4 +13,14 @@
  				estado
  	</select>
  	
+ 	<select id="getEstadoDAO" parameterType="java.lang.Integer" resultType="delivery.model.Estado">
+ 		select id,
+ 				sigla,
+ 				nome_estado as nome
+ 		from 
+ 				estado
+ 		where
+ 				id = #{idEstado}
+ 	</select>
+ 	
  </mapper>

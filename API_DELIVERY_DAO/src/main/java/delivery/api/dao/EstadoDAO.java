@@ -8,4 +8,6 @@ public interface EstadoDAO {
 	
 	public List<Estado> getEstadosDAO();
 	
+	public Estado getEstadoDAO(int idEstado);
+	
 }

@@ -2,7 +2,8 @@
 	var app = angular.module('empresaService' , []);
 	var urlBase = 'http://localhost:8080';
 	var depoisCadastro = true;
-	var cpfCnpj; 
+	var cpfCnpj;
+	var estados; 
 	
 
 	app.controller('cadastroEmpresaInicio', function($scope, $http) {
@@ -147,7 +148,6 @@
 					$http.get(urlBase + '/getEmpresaCadastro').success(function(data){
 					$scope.empresa = data;
 					cpfCnpj = data.cpfCnpj;
-					alert("dados do cpfCnpj : " +  cpfCnpj);
 
 					if($scope.empresa.tipo == null){
 						depoisCadastro = false;
@@ -158,7 +158,6 @@
 		    			$('#tab-cadastro').toggleClass( "active" );
 		    		} else {
 		    			depoisCadastro = true;
-		    			alert(depoisCadastro);
 		    			$('#tab-cadastro').removeClass( "active" );
 		    			$('#tab-update').removeClass( "active" );
 		    			latLong = latLong = new google.maps.LatLng($scope.empresa.latitude,$scope.empresa.longitude);
@@ -215,7 +214,6 @@
 									$scope.empresa = data;
 									$scope.nome = data.nome;
 									$scope.cpfCnpj = data.cpfCnpj;
-									alert(data.nome);
 								});
 
 								depoisCadastro = true;
@@ -225,19 +223,27 @@
 				} 
 			}
 				
-
+			
 			$scope.getEstados = function(){
-			$http.get('http://localhost:8080/getEstados').success(function(data){
-				$scope.estados = data;
-			})
+			if($scope.estados == null){
+				$http.get('http://localhost:8080/getEstados').success(function(data){
+					$scope.estados = data;
+					estados = data;
+				})
+			} 
+			
 		}
 
 
 		$scope.getCidades = function(){
-			var idEstado = $.param({idEstado: $scope.estado.id});
-			$http.get('http://localhost:8080/getCidades?' + idEstado).success(function(data){
-				$scope.cidades = data;
-			})
+			if($scope.estado != null){			
+				for(i=0;i<estados.length;i++){
+					console.log($scope.estado.id +" == "+ estados[i].id);
+					if($scope.estado.id == estados[i].id){
+						$scope.cidades = $scope.estado.cidade;
+					}
+				}
+			}
 		}
 
 		/*Obtem informações de latitude e longitude e atualiza o mapa */
@@ -429,15 +435,18 @@
 					depoisCadastro = false;
 			 		$("#cadastro").hide();
 		    		$("#atualizar").show();
-		    		$("#excluir").hide();
+		    		$("#excluir").show();
+		    		$("#atualizar").toggleClass( "active" )
 		    		$('#tab-update').toggleClass( "active" );
 		    		$('#tab-cadastro').removeClass( "active" );
+		    		$('#tab-excluir').removeClass( "active" );
 
 				var data = $.param({cpfCnpj: cpfCnpj});
 				$http.post(urlBase + '/getEmpresaController?' + data).success(function(data,status){
 					$scope.nome = data.nome;
 					$scope.cpfCnpj = data.cpfCnpj;
 					$scope.tipo = data.tipo;
+					$scope.estado = data.cidade.estado;
 					$scope.cidade = data.cidade;
 					var enderecoS = data.endereco.split("||");
 					$scope.bairro = enderecoS[0];
@@ -453,6 +462,8 @@
 			}
 
 			$scope.executaAtualizacao = function(){
+				$('#tab-update').removeClass( "active" );
+				$('#atualizar').removeClass( "active" );
 				if(setValidFields()){
 					var nome = $scope.nome;
 					var cpfCnpj = $scope.cpfCnpj;
@@ -499,16 +510,12 @@
 				$scope.cep != null &&
 				$scope.telFixo != null &&
 				$scope.telMovel != null &&
-				$scope.email != null &&
-				$scope.senha != null){
-
+				$scope.email != null){
 					fieldsValid = true;
 				} else {
 					fieldsValid = false;
 				}
-
-				return fieldsValid;
-				
+				return fieldsValid;			
 			}
 		
 		});

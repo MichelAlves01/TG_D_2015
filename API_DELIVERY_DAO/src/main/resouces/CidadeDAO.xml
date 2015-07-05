@@ -8,7 +8,7 @@
 	<select id="getCidadesDAO" parameterType="java.lang.Integer" resultType="delivery.model.Cidade">
 		select 	
 			id,
-			id_estado as idEstado,
+			id_estado as "estado.id",
 			nome_cidade as nome
 		 from cidade
 		where 
@@ -17,7 +17,7 @@
 	<select id="getCidadeDAO" parameterType="java.lang.Integer" resultType="delivery.model.Cidade">
 		select 	
 			id,
-			id_estado as idEstado,
+			id_estado as "estado.id",
 			nome_cidade as nome
 		 from cidade
 		where 
