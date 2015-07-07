@@ -436,17 +436,17 @@
 			 		$("#cadastro").hide();
 		    		$("#atualizar").show();
 		    		$("#excluir").show();
-		    		$("#atualizar").toggleClass( "active" )
 		    		$('#tab-update').toggleClass( "active" );
 		    		$('#tab-cadastro').removeClass( "active" );
-		    		$('#tab-excluir').removeClass( "active" );
 
 				var data = $.param({cpfCnpj: cpfCnpj});
 				$http.post(urlBase + '/getEmpresaController?' + data).success(function(data,status){
 					$scope.nome = data.nome;
 					$scope.cpfCnpj = data.cpfCnpj;
 					$scope.tipo = data.tipo;
+					alert(data.cidade.estado.id);
 					$scope.estado = data.cidade.estado;
+					alert(data.cidade.id);
 					$scope.cidade = data.cidade;
 					var enderecoS = data.endereco.split("||");
 					$scope.bairro = enderecoS[0];
@@ -458,12 +458,13 @@
 					$scope.email = data.email;
 				});
 
+				$('#tab-update').removeClass( "active" );
+		    		$('#tab-cadastro').removeClass( "active" );
+
 						
 			}
 
 			$scope.executaAtualizacao = function(){
-				$('#tab-update').removeClass( "active" );
-				$('#atualizar').removeClass( "active" );
 				if(setValidFields()){
 					var nome = $scope.nome;
 					var cpfCnpj = $scope.cpfCnpj;
@@ -510,12 +511,26 @@
 				$scope.cep != null &&
 				$scope.telFixo != null &&
 				$scope.telMovel != null &&
-				$scope.email != null){
+				$scope.email != null &&
+				$scope.senha != null){
+
 					fieldsValid = true;
 				} else {
 					fieldsValid = false;
 				}
-				return fieldsValid;			
+
+				return fieldsValid;
+				
+			}
+
+			$scope.excluirEmpresa = function(){
+				var data = $.param({cpfCnpj: $scope.cpfCnpj});
+
+				$http.post(urlBase + 'excluirEmpresaController' + data).success(function(data,status){
+
+				});
+
+				alert(cpfCnpj);
 			}
 		
 		});

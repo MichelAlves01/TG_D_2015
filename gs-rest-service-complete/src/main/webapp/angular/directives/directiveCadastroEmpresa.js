@@ -15,12 +15,6 @@
 		};
 	});
 
-	app.directive('dados', function(){
-		return{
-			restrict: 'A',
-			templateUrl: 'view-cadastro/dados-empresa.html'
-		};
-	});
 	app.directive('preenchido', function(){
 		return{
 			restrict: 'A',
