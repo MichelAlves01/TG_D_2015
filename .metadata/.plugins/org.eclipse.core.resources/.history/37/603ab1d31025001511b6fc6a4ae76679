@@ -146,6 +146,7 @@ public class EmpresaController {
 	@RequestMapping(value="/excluirEmpresaController", method=RequestMethod.POST) 
 	public void excluirEmpresaController(@RequestParam(value="cpfCnpj") String cpfCnpj){
 		empresaService = new EmpresaService();
-		empresaService.excluirEmpresaService(cpfCnpj);	
+		empresaService.excluirEmpresaService(cpfCnpj);
+		
 	}
 }

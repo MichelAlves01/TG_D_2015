@@ -16,9 +16,8 @@ public class EmpresaService {
 		
 	}
 	
-	public void excluirEmpresaService(String cpfCnpj){
-		empresaImpl = new EmpresaImpl();
-		empresaImpl.excluirEmpresaDAO(cpfCnpj);
+	public void excluirEmpresaService(Empresa empresa){
+		
 	}
 	
 	public Empresa getEmpresaService( int cpfCnpj ){

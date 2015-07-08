@@ -372,7 +372,11 @@
 		}
 
 		$scope.isValidCep = function(){
-			if($scope.cep != null){
+			$http('viacep.com.br/ws/01001000/json/?callback=callback_name').success(function(){
+				cepValue = data;
+			}); 
+			alert(cepValue);
+			if($scope.cep != null && cepValue != null){
 				return true;
 			} else {
 				return false;
@@ -526,10 +530,10 @@
 			$scope.excluirEmpresa = function(){
 				var data = $.param({cpfCnpj: $scope.cpfCnpj});
 
-				$http.post(urlBase + 'excluirEmpresaController' + data).success(function(data,status){
+				$http.post(urlBase + '/excluirEmpresaController?' + data).success(function(data,status){
 
 				});
-
+				location.href = "/";
 				alert(cpfCnpj);
 			}
 		
