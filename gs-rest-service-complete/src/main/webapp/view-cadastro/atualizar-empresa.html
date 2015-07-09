@@ -106,10 +106,10 @@
 																	</td>	
 																	<td style="padding-right: 10px;">
 																		<fieldset>
-																			<label>CEP 	<font ng-hide="isValidAll()"><i class="icon-hand-down" ng-hide="isValidCep()"></i>
-																						<i class="icon-ok" ng-show="isValidCep()"></i></font>
+																			<label>CEP 	<font ng-hide="isValidAll()"><i class="icon-hand-down" ng-hide=""></i>
+																						<i class="icon-ok" ng-show=""></i></font>
 																			</label>
-																			<input type="text" ng-model="cep" class="input-large" placeholder="CEP apenas numeros" required/>
+																			<input type="text" ng-model="cep" ng-change="isValidCep()" class="input-large" placeholder="CEP apenas numeros" required/>
 																		</fieldset>
 																	</td>																	
 																</tr>

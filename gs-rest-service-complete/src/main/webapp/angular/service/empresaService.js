@@ -3,7 +3,9 @@
 	var urlBase = 'http://localhost:8080';
 	var depoisCadastro = true;
 	var cpfCnpj;
-	var estados; 
+	var estados;
+	var cepValue;
+	var cidades;
 	
 
 	app.controller('cadastroEmpresaInicio', function($scope, $http) {
@@ -325,6 +327,57 @@
 
 
 
+		
+
+		$scope.isValidEndereco = function(){
+			if($scope.endereco != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+
+		$scope.isValidNumero = function(){
+			if($scope.numero != null){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		$scope.verificarCep = function(){
+				
+				if(cepValue != null && $scope.cep != cepValue.cep){
+					cepValue = null;
+				}
+				if($scope.cep != null && cepValue == null){
+					alert("chamou");
+					$http.get('http://cep.correiocontrol.com.br/'+ $scope.cep +'.json').success(function(data,status){
+						cepValue = data;
+					});
+				}
+				cepRepeat = $scope.cep;
+			
+			$scope.endereco = cepValue.logradouro;
+			$scope.bairro = cepValue.bairro;			
+			
+			for(i=0 ; i<estados.length ; i++){
+				if(estados[i].sigla == cepValue.uf){
+					$scope.estado = estados[i];
+					$scope.cidades = estados[i].cidade; 
+					cidades = estados[i].cidade;
+						for(k=0 ; k< cidades.length ; k++){
+							if(cidades[k].nome == cepValue.localidade){
+								console.log(cidades[k].nome);
+								$scope.cidade = cidades[k]; 
+							}
+						}
+				}
+			}
+			return true;	
+		}
+
 		latLongTest = new google.maps.LatLng(0,0);
 		var typeNeighBor = null;
 		$scope.isValidBairro = function(){
@@ -354,29 +407,8 @@
 		}
 		}
 
-		$scope.isValidEndereco = function(){
-			if($scope.endereco != null){
-				return true;
-			} else {
-				return false;
-			}
-		}
-
-
-		$scope.isValidNumero = function(){
-			if($scope.numero != null){
-				return true;
-			} else {
-				return false;
-			}
-		}
-
 		$scope.isValidCep = function(){
-			$http('viacep.com.br/ws/01001000/json/?callback=callback_name').success(function(){
-				cepValue = data;
-			}); 
-			alert(cepValue);
-			if($scope.cep != null && cepValue != null){
+			if($scope.cep != null){
 				return true;
 			} else {
 				return false;
