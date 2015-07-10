@@ -908,3 +908,11 @@ centro-principal{
 		background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.96) 47%, rgba(245,251,239,0.91) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5fbef', GradientType=1 );
   }
+
+div.growlUI { 
+		background-image: url(../images/warning.png) no-repeat 50px 50px;
+	}
+div.growlUI h4, div.growlUI h5 {
+    text-align: right;
+}
+

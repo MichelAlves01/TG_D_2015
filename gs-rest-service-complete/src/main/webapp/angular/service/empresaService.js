@@ -4,7 +4,7 @@
 	var depoisCadastro = true;
 	var cpfCnpj;
 	var estados;
-	var cepValue;
+	var cepValue = null;
 	var cidades;
 	
 
@@ -20,8 +20,8 @@
 
 		    $scope.iniciaCadastroEmpresa = function (){
 		    	var data = $.param({nome: $scope.nome , cpfCnpj: $scope.cpfCnpj})
-
 		    	if(statusCpfCnpj && $scope.nome != null && $scope.tipo == null){
+
 		    	$http.post(urlBase + '/iniciaCadastroEmpresa?'+ data).
 	        													success(function(data,status) {
 	        														$scope.empresa = data;
@@ -37,14 +37,17 @@
 	           			});
 	            } else {
 	            	if(!statusCpfCnpj){
-	            		alert("cpf ou cnpj invalido!!!");
+	            		$.growlUI('CPF ou CNPJ invalido', 'verifique e tente novamente', 'E'); 
 	            	}
 	        	}
 		    }	
 
 
 		    $scope.validaCpfCnpj = function(){
-
+		    	if($scope.cpfCnpj != null){
+		    		$scope.cpfCnpj = $scope.cpfCnpj.replace(/[^0-9]/g,'');
+		    		console.log($scope.cpfCnpj);
+		    	}
 		    	if($scope.cpfCnpj.length == 11){
 		    		var strCPF = $scope.cpfCnpj;
 		    		var Soma; 
@@ -351,31 +354,31 @@
 				if(cepValue != null && $scope.cep != cepValue.cep){
 					cepValue = null;
 				}
-				if($scope.cep != null && cepValue == null){
-					alert("chamou");
+
+				if($scope.cep != null && $scope.cep.length == 8){
 					$http.get('http://cep.correiocontrol.com.br/'+ $scope.cep +'.json').success(function(data,status){
 						cepValue = data;
 					});
-				}
-				cepRepeat = $scope.cep;
+
+						$scope.endereco = cepValue.logradouro;
+						$scope.bairro = cepValue.bairro;			
 			
-			$scope.endereco = cepValue.logradouro;
-			$scope.bairro = cepValue.bairro;			
-			
-			for(i=0 ; i<estados.length ; i++){
-				if(estados[i].sigla == cepValue.uf){
-					$scope.estado = estados[i];
-					$scope.cidades = estados[i].cidade; 
-					cidades = estados[i].cidade;
-						for(k=0 ; k< cidades.length ; k++){
-							if(cidades[k].nome == cepValue.localidade){
-								console.log(cidades[k].nome);
-								$scope.cidade = cidades[k]; 
+						for(i=0 ; i<estados.length ; i++){
+							if(estados[i].sigla == cepValue.uf){
+								$scope.estado = estados[i];
+								$scope.cidades = estados[i].cidade; 
+								cidades = estados[i].cidade;
+									for(k=0 ; k< cidades.length ; k++){
+										if(cidades[k].nome == cepValue.localidade){
+											console.log(cidades[k].nome);
+											$scope.cidade = cidades[k]; 
+										}
+									}
 							}
 						}
 				}
-			}
-			return true;	
+			
+				
 		}
 
 		latLongTest = new google.maps.LatLng(0,0);
@@ -448,15 +451,8 @@
 		}
 
 		$scope.isValidSenha = function(){
-			if($scope.senha != null){
-				return true;
-			} else {
-				return false;
-			}
-		}
-
-		$scope.isValidConfirmaSenha = function(){
-			if($scope.confirmaSenha != null){
+			
+			if($scope.senha != null && $scope.senha == $scope.confirmaSenha){
 				return true;
 			} else {
 				return false;
@@ -548,7 +544,8 @@
 				$scope.telFixo != null &&
 				$scope.telMovel != null &&
 				$scope.email != null &&
-				$scope.senha != null){
+				$scope.senha != null && 
+				$scope.senha == $scope.confirmaSenha){
 
 					fieldsValid = true;
 				} else {

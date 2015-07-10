@@ -5,6 +5,7 @@
 			
 			<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 			<script type="text/javascript" src="../js/angular.min.js"></script>
+			<script type="text/javascript" src="js/jquery.blockUI.js"></script>
 			<script type="text/javascript" src="../angular/controller/empresaController.js"></script>
 			<script type="text/javascript" src="../angular/service/empresaService.js"></script>
 			<script type="text/javascript" src="../angular/directives/directiveLoginPage.js"></script>
@@ -20,7 +21,19 @@
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="../css/principal.css">
-	
+
+			<script type="text/javascript">
+				$(document).ready(function() { 
+				   $('#cep').keypress(function(e) {
+				    	if(e.which == 13){
+				    		$.blockUI({ message: $('#esperarCep') }); 
+				    	} 
+			    	console.log($('#bairro').value);
+		    		setTimeout($.unblockUI, 10000); 
+				    }); 
+				}); 
+			</script>	       
+
 
 
 </head>
@@ -48,7 +61,9 @@
 		</tr>
 	</table>
 	</div>
-	
+	<div id="esperarCep" style="cursor: default; display: none; height: 100px; padding: 5px;">
+		<p><label>Carregando Aguarde ..</label></p>
+	</div>
 </body>
 </html>
 

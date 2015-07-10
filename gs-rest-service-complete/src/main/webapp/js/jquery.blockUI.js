@@ -33,16 +33,24 @@
 		$.unblockUI = function(opts) { remove(window, opts); };
 
 		// convenience method for quick growl-like notifications  (http://www.google.com/search?q=growl)
-		$.growlUI = function(title, message, timeout, onClose) {
+		$.growlUI = function(title, message, type , timeout, onClose) {
 			var $m = $('<div class="growlUI"></div>');
-			if (title) $m.append('<h1>'+title+'</h1>');
-			if (message) $m.append('<h2>'+message+'</h2>');
+			if(type == 'E'){
+				$m.append('<img src="../images/warning.png" style="float: left; height: 30px; width: 30px; padding-left: 5px; padding-right: 5px;" />')
+				if (title) $m.append('<h4 style="color: #FE2E2E;">'+title+'</h4>');
+				if (message) $m.append('<h5 style="color: #FE2E2E;">'+message+'</h5>');
+			}else if(type == 'C'){
+				$m.append('<img src="../images/ok.png" style="float: left; height: 30px; width: 30px; padding-left: 5px; padding-right: 5px;" />')
+				if (title) $m.append('<h4 style="color: green">'+title+'</h4>');
+				if (message) $m.append('<h5 style="color: green">'+message+'</h5>');
+			}
 			if (timeout === undefined) timeout = 3000;
-
+			var cssOption = type == 'C' && $.blockUI.defaults.growlCSS || $.blockUI.defaults.growllCSS;
+			
 			// Added by konapun: Set timeout to 30 seconds if this growl is moused over, like normal toast notifications
 			var callBlock = function(opts) {
 				opts = opts || {};
-
+				
 				$.blockUI({
 					message: $m,
 					fadeIn : typeof opts.fadeIn  !== 'undefined' ? opts.fadeIn  : 700,
@@ -51,7 +59,7 @@
 					centerY: false,
 					showOverlay: false,
 					onUnblock: onClose,
-					css: $.blockUI.defaults.growlCSS
+					css: cssOption
 				});
 			};
 
@@ -155,20 +163,38 @@
 
 			// styles applied when using $.growlUI
 			growlCSS: {
-				width:		'350px',
-				top:		'10px',
-				left:		'',
-				right:		'10px',
-				border:		'none',
-				padding:	'5px',
-				opacity:	0.6,
+				width:		'250px',
+				height:     '60px',
+				top:		'5px',
+				margin: 	'0 auto',
+				border:		'3px solid green',
+				padding:	'8px',
+				opacity:	0.8,
 				cursor:		'default',
 				color:		'#fff',
-				backgroundColor: '#000',
+				backgroundColor: '#BCF5A9',
 				'-webkit-border-radius':'10px',
 				'-moz-border-radius':	'10px',
 				'border-radius':		'10px'
 			},
+			
+			growllCSS: {
+				width:		'220px',
+				height:     '60px',
+				top:		'5px',
+				margin: 	'0 auto',
+				border:		'3px solid #FE2E2E',
+				padding:	'8px',
+				opacity:	0.8,	
+				cursor:		'default',
+				color:		'#fff',
+				backgroundColor: '#F6D8CE',
+				'-webkit-border-radius':'10px',
+				'-moz-border-radius':	'10px',
+				'border-radius':		'10px'
+				
+			},
+			
 
 			// IE issues: 'about:blank' fails on HTTPS and javascript:false is s-l-o-w
 			// (hat tip to Jorge H. N. de Vasconcelos)
