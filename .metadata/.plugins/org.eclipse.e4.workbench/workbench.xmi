@@ -779,7 +779,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_yQZhPCXyEeW1p_CsN9XtQA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6wsd4CZYEeWV_YvoLHwLbg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_yRlM_CXyEeW1p_CsN9XtQA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ElozsygPEeWrR6poMnkkbg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_yRlM_CXyEeW1p_CsN9XtQA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_yQZhSSXyEeW1p_CsN9XtQA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -809,7 +809,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_yQj5NSXyEeW1p_CsN9XtQA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6ynwgiZYEeWV_YvoLHwLbg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yRkl3yXyEeW1p_CsN9XtQA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_EmOpkygPEeWrR6poMnkkbg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yRkl3yXyEeW1p_CsN9XtQA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_yQj5QCXyEeW1p_CsN9XtQA" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
         <tags>Draggable</tags>
@@ -857,10 +857,10 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_yQlHViXyEeW1p_CsN9XtQA" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_84OLEyZYEeWV_YvoLHwLbg" elementId="browser">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_FwxKECgPEeWrR6poMnkkbg" elementId="browser">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_84X8ECZYEeWV_YvoLHwLbg" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_FwxKESgPEeWrR6poMnkkbg" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open">
           <tags>Opaque</tags>
         </children>
       </children>

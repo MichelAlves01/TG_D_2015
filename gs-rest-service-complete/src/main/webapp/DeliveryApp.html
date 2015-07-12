@@ -22,17 +22,7 @@
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="../css/principal.css">
 
-			<script type="text/javascript">
-				$(document).ready(function() { 
-				   $('#cep').keypress(function(e) {
-				    	if(e.which == 13){
-				    		$.blockUI({ message: $('#esperarCep') }); 
-				    	} 
-			    	console.log($('#bairro').value);
-		    		setTimeout($.unblockUI, 10000); 
-				    }); 
-				}); 
-			</script>	       
+				       
 
 
 
@@ -61,9 +51,7 @@
 		</tr>
 	</table>
 	</div>
-	<div id="esperarCep" style="cursor: default; display: none; height: 100px; padding: 5px;">
-		<p><label>Carregando Aguarde ..</label></p>
-	</div>
+	
 </body>
 </html>
 

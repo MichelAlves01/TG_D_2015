@@ -5,7 +5,47 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-07-07T20:09:26Z</updated>
+  <updated>2015-07-10T04:20:00Z</updated>
+  <entry>
+    <title>Spring Boot 1.3.0.M2 Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/07/10/spring-boot-1-3-0-m2-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2015-07-10:2186</id>
+    <updated>2015-07-10T04:20:00Z</updated>
+    <content type="html">&lt;p&gt;Spring Boot v1.3.0.M2 is available now from the &lt;a href="http://repo.springsource.org/milestone/"&gt;Spring milestone repository&lt;/a&gt;. This release closes a whopping &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.0.M2+is%3Aissue+is%3Aclosed"&gt;73 issues&lt;/a&gt; and merges &lt;a href="https://github.com/spring-projects/spring-boot/pulls?q=milestone%3A1.3.0.M2+is%3Aclosed+is%3Apr"&gt;59 pull-requests&lt;/a&gt;! Thanks to everyone that has contributed.&lt;/p&gt;&lt;p&gt;Highlights of the new release include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Auto-configuration support for &lt;a href="http://jooq.org"&gt;jOOQ&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Hypermedia support for actuator endpoints.&lt;/li&gt;
+  &lt;li&gt;Support for ANSI color &lt;code&gt;banner.txt&lt;/code&gt; files.&lt;/li&gt;
+  &lt;li&gt;An improved way to access &lt;code&gt;ApplicationArguments&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;New &lt;code&gt;/flyway&lt;/code&gt;, &lt;code&gt;/liquibase&lt;/code&gt; and &lt;code&gt;/logfile&lt;/code&gt; actuator endpoints.&lt;/li&gt;
+  &lt;li&gt;Auto-configuration support for &lt;a href="http://projects.spring.io/spring-session/"&gt;Spring Session&lt;/a&gt; with Redis.&lt;/li&gt;
+  &lt;li&gt;Property based configuration of Spring&amp;rsquo;s &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#mvc-config-static-resources"&gt;&amp;ldquo;resource chains&amp;rdquo;&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;New logback &lt;code&gt;&amp;lt;springProfile&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;springProperty&amp;gt;&lt;/code&gt; tags.&lt;/li&gt;
+  &lt;li&gt;Support for &lt;a href="http://activemq.apache.org/artemis/"&gt;Apache Artemis&lt;/a&gt; (following the donation of HornetQ to Apache).&lt;/li&gt;
+  &lt;li&gt;A new AntLib module to help create executable jars from Apache Ant.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;For a complete list of changes, and upgrade instructions, see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.3-Release-Notes"&gt;Spring Boot 1.3 Release Notes&lt;/a&gt; on the WIKI and the updated &lt;a href="http://docs.spring.io/spring-boot/docs/1.3.0.M2/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;As always, early feedback and &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;bug reports&lt;/a&gt; are extremely valuable to us and very welcome.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Webinar Replay: Debug and Maintain your Spring Boot App</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/07/09/webinar-replay-debug-and-maintain-your-spring-boot-app" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2015-07-09:2185</id>
+    <updated>2015-07-09T15:48:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: Greg Turnquist&lt;/p&gt;
+&lt;p&gt;So you have decided to build an application using Spring Boot? Sooner or later, something will go wrong. It does not matter how experienced we are. How will Spring Boot help us figure out what went wrong and fix things? This talk introduces lots of tools to help us debug and manage &amp;quot;bootiful&amp;quot; apps. You will learn how to use Boot's autoconfiguration report, override Boot's settings &amp;amp; beans, create custom metrics/health checks/app info, and create custom JMX info &amp;amp; custom CRaSH commands.&lt;/p&gt;
+&lt;p&gt;Slides: &lt;a href="https://speakerdeck.com/gregturn/debug-and-maintain-your-spring-boot-apps"&gt;https://speakerdeck.com/gregturn/debug-and-maintain-your-spring-boot-apps&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; Code at&lt;a href="https://github.com/gregturn/debug-your-spring-boot-app"&gt; https://github.com/gregturn/debug-your-spring-boot-app &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn about about Spring Boot at &lt;a href="http://projects.spring.io/spring-security"&gt;http://projects.spring.io/spring-boot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn about about Spring Framework at &lt;a href="http://projects.spring.io/spring-framework"&gt;http://projects.spring.io/spring-framework&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;iframe width="420" height="315" src="https://www.youtube.com/embed/L5JgndjwwBo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt; &lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - July 7th, 2015</title>
     <link rel="alternate" href="https://spring.io/blog/2015/07/07/this-week-in-spring-july-7th-2015" />
@@ -548,39 +588,5 @@ dependencies {&#xD;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;&lt;p&gt;As in the direct binding benchmark, the graphs show that as message size increases, rates decrease but overall data throughput increases. For typical size payloads in the range of 100 to 1,000 bytes we are able to push 600K to ~2 million events per second using a single thread. It is important to note that Spring XD’s benchmarks - based on a more feature rich consumer library - were within 8% of the Kafka native client API’s benchmarks. Also note that between 1000 and 10,000 byte message sizes a single producer can reach about half of the 10Gb network capacity. In future tests we will show benchmarks of multiple producers and consumers to show how XD scales up and how other tuning parameters such as batch size impact performance.&lt;/p&gt;&lt;h1&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h1&gt;&lt;p&gt;The benchmarks above show that Spring XD can meet high performance streaming use-case requirements. They also show that Spring XD which uses the &lt;a href="http://docs.spring.io/spring-xd/docs/current-SNAPSHOT/reference/html/#_server_configuration"&gt;Spring Integration Kafka&lt;/a&gt; (SIK) client library introduces very little overhead as compared to the native Kafka high level consumer library, while providing added functionality such as control over offsets and partitions. Thus you can take advantage of using the Spring XD programming model as well as functionality in the SIK consumer API with minimal impact to performance. &lt;/p&gt;&lt;h1&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next steps&lt;/h1&gt;&lt;p&gt;While there are some use-cases that are mostly data passthrough-centric, most use cases will involve some processing of the payload. Also, we only used a single processing thread. In future blog posts we will show how XD scales up with more container instances, how message rates are impacted while deserializing/serializing objects using popular libraries and how multiple threads and reactive programming can also help to increase rates per JVM process. Stay tuned!&lt;/p&gt;&lt;p&gt;&lt;em&gt;Editor’s Note: ©2015 Pivotal Software, Inc. All rights reserved. Apache and Apache Kafka, are either registered trademarks or trademarks of the Apache Software Foundation in the United States and/or other countries.&lt;/em&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - June 16th, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/17/this-week-in-spring-june-16th-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-06-17:2167</id>
-    <updated>2015-06-17T00:18:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week&lt;br/&gt;I&amp;rsquo;m in sunny London for Devoxx UK where I&amp;rsquo;ll be talking to developers about building&lt;br/&gt;cloud-native applications with Spring Boot, Spring Cloud, and Cloud Foundry. As usual, if you&amp;rsquo;re in the area, &lt;a href="http://twitter.com/starbuxman"&gt;hit me up&lt;/a&gt;. The big news this week is the Spring XD 1.2 GA blowing the doors off performance numbers! No benchmarketing here, everything is published and reproducible: Performance turning to get ~12 MILLION msg/sec with an in-memory transport and 2.6MILLION msg/sec when using Kafka (100 byte messages). Lots more detail in the &lt;a href="http://spring.io/blog/2015/06/17/spring-xd-benchmarks-part-1"&gt;performance blog&lt;/a&gt;. And we haven&amp;rsquo;t even talked about the Amabari installer or the containerload of &lt;a href="http://spring.io/blog/2015/06/17/spring-xd-1-2-ga-spring-xd-1-1-3-and-flo-for-spring-xd-beta-released"&gt;new features&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Check out Spring ninja Stephane Nicoll&amp;rsquo;s &lt;a href="https://spring.io/blog/2015/06/15/cache-auto-configuration-in-spring-boot-1-3"&gt;blog introducing the smart new auto-configuration in Spring Boot 1.3M1 for Spring Cache&lt;/a&gt; (and by extension, any JSR107 implementation)&lt;/li&gt;
-  &lt;li&gt;Spring community member Tadaya Tsuyukubo introduces &lt;a href="https://spring.io/blog/2015/06/15/introducing-spring-social-evernote"&gt;his Spring Social Evernote binding in this fantastic guest post&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring lead Juergen Hoeller has &lt;a href="https://spring.io/blog/2015/06/15/spring-framework-3-2-x-eol-on-dec-31-2016"&gt;explained the Spring framework 3.2 end-of-line plan&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Gemfire lead &lt;a href="https://spring.io/blog/2015/06/12/spring-data-gemfire-supports-apache-geode"&gt;John Blum introduces the requisite support for Apache Geode&lt;/a&gt;. Apache Geode is in the Apache incubation project, and is based on the open-source Gemfire technology.&lt;/li&gt;
-  &lt;li&gt;Spring Boot co-lead Phillip Webb just &lt;a href="https://spring.io/blog/2015/06/12/spring-boot-1-3-0-m1-available-now"&gt;announced Spring Boot 1.3M1&lt;/a&gt; which is &lt;em&gt;packed&lt;/em&gt; with lots of great features&lt;br/&gt; including the &lt;em&gt;fabulous&lt;/em&gt; &lt;code&gt;devtools&lt;/code&gt; module that supports tools that are particularly useful at &lt;em&gt;development&lt;/em&gt; time: view template reloading, remote-debugging, a live-reloader of sorts, and much more. It also offer one of my all-time favorite Spring Boot features: executable &lt;code&gt;.jar&lt;/code&gt;s! With this new feature, you can run &lt;code&gt;mvn clean install&lt;/code&gt; and then run &lt;code&gt;./foo.jar&lt;/code&gt; on a UNIX-like environment and &lt;em&gt;it just works&lt;/em&gt;!&lt;/li&gt;
-  &lt;li&gt;Spring Data ninja Thomas Risberg &lt;a href="https://spring.io/blog/2015/06/11/spring-for-apache-hadoop-2-2-ga-released"&gt;just announced Spring for Apache Hadoop 2.2 GA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring framework lead Juergen Hoeller &lt;a href="https://spring.io/blog/2015/06/10/feedback-welcome-spring-5-system-requirements"&gt;invites feedback about Spring framework 5 requirements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Our pals over at &lt;a href="http://terasolunaorg.github.io/"&gt;NTT Data put together a nice post on Terasoluna&lt;/a&gt;, a framework that they build that sits on top of Spring and Spring Boot, and that they certify when building (a considerable many) applications that needs to last.&lt;/li&gt;
-  &lt;li&gt;Josha Stella put together a &lt;a href="http://radar.oreilly.com/2015/06/an-introduction-to-immutable-infrastructure.html"&gt;nice look at why we should prefer immutable infrastructure&lt;/a&gt;. Battery Ventures (formerly Netflix)&amp;rsquo;s Adrian Cochroft famously talked about this, saying &amp;ldquo;treat servers like pets, not cattle.&amp;rdquo; This is a good read, even if it has absolutely nothing to do with Spring.&lt;/li&gt;
-  &lt;li&gt;The people at Boxfuse look at how to build a Spring Boot application &lt;a href="https://boxfuse.com/blog/spring-boot-ec2.html"&gt;and then use &lt;em&gt;fuse&lt;/em&gt; it into an Amazon EC2-runnable image&lt;/a&gt; in a few simple steps. Boxfuse looks interesting, but keep in mind that Boxfuse is for-pay. As an alternative, &lt;a href="https://spring.io/guides/gs/spring-cloud-and-lattice/"&gt;you could simply run Docker images almost anywhere these days&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 3.2.x EOL on Dec 31, 2016</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/06/15/spring-framework-3-2-x-eol-on-dec-31-2016" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Juergen Hoeller</name>
-    </author>
-    <id>tag:spring.io,2015-06-09:2156</id>
-    <updated>2015-06-15T19:15:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;&lt;p&gt;The Spring team hereby announces that the Spring Framework 3.2.x line will reach End-Of-Life status at the end of 2016 (along with &lt;a href="http://mail-archives.apache.org/mod_mbox/www-announce/201506.mbox/%3C556ECB68.2080804%40apache.org%3E"&gt;Apache Tomcat 6.x&lt;/a&gt;). We keep publishing occasional 3.2.x maintenance releases up until that point and will then end the branch.&lt;/p&gt;&lt;p&gt;Please prepare for &lt;a href="https://github.com/spring-projects/spring-framework/wiki/Migrating-from-earlier-versions-of-the-Spring-Framework"&gt;upgrading to Spring Framework 4.x&lt;/a&gt; in time. The current Spring Framework 4 generation will remain in active maintenance until 2019, based on the upcoming 4.3 feature release next year - similar to the extended life that 3.2.x is in at the moment.&lt;/p&gt;&lt;p&gt;FYI, we expect Spring Framework 5.0 to be generally available by Q4 2016, &lt;a href="https://spring.io/blog/2015/06/10/feedback-welcome-spring-5-system-requirements"&gt;requiring JDK 8+.&lt;/a&gt;&lt;br/&gt;If you need to stay on JDK 6 or 7, Spring Framework 4.x is the end of your upgrade path there.&lt;/p&gt;&lt;p&gt;All the best for your upgrade planning,&lt;/p&gt;&lt;p&gt;Juergen&lt;/p&gt;</content>
   </entry>
 </feed>

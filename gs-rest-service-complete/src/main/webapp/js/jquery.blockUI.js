@@ -132,13 +132,11 @@
 			// $.blockUI.defaults.css = {};
 			css: {
 				padding:	0,
-				margin:		0,
-				width:		'30%',
+				margin:		'0 auto',
+				left: 		'48%',
 				top:		'40%',
-				left:		'35%',
 				textAlign:	'center',
 				color:		'#000',
-				border:		'3px solid #aaa',
 				backgroundColor:'#fff',
 				cursor:		'wait'
 			},
